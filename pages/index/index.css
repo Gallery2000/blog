@@ -2,6 +2,49 @@
   height: 516px;
   width: 100%;
   background-color: #0252d9;
-  margin-top: 80px; }
+  margin-top: 80px;
+  overflow: hidden; }
+  .index-body .main {
+    width: 1366px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%; }
+    .index-body .main .text-wrap {
+      margin-top: 182px;
+      overflow: hidden;
+      width: 706px;
+      text-align: center;
+      margin-left: 100px;
+      float: left; }
+      .index-body .main .text-wrap .sm-title {
+        margin-bottom: 10px; }
+      .index-body .main .text-wrap .big-title img {
+        width: 100%; }
+    .index-body .main .img-wrap {
+      float: right;
+      width: 560px;
+      border: 1px solid #000;
+      position: relative;
+      height: 100%; }
+      .index-body .main .img-wrap .img-box-1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 260px; }
+        .index-body .main .img-wrap .img-box-1 img {
+          width: 100%; }
+      .index-body .main .img-wrap .img-box-2 {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 260px; }
+        .index-body .main .img-wrap .img-box-2 img {
+          width: 100%; }
+      .index-body .main .img-wrap .img-box-3 {
+        width: 260px;
+        position: absolute;
+        right: 0; }
+        .index-body .main .img-wrap .img-box-3 img {
+          width: 100%; }
 
 /*# sourceMappingURL=index.css.map */
