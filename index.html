@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../common/js/jquery.pseudo.js"></script>
+    <style>
+        p {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+        }
+
+        p:after,
+        p .after {
+            content: "";
+            after: "";
+            position: absolute;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p>我是123</p>
+</body>
+
+</html>

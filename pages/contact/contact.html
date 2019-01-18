@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="../../common/style/main.css">
+    <link rel="stylesheet" href="./contact.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-main clear">
+            <div class="logo-wrap">
+                <img class="logo" src="../../images/logo.png" alt="">
+            </div>
+            <div class="logo-wrap">
+                <img class="title" src="../../images/logit-title.png" alt="">
+            </div>
+            <div class="list-wrap">
+                <ul class="clear">
+                    <li class="item-1"><a href="javascript:;">首页</a></li>
+                    <li class="item-2"><a href="javascript:;">公司简介</a></li>
+                    <li class="item-3"><a href="javascript:;">公司动态</a></li>
+                    <li class="item-4"><a href="../product/product.html">公司产品</a></li>
+                    <li class="item-5"><a href="../recruit/recruit.html">招贤纳士</a></li>
+                    <li class="item-6"><a href="../contact/contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="call-me">
+        <div class="main">
+            <h1 class="title">联系我们</h1>
+            <p class="desc">Contact us</p>
+        </div>
+    </div>
+    <div class="location">
+        <div class="main clear">
+            <div id="container" class="left-main">
+                <img class="map" src="../../images/map.png" alt="">
+            </div>
+            <div class="right-main">
+                <p class="title">商务合作</p>
+                <dl>
+                    <dd><i class="iconfont">&#xe619;</i>东莞市松山湖高新技术产业开发区工业西路14号2栋首层3-05</dd>
+                    <dd><i class="iconfont">&#xe634;</i>523808</dd>
+                    <dd><i class="iconfont">&#xe64b;</i>0769-22895462</dd>
+                </dl>
+                <dl>
+                    <dd><i class="iconfont">&#xe633;</i>1002938477</dd>
+                    <dd><i class="iconfont">&#xe60a;</i>15393864750</dd>
+                    <dd><i class="iconfont">&#xe634;</i>1002938477@qq.com</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bar">
+        <div class="main clear">
+            <div class="footer-wrap clear">
+                <dl>
+                    <dt>关注我们</dt>
+                    <dd><a href="javascript:;">公纵号</a></dd>
+                </dl>
+                <dl>
+                    <dt>加入我们</dt>
+                    <dd><a href="javascript:;">社会招聘</a></dd>
+                    <dd><a href="javascript:;">校园招聘</a></dd>
+                </dl>
+                <dl>
+                    <dt>合作洽谈</dt>
+                    <dd><a href="javascript:;">客户服务</a></dd>
+                    <dd><a href="javascript:;">咨询合作</a></dd>
+                </dl>
+                <dl class="child-node">
+                    <dt>法律信息</dt>
+                    <dd><a href="javascript:;">知识产权</a></dd>
+                    <dd><a href="javascript:;">服务协议</a></dd>
+                </dl>
+            </div>
+
+            <div class="logo-title">
+                <img src="../../images/logit-title.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5tXIMPokB8DvjlXvbeTBQmYFsgMGmls9"></script>
+    <script>
+        var map = new BMap.Map("container");
+        var point = new BMap.Point(113.893854, 22.933373);
+        map.centerAndZoom(point, 18);
+        var marker = new BMap.Marker(point); // 创建标注
+
+        var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(46, 29), {
+            anchor: new BMap.Size(15, 54),
+            imageOffset: new BMap.Size(22, 0 - 12 * 25) // 设置图片偏移    
+        });
+        var marker = new BMap.Marker(point, {
+            icon: myIcon
+        });
+
+
+        map.addOverlay(marker)
+
+        map.enableScrollWheelZoom(true);
+    </script>
+</body>
+
+</html>

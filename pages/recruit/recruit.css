@@ -1,0 +1,169 @@
+.recruit-body {
+  width: 100%;
+  height: 774px;
+  background-color: #0252d9;
+  text-align: center; }
+  .recruit-body img {
+    height: 100%;
+    animation: bounceIn .8s; }
+
+@keyframes bounceIn {
+  0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3); }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1); }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03); }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); } }
+.recruit-detail {
+  width: 100%; }
+  .recruit-detail .main {
+    width: 1366px;
+    margin: 0 auto; }
+    .recruit-detail .main .recruit-title {
+      margin-top: 18px;
+      margin-bottom: 52px;
+      font-size: 36px;
+      font-weight: 100;
+      text-align: center; }
+    .recruit-detail .main .recruit-type {
+      text-align: center; }
+      .recruit-detail .main .recruit-type ul {
+        display: inline-block; }
+        .recruit-detail .main .recruit-type ul li {
+          width: 130px;
+          height: 130px;
+          float: left; }
+          .recruit-detail .main .recruit-type ul li img {
+            width: 100%;
+            height: 100%; }
+          .recruit-detail .main .recruit-type ul li.item-function {
+            margin-right: 100px; }
+          .recruit-detail .main .recruit-type ul li.item-technology {
+            margin-right: 100px; }
+          .recruit-detail .main .recruit-type ul li.item-products {
+            margin-right: 100px; }
+          .recruit-detail .main .recruit-type ul li.item-operations {
+            margin-right: 100px; }
+    .recruit-detail .main .recruit-position {
+      width: 1180px;
+      margin: 24px auto 50px;
+      background-color: #fafafa;
+      border-radius: 10px; }
+      .recruit-detail .main .recruit-position ul li {
+        position: relative;
+        padding-left: 28px; }
+        .recruit-detail .main .recruit-position ul li.item-1:after, .recruit-detail .main .recruit-position ul li.item-1 .after {
+          content: "";
+          after: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border-bottom: 1px dashed #d7d7d7;
+          width: 100%; }
+        .recruit-detail .main .recruit-position ul li.item-2:after, .recruit-detail .main .recruit-position ul li.item-2 .after {
+          content: "";
+          after: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border-bottom: 1px dashed #d7d7d7;
+          width: 100%; }
+        .recruit-detail .main .recruit-position ul li.item-3:after, .recruit-detail .main .recruit-position ul li.item-3 .after {
+          content: "";
+          after: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border-bottom: 1px dashed #d7d7d7;
+          width: 100%; }
+        .recruit-detail .main .recruit-position ul li.item-4:after, .recruit-detail .main .recruit-position ul li.item-4 .after {
+          content: "";
+          after: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border-bottom: 1px dashed #d7d7d7;
+          width: 100%; }
+        .recruit-detail .main .recruit-position ul li.item-5:after, .recruit-detail .main .recruit-position ul li.item-5 .after {
+          content: "";
+          after: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border-bottom: 1px dashed #d7d7d7;
+          width: 100%; }
+        .recruit-detail .main .recruit-position ul li.active.item .item .title {
+          font-size: 15px; }
+        .recruit-detail .main .recruit-position ul li.active.item .item .desc {
+          display: none; }
+        .recruit-detail .main .recruit-position ul li.active.item .item .iconfont.up {
+          display: block; }
+        .recruit-detail .main .recruit-position ul li.active.item .item .iconfont.down {
+          display: none; }
+        .recruit-detail .main .recruit-position ul li.active.item .item-wrap {
+          display: block; }
+        .recruit-detail .main .recruit-position ul li .item {
+          height: 70px;
+          line-height: 70px; }
+          .recruit-detail .main .recruit-position ul li .item:hover {
+            cursor: pointer; }
+            .recruit-detail .main .recruit-position ul li .item:hover .desc {
+              display: block; }
+          .recruit-detail .main .recruit-position ul li .item .title {
+            float: left;
+            font-size: 13px; }
+          .recruit-detail .main .recruit-position ul li .item .desc {
+            float: right;
+            font-size: 13px;
+            color: #0252d8;
+            display: none; }
+          .recruit-detail .main .recruit-position ul li .item .iconfont {
+            margin-right: 30px;
+            margin-left: 16px;
+            float: right;
+            color: #333;
+            display: none;
+            font-size: 25px; }
+            .recruit-detail .main .recruit-position ul li .item .iconfont.down {
+              display: block; }
+            .recruit-detail .main .recruit-position ul li .item .iconfont:hover {
+              color: #0252d9; }
+        .recruit-detail .main .recruit-position ul li .item-wrap {
+          overflow: hidden;
+          display: none; }
+          .recruit-detail .main .recruit-position ul li .item-wrap dl.contact dd {
+            line-height: 36px;
+            font-size: 18px;
+            font-weight: 200; }
+          .recruit-detail .main .recruit-position ul li .item-wrap dl {
+            overflow: hidden;
+            margin-bottom: 30px; }
+            .recruit-detail .main .recruit-position ul li .item-wrap dl dt {
+              font-size: 15px;
+              line-height: 28px; }
+            .recruit-detail .main .recruit-position ul li .item-wrap dl dd {
+              font-size: 14px;
+              line-height: 26px; }

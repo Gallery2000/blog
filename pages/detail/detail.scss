@@ -1,0 +1,52 @@
+$blue:#0252d9;
+$gray:#fafafa;
+
+
+.detail-body {
+    margin-top: 80px;
+    margin-bottom: 42px;
+    width: 100%;
+
+    .main {
+        overflow: hidden;
+        text-align: center;
+
+        .title {
+            overflow: hidden;
+            margin-top: 52px;
+            margin-bottom: 44px;
+            font-size: 28px;
+            color: $blue;
+        }
+
+        .phone-wrap {
+            width: 308px;
+            height: 500px;
+            background-image: url(../../images/iPhoneX样机.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            margin: 0 auto;
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/iPhoneX样机.png', sizingMethod='scale');
+            transition: .5s;
+
+            &:hover {
+                transform: translate3d(0, -10px, 0);
+            }
+
+            .phone {
+                display: none;
+            }
+        }
+
+        .release-time {
+            font-size: 12px;
+            margin-bottom: 16px;
+            margin-top: 20px;
+        }
+
+        .release-desc {
+            font-size: 12px;
+        }
+    }
+}

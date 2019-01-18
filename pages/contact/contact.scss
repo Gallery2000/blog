@@ -1,0 +1,111 @@
+$blue:#0252d9;
+$gray:#fafafa;
+
+//联系我背景
+.call-me {
+    margin-top: 80px;
+    width: 100%;
+    height: 436px;
+    background-image: url(../../images/recruit-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/recruit-bg.png', sizingMethod='scale');
+    position: relative;
+
+    .main {
+        width: 512px;
+        height: 140px;
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -256px;
+        margin-top: -70px;
+
+        .title {
+            font-size: 48px;
+            color: #fff;
+            font-weight: 100;
+            padding-bottom: 28px;
+            position: relative;
+
+            &:after,
+            & .after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background-color: #fff;
+            }
+        }
+
+        .desc {
+            margin-top: 10px;
+            font-size: 28px;
+            font-weight: 200;
+            color: #fff;
+        }
+    }
+}
+
+
+
+
+
+//location 定位
+.location {
+    margin-top: 42px;
+    width: 100%;
+    margin-bottom: 42px;
+    overflow: hidden;
+
+    .main {
+        margin: 0 auto;
+        width: 1366px;
+
+        .left-main,
+        .right-main {
+            width: 50%;
+            float: left;
+            min-height: 420px;
+        }
+
+        .left-main {
+            img {
+                width: 100%;
+            }
+        }
+
+        .right-main {
+            padding-left: 104px;
+
+            .title {
+                font-size: 28px;
+                font-weight: 200px;
+                margin-top: 32px;
+                margin-bottom: 44px;
+                overflow: hidden;
+            }
+
+            dl {
+                margin-bottom: 40px;
+                overflow: hidden;
+                dd {
+                    i.iconfont{
+                        font-size: 25px;
+                        margin-right: 14px;
+                        vertical-align: middle;
+                        position: relative;
+                        // top: -4px;
+                    }
+                    vertical-align: middle;
+                    font-size: 13px;
+                    line-height: 34px;
+                }
+            }
+        }
+    }
+}
