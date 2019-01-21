@@ -47,4 +47,198 @@
         .index-body .main .img-wrap .img-box-3 img {
           width: 100%; }
 
+.index-main {
+  width: 100%;
+  overflow: hidden; }
+  .index-main .brief-introduction {
+    width: 1366px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .index-main .brief-introduction .title {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      color: #0252D9;
+      text-align: center;
+      margin-top: 82px;
+      margin-bottom: 20px;
+      overflow: hidden; }
+    .index-main .brief-introduction dl {
+      overflow: hidden; }
+      .index-main .brief-introduction dl dd {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 14px; }
+    .index-main .brief-introduction .slider-wrap {
+      overflow: hidden;
+      width: 1164px;
+      height: 470px;
+      background-color: #0252d9;
+      margin: 56px auto; }
+    .index-main .brief-introduction .more-wrap .title {
+      margin-bottom: 40px; }
+    .index-main .brief-introduction .more-wrap .img-wrap {
+      width: 1100px;
+      height: 589px;
+      background-image: url(../../images/index/u29.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin: 0 auto;
+      overflow: hidden;
+      text-align: center;
+      padding-top: 34px; }
+      .index-main .brief-introduction .more-wrap .img-wrap img {
+        width: 776px;
+        height: 485px; }
+    .index-main .brief-introduction .more-wrap .more-link-wrap {
+      text-align: center;
+      margin-top: 30px;
+      overflow: hidden;
+      cursor: pointer; }
+      .index-main .brief-introduction .more-wrap .more-link-wrap span {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 26px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: #0252D9; }
+      .index-main .brief-introduction .more-wrap .more-link-wrap .iconfont {
+        color: #afb4e7;
+        font-size: 26px;
+        vertical-align: middle; }
+    .index-main .brief-introduction .describe {
+      width: 100%; }
+      .index-main .brief-introduction .describe .title-wrap {
+        margin-top: 100px;
+        font-weight: 400;
+        font-style: normal;
+        color: #0252D9;
+        text-align: center;
+        overflow: hidden;
+        margin-bottom: 14px; }
+        .index-main .brief-introduction .describe .title-wrap .small {
+          font-size: 40px; }
+        .index-main .brief-introduction .describe .title-wrap .big {
+          font-size: 72px; }
+      .index-main .brief-introduction .describe .desc {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: #0B5CF4;
+        text-align: center; }
+      .index-main .brief-introduction .describe .desc-avatar {
+        overflow: hidden;
+        margin-top: 40px; }
+        .index-main .brief-introduction .describe .desc-avatar ul {
+          font-size: 0;
+          text-align: center; }
+          .index-main .brief-introduction .describe .desc-avatar ul li {
+            display: inline-block;
+            width: 300px;
+            margin: 10px 16px;
+            overflow: hidden; }
+            .index-main .brief-introduction .describe .desc-avatar ul li:hover {
+              box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+            .index-main .brief-introduction .describe .desc-avatar ul li .action-wrap {
+              position: relative;
+              height: 200px;
+              overflow: hidden; }
+              .index-main .brief-introduction .describe .desc-avatar ul li .action-wrap:hover .more-act {
+                display: block; }
+              .index-main .brief-introduction .describe .desc-avatar ul li .action-wrap:hover img {
+                transform: scale(1.1); }
+              .index-main .brief-introduction .describe .desc-avatar ul li .action-wrap img {
+                width: 100%;
+                height: 100%;
+                transition: all 1s; }
+              .index-main .brief-introduction .describe .desc-avatar ul li .action-wrap .more-act {
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.6);
+                text-align: center;
+                left: 0;
+                top: 0;
+                line-height: 200px;
+                color: #fff;
+                font-size: 28px;
+                font-weight: 200; }
+            .index-main .brief-introduction .describe .desc-avatar ul li .desc-wrap {
+              text-align: center;
+              padding: 14px 44px 0;
+              height: 200px;
+              overflow: hidden; }
+              .index-main .brief-introduction .describe .desc-avatar ul li .desc-wrap .text {
+                font-size: 16px; }
+              .index-main .brief-introduction .describe .desc-avatar ul li .desc-wrap .desc-text {
+                margin-top: 36px;
+                font-size: 14px; }
+    .index-main .brief-introduction .join-us {
+      margin-top: 100px;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 20px;
+      color: #0252D9;
+      text-align: center;
+      margin-bottom: 64px;
+      overflow: hidden; }
+
+.partner-wrap {
+  background-color: #333333;
+  width: 100%;
+  overflow: hidden; }
+  .partner-wrap .partner-main {
+    width: 1366px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .partner-wrap .partner-main .title {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      color: #FFFFFF;
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      overflow: hidden; }
+    .partner-wrap .partner-main .desc {
+      font-weight: 200;
+      font-style: normal;
+      font-size: 20px;
+      color: #FFFFFF;
+      text-align: center; }
+    .partner-wrap .partner-main .partner-list-wrap {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      overflow: hidden; }
+      .partner-wrap .partner-main .partner-list-wrap ul {
+        font-size: 0;
+        text-align: center; }
+        .partner-wrap .partner-main .partner-list-wrap ul li {
+          overflow: hidden;
+          margin: 5px;
+          width: 300px;
+          height: 170px;
+          border: 1px solid #FFF;
+          text-align: center;
+          vertical-align: middle;
+          display: inline-block;
+          position: relative;
+          background-color: #fff; }
+          .partner-wrap .partner-main .partner-list-wrap ul li:hover img {
+            transform: scale(1.2); }
+          .partner-wrap .partner-main .partner-list-wrap ul li img {
+            transition: all .5s;
+            height: 40px;
+            position: relative;
+            top: 50%;
+            margin-top: -20px; }
+
+.footer-bar {
+  background: #333; }
+
 /*# sourceMappingURL=index.css.map */
