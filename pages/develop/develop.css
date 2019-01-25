@@ -1,0 +1,16 @@
+.develop-body {
+  margin: 300px; }
+  .develop-body .tooltip {
+    width: 458px;
+    height: 45px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    position: relative; }
+    .develop-body .tooltip .arrow {
+      position: absolute;
+      right: -12px;
+      top: 50%;
+      margin-top: -9px;
+      width: 12px;
+      height: 18px; }
+      .develop-body .tooltip .arrow img {
+        width: 100%; }

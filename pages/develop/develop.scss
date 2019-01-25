@@ -1,0 +1,64 @@
+// .develop-body{
+//     .tooltip{
+//         margin: 300px;
+//         width: 240px;
+//         height: 100px;
+//         box-shadow: 0 2px 12px 0 rgba(0,0,0,.3);
+//         position: relative;
+//         border: 1px solid #ebeef5;
+//         border-radius: 4px;
+//         .arrow{
+//             position: absolute;
+//             display: block;
+//             width: 0;
+//             height: 0;
+//             border-color: transparent;
+//             border-style: solid;
+//             border-width: 6px;
+//             box-shadow:2px 2px 12px rgba(0,0,0,.03);
+//             filter: drop-shadow(0 2px 12px rgba(0,0,0,.03));
+//             top: -6px;
+//             left: 50%;
+//             margin-right: 3px;
+//             border-top-width: 0;
+//             border-bottom-color: #ebeef5;
+//             &::after{
+//                 position: absolute;
+//                 display: block;
+//                 width: 0;
+//                 height: 0;
+//                 border-color: transparent;
+//                 border-style: solid;
+//                 content: " ";
+//                 border-width: 6px;
+//                 top: 0px;
+//                 margin-left: -6px;
+//                 border-top-width: 0;
+//                 border-bottom-color: #fff
+//             }
+//         }
+//     }
+// }
+
+
+.develop-body{
+        margin: 300px;
+
+    .tooltip{
+        width: 458px;
+        height: 45px;
+        box-shadow: 0 0 12px rgba(0,0,0,.3);
+        position: relative;
+        .arrow{
+            position: absolute;
+            right: -12px;
+            top: 50%;
+            margin-top: -9px;
+            width: 12px;
+            height: 18px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
