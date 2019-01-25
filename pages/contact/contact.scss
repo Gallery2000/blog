@@ -68,30 +68,37 @@ $gray:#fafafa;
 
         .left-main,
         .right-main {
-            width: 50%;
             float: left;
-            min-height: 420px;
+            min-height: 458px;
         }
 
         .left-main {
+            width: 704px;
             img {
                 width: 100%;
             }
         }
 
         .right-main {
+            
             padding-left: 104px;
-
+            .img-wrap{
+                overflow: hidden;
+                margin-top: 32px;
+                margin-bottom: 35px;
+                img{
+                    height: 32px;
+                }
+            }
             .title {
                 font-size: 28px;
                 font-weight: 200px;
-                margin-top: 32px;
-                margin-bottom: 44px;
+                margin-top: 36px;
+                margin-bottom: 13px;
                 overflow: hidden;
             }
 
             dl {
-                margin-bottom: 40px;
                 overflow: hidden;
                 dd {
                     i.iconfont{

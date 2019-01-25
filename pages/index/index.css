@@ -27,14 +27,14 @@
       .index-body .main .text-wrap div {
         position: absolute; }
       .index-body .main .text-wrap .sm-title {
-        left: 195px;
-        top: 175px; }
+        left: 196px;
+        top: 176px; }
         .index-body .main .text-wrap .sm-title img {
-          width: 393px;
+          width: 392px;
           height: 40px; }
       .index-body .main .text-wrap .big-title {
         left: 78px;
-        top: 213px; }
+        top: 214px; }
         .index-body .main .text-wrap .big-title img {
           width: 660px;
           height: 114px; }
@@ -43,19 +43,19 @@
       .index-body .main .img-wrap div {
         position: absolute; }
       .index-body .main .img-wrap .img-box-1 {
-        left: 745px;
+        right: 420px;
         top: 0; }
         .index-body .main .img-wrap .img-box-1 img {
           width: 220px;
           height: 164px; }
       .index-body .main .img-wrap .img-box-2 {
         top: 330px;
-        left: 795px; }
+        right: 350px; }
         .index-body .main .img-wrap .img-box-2 img {
           width: 220px;
           height: 156px; }
       .index-body .main .img-wrap .img-box-3 {
-        right: 40px;
+        right: 50px;
         top: 70px; }
         .index-body .main .img-wrap .img-box-3 img {
           width: 300px;
@@ -75,8 +75,11 @@
       color: #0252D9;
       text-align: center;
       margin-top: 82px;
-      margin-bottom: 20px;
-      overflow: hidden; }
+      margin-bottom: 32px;
+      overflow: hidden;
+      height: 46px;
+      overflow: hidden;
+      line-height: 46px; }
     .index-main .brief-introduction dl {
       overflow: hidden; }
       .index-main .brief-introduction dl dd {
@@ -84,15 +87,31 @@
         font-style: normal;
         font-size: 20px;
         text-align: center;
-        margin-bottom: 14px; }
+        margin-bottom: 14px;
+        line-height: 28px;
+        height: 28px;
+        margin-bottom: 10px; }
+        .index-main .brief-introduction dl dd:last-child {
+          margin: 0; }
     .index-main .brief-introduction .slider-wrap {
       overflow: hidden;
       width: 1164px;
       height: 470px;
       background-color: #0252d9;
-      margin: 56px auto; }
-    .index-main .brief-introduction .more-wrap .title {
-      margin-bottom: 40px; }
+      margin: 0 auto;
+      margin-top: 68px; }
+    .index-main .brief-introduction .more-wrap .more-title {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 40px;
+      color: #0252D9;
+      text-align: center;
+      margin-top: 82px;
+      margin-bottom: 46px;
+      overflow: hidden;
+      height: 46px;
+      overflow: hidden;
+      line-height: 46px; }
     .index-main .brief-introduction .more-wrap .img-wrap {
       width: 1100px;
       height: 589px;
@@ -110,7 +129,8 @@
         height: 485px; }
     .index-main .brief-introduction .more-wrap .more-link-wrap {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 28px;
+      margin-bottom: 72px;
       overflow: hidden;
       cursor: pointer; }
       .index-main .brief-introduction .more-wrap .more-link-wrap span {
@@ -126,15 +146,17 @@
         font-size: 26px;
         vertical-align: middle; }
     .index-main .brief-introduction .describe {
+      overflow: hidden;
       width: 100%; }
       .index-main .brief-introduction .describe .title-wrap {
-        margin-top: 100px;
+        margin-top: 36px;
         font-weight: 400;
         font-style: normal;
         color: #0252D9;
         text-align: center;
         overflow: hidden;
-        margin-bottom: 14px; }
+        margin-bottom: 12px;
+        height: 100px; }
         .index-main .brief-introduction .describe .title-wrap .small {
           font-size: 40px; }
         .index-main .brief-introduction .describe .title-wrap .big {
@@ -147,10 +169,11 @@
         text-align: center; }
       .index-main .brief-introduction .describe .desc-avatar {
         overflow: hidden;
-        margin-top: 40px; }
+        margin-top: 42px; }
         .index-main .brief-introduction .describe .desc-avatar ul {
           font-size: 0;
-          text-align: center; }
+          text-align: center;
+          overflow: hidden; }
           .index-main .brief-introduction .describe .desc-avatar ul li {
             display: inline-block;
             width: 300px;
@@ -161,7 +184,8 @@
             .index-main .brief-introduction .describe .desc-avatar ul li .action-wrap {
               position: relative;
               height: 200px;
-              overflow: hidden; }
+              overflow: hidden;
+              cursor: pointer; }
               .index-main .brief-introduction .describe .desc-avatar ul li .action-wrap:hover .more-act {
                 display: block;
                 display: none\0;
@@ -189,13 +213,13 @@
                 font-weight: 200; }
             .index-main .brief-introduction .describe .desc-avatar ul li .desc-wrap {
               text-align: center;
-              padding: 14px 44px 0;
+              padding: 12px 40px 0;
               height: 200px;
               overflow: hidden; }
               .index-main .brief-introduction .describe .desc-avatar ul li .desc-wrap .text {
                 font-size: 16px; }
               .index-main .brief-introduction .describe .desc-avatar ul li .desc-wrap .desc-text {
-                margin-top: 36px;
+                margin-top: 40px;
                 font-size: 14px; }
     .index-main .brief-introduction .join-us {
       margin-top: 100px;
@@ -205,7 +229,8 @@
       color: #0252D9;
       text-align: center;
       margin-bottom: 64px;
-      overflow: hidden; }
+      overflow: hidden;
+      cursor: pointer; }
 
 .partner-wrap {
   background-color: #333333;
@@ -221,7 +246,7 @@
       font-size: 40px;
       color: #FFFFFF;
       text-align: center;
-      margin-top: 50px;
+      margin-top: 52px;
       margin-bottom: 10px;
       overflow: hidden; }
     .partner-wrap .partner-main .desc {
@@ -231,8 +256,7 @@
       color: #FFFFFF;
       text-align: center; }
     .partner-wrap .partner-main .partner-list-wrap {
-      margin-top: 20px;
-      margin-bottom: 10px;
+      margin-top: 45px;
       overflow: hidden; }
       .partner-wrap .partner-main .partner-list-wrap ul {
         font-size: 0;
@@ -247,7 +271,8 @@
           vertical-align: middle;
           display: inline-block;
           position: relative;
-          background-color: #fff; }
+          background-color: #fff;
+          cursor: pointer; }
           .partner-wrap .partner-main .partner-list-wrap ul li:hover img {
             transform: scale(1.2); }
           .partner-wrap .partner-main .partner-list-wrap ul li img {

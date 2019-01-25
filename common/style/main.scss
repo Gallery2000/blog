@@ -1,13 +1,14 @@
-//初始化
 @font-face {
     font-family: 'iconfont';  /* project id 1002004 */
-    src: url('http://at.alicdn.com/t/font_1002004_8a81x7nq8d3.eot');
-    src: url('http://at.alicdn.com/t/font_1002004_8a81x7nq8d3.eot?#iefix') format('embedded-opentype'),
-    url('http://at.alicdn.com/t/font_1002004_8a81x7nq8d3.woff2') format('woff2'),
-    url('http://at.alicdn.com/t/font_1002004_8a81x7nq8d3.woff') format('woff'),
-    url('http://at.alicdn.com/t/font_1002004_8a81x7nq8d3.ttf') format('truetype'),
-    url('http://at.alicdn.com/t/font_1002004_8a81x7nq8d3.svg#iconfont') format('svg');
+    src: url('http://at.alicdn.com/t/font_1002004_1wn5bqhrh6k.eot');
+    src: url('http://at.alicdn.com/t/font_1002004_1wn5bqhrh6k.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_1002004_1wn5bqhrh6k.woff2') format('woff2'),
+    url('http://at.alicdn.com/t/font_1002004_1wn5bqhrh6k.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_1002004_1wn5bqhrh6k.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_1002004_1wn5bqhrh6k.svg#iconfont') format('svg');
   }
+  
+  
   .iconfont{
     font-family:"iconfont" !important;
     font-size:16px;font-style:normal;
@@ -56,7 +57,8 @@ body {
     top: 0;
     right: 0;
     z-index: 99;
-    transition: .4s;
+    transition: .1s;
+    transition-timing-function:ease-out;
     overflow: hidden;
 
     &:hover {
@@ -72,8 +74,8 @@ body {
         width: 1366px;
         margin: 0 auto;
         height: 100%;
-        padding-left: 34px;
-        padding-right: 34px;
+        padding-left: 38px;
+        padding-right: 38px;
         overflow: hidden;
 
         .logo-wrap {
@@ -93,6 +95,7 @@ body {
                 left: 0;
                 top: 50%;
                 margin-top: -30px;
+                cursor: pointer;
             }
 
             .title {
@@ -102,6 +105,7 @@ body {
                 left: 0;
                 top: 50%;
                 margin-top: -15px;
+                cursor: pointer;
             }
 
         }
@@ -127,7 +131,7 @@ body {
                     float: left;
                     padding: 0 6px;
                     position: relative;
-                    width: 100px;
+                    width: 110px;
 
                     @for $i from 1 through 5 {
 
@@ -197,13 +201,11 @@ body {
 
             dl {
                 float: left;
-                padding-left: 80px;
-                width: 304px;
-
-                &.child-node {
-                    width: 230px;
+                width: 120px;
+                margin-left: 180px;
+                &:first-child{
+                    margin-left: 80px;
                 }
-
                 dt {
                     font-size: 13px;
                     font-weight: 650;
@@ -229,11 +231,13 @@ body {
 
         .logo-title {
             width: 224px;
-            float: right;
+            float: left;
             text-align: left;
             height: 82px;
             position: relative;
-
+            margin-left: 30px;
+            overflow: hidden;
+            cursor: pointer;
             img {
                 position: absolute;
                 left: 0;

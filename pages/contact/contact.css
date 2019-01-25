@@ -2,7 +2,7 @@
   margin-top: 80px;
   width: 100%;
   height: 436px;
-  background-image: url(../../images/contact/contact-bg.png);
+  background-image: url(../../images/recruit-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/recruit-bg.png', sizingMethod='scale');
@@ -47,21 +47,27 @@
     width: 1366px; }
     .location .main .left-main,
     .location .main .right-main {
-      width: 50%;
       float: left;
-      min-height: 420px; }
-    .location .main .left-main img {
-      width: 100%; }
+      min-height: 458px; }
+    .location .main .left-main {
+      width: 704px; }
+      .location .main .left-main img {
+        width: 100%; }
     .location .main .right-main {
       padding-left: 104px; }
+      .location .main .right-main .img-wrap {
+        overflow: hidden;
+        margin-top: 32px;
+        margin-bottom: 35px; }
+        .location .main .right-main .img-wrap img {
+          height: 32px; }
       .location .main .right-main .title {
         font-size: 28px;
         font-weight: 200px;
-        margin-top: 32px;
-        margin-bottom: 44px;
+        margin-top: 36px;
+        margin-bottom: 13px;
         overflow: hidden; }
       .location .main .right-main dl {
-        margin-bottom: 40px;
         overflow: hidden; }
         .location .main .right-main dl dd {
           vertical-align: middle;
@@ -72,3 +78,5 @@
             margin-right: 14px;
             vertical-align: middle;
             position: relative; }
+
+/*# sourceMappingURL=contact.css.map */

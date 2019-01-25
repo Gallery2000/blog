@@ -44,17 +44,17 @@ $gray:#fafafa;
                 position: absolute;
             }
             .sm-title{
-                left: 195px;
-                top: 175px;
+                left: 196px;
+                top: 176px;
                 img{
-                    width: 393px;
+                    width: 392px;
                     height: 40px;
                 }
 
             }
             .big-title{
                 left: 78px;
-                top: 213px;
+                top: 214px;
                 img{
                     width: 660px;
                     height: 114px;   
@@ -68,7 +68,7 @@ $gray:#fafafa;
                 position: absolute;
             }
             .img-box-1{
-                left: 745px;
+                right: 420px;
                 top: 0;
                 img{
                     width: 220px;
@@ -78,7 +78,8 @@ $gray:#fafafa;
             }
             .img-box-2{
                 top: 330px;
-                left: 795px;
+                // left: 795px;
+                right: 350px;
                 // right: 110px; 
                 img{
                     width: 220px;
@@ -87,7 +88,7 @@ $gray:#fafafa;
 
             }
             .img-box-3{
-                right: 40px;
+                right: 50px;
                 top:70px;
                 img{
                     width: 300px;
@@ -113,8 +114,11 @@ $gray:#fafafa;
             color: #0252D9;
             text-align: center;
             margin-top: 82px;
-            margin-bottom: 20px;
+            margin-bottom: 32px;
             overflow: hidden;
+            height: 46px;
+            overflow: hidden;
+            line-height: 46px;
         }
         dl{
             overflow: hidden;
@@ -124,6 +128,12 @@ $gray:#fafafa;
             font-size: 20px;
             text-align: center;
             margin-bottom: 14px;
+            line-height: 28px;
+            height: 28px;
+            margin-bottom: 10px;
+            &:last-child{
+                margin: 0;
+            }
            } 
         }
         .slider-wrap{
@@ -131,11 +141,22 @@ $gray:#fafafa;
             width: 1164px;
             height: 470px;
             background-color: $blue;
-            margin: 56px auto;
+            margin: 0 auto;
+            margin-top: 68px;
         }
         .more-wrap{
-            .title{
-                margin-bottom: 40px;
+            .more-title{
+                font-weight: 400;
+                font-style: normal;
+                font-size: 40px;
+                color: #0252D9;
+                text-align: center;
+                margin-top: 82px;
+                margin-bottom: 46px;
+                overflow: hidden;
+                height: 46px;
+                overflow: hidden;
+                line-height: 46px;
             }
             .img-wrap{
                 width: 1100px;
@@ -156,7 +177,8 @@ $gray:#fafafa;
             }
             .more-link-wrap{
                 text-align: center;
-                margin-top: 30px;
+                margin-top: 28px;
+                margin-bottom: 72px;
                 overflow: hidden;
                 cursor: pointer;
                 span{
@@ -177,15 +199,18 @@ $gray:#fafafa;
         }
         
         .describe{
+            overflow: hidden;
             width: 100%;
             .title-wrap{
-                margin-top: 100px;
+                margin-top: 36px;
                 font-weight: 400;
                 font-style: normal;
                 color: #0252D9;
                 text-align: center;
                 overflow: hidden;
-                margin-bottom: 14px;
+                margin-bottom: 12px;
+                height: 100px;
+                
                 .small{
                     font-size: 40px;
                 }
@@ -202,10 +227,11 @@ $gray:#fafafa;
             }
             .desc-avatar{
                 overflow: hidden;
-                margin-top: 40px;
+                margin-top: 42px;
                 ul{
                     font-size: 0;
                     text-align: center;
+                    overflow: hidden;
                     li{
                         display: inline-block;
                         width: 300px;
@@ -218,6 +244,7 @@ $gray:#fafafa;
                             position: relative;
                             height: 200px;
                             overflow: hidden;
+                            cursor: pointer;
                             &:hover{
                                 .more-act{
                                     display: block;
@@ -254,14 +281,14 @@ $gray:#fafafa;
                         }
                         .desc-wrap{
                             text-align: center;
-                            padding: 14px 44px 0;
+                            padding: 12px 40px 0;
                             height: 200px;
                             overflow: hidden;
                             .text{
                                 font-size: 16px;
                             }
                             .desc-text{
-                                margin-top: 36px;
+                                margin-top: 40px;
                                 font-size: 14px;
                             }
                         }
@@ -278,6 +305,7 @@ $gray:#fafafa;
             text-align: center;
             margin-bottom: 64px;
             overflow: hidden;
+            cursor: pointer;
         }
     }
 }
@@ -297,7 +325,7 @@ $gray:#fafafa;
             font-size: 40px;
             color: #FFFFFF;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 52px;
             margin-bottom: 10px;
             overflow: hidden;
         }
@@ -309,8 +337,7 @@ $gray:#fafafa;
             text-align: center;
         }
         .partner-list-wrap{
-            margin-top: 20px;
-            margin-bottom: 10px;
+            margin-top: 45px;
             overflow: hidden;
             ul{
                 font-size: 0;
@@ -326,6 +353,7 @@ $gray:#fafafa;
                     display: inline-block;
                     position: relative;
                     background-color: #fff;
+                    cursor: pointer;
                     &:hover{
                         img{
                             transform: scale(1.2);

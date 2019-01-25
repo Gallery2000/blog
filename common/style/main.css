@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'iconfont';
   /* project id 1002004 */
-  src: url("http://at.alicdn.com/t/font_1002004_8a81x7nq8d3.eot");
-  src: url("http://at.alicdn.com/t/font_1002004_8a81x7nq8d3.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1002004_8a81x7nq8d3.woff2") format("woff2"), url("http://at.alicdn.com/t/font_1002004_8a81x7nq8d3.woff") format("woff"), url("http://at.alicdn.com/t/font_1002004_8a81x7nq8d3.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1002004_8a81x7nq8d3.svg#iconfont") format("svg"); }
+  src: url("http://at.alicdn.com/t/font_1002004_1wn5bqhrh6k.eot");
+  src: url("http://at.alicdn.com/t/font_1002004_1wn5bqhrh6k.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1002004_1wn5bqhrh6k.woff2") format("woff2"), url("http://at.alicdn.com/t/font_1002004_1wn5bqhrh6k.woff") format("woff"), url("http://at.alicdn.com/t/font_1002004_1wn5bqhrh6k.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1002004_1wn5bqhrh6k.svg#iconfont") format("svg"); }
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 16px;
@@ -41,7 +41,8 @@ body {
   top: 0;
   right: 0;
   z-index: 99;
-  transition: .4s;
+  transition: .1s;
+  transition-timing-function: ease-out;
   overflow: hidden; }
   .navbar:hover {
     height: 90px;
@@ -53,8 +54,8 @@ body {
     width: 1366px;
     margin: 0 auto;
     height: 100%;
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-left: 38px;
+    padding-right: 38px;
     overflow: hidden; }
     .navbar .nav-main .logo-wrap {
       float: left;
@@ -69,14 +70,16 @@ body {
         position: absolute;
         left: 0;
         top: 50%;
-        margin-top: -30px; }
+        margin-top: -30px;
+        cursor: pointer; }
       .navbar .nav-main .logo-wrap .title {
         margin-left: 10px;
         height: 30px;
         position: absolute;
         left: 0;
         top: 50%;
-        margin-top: -15px; }
+        margin-top: -15px;
+        cursor: pointer; }
     .navbar .nav-main .logo-title {
       margin-left: 4px;
       font-size: 30px;
@@ -94,7 +97,7 @@ body {
           float: left;
           padding: 0 6px;
           position: relative;
-          width: 100px; }
+          width: 110px; }
           .navbar .nav-main .list-wrap ul li.item-1:after, .navbar .nav-main .list-wrap ul li.item-1 .after {
             content: "";
             after: "";
@@ -181,10 +184,10 @@ body {
       float: left; }
       .footer-bar .main .footer-wrap dl {
         float: left;
-        padding-left: 80px;
-        width: 304px; }
-        .footer-bar .main .footer-wrap dl.child-node {
-          width: 230px; }
+        width: 120px;
+        margin-left: 180px; }
+        .footer-bar .main .footer-wrap dl:first-child {
+          margin-left: 80px; }
         .footer-bar .main .footer-wrap dl dt {
           font-size: 13px;
           font-weight: 650;
@@ -200,10 +203,13 @@ body {
               color: #bcbcbc; }
     .footer-bar .main .logo-title {
       width: 224px;
-      float: right;
+      float: left;
       text-align: left;
       height: 82px;
-      position: relative; }
+      position: relative;
+      margin-left: 30px;
+      overflow: hidden;
+      cursor: pointer; }
       .footer-bar .main .logo-title img {
         position: absolute;
         left: 0;

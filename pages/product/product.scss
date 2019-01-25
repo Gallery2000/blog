@@ -6,6 +6,26 @@ $gray:#fafafa;
     width: 100%;
     background-color: #eee;
     height: 500px;
+    background-image: url(../../images/product/产品的副本.png);
+    overflow: hidden;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/product/产品的副本.png', sizingMethod='scale');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    .title{
+        overflow: hidden;
+        font-size: 48px;
+        font-weight: 400;
+        color: #fff;
+        margin-top: 23px;
+        font-weight: 100;
+    }
+    .desc{
+        font-weight: 100;
+        margin-top: 10px;
+        font-size: 28px;
+        color: #fff;
+    }
 }
 
 .product-main {
@@ -20,7 +40,7 @@ $gray:#fafafa;
             font-size: 36px;
             font-weight: 400;
             text-align: center;
-            margin-top: 84px;
+            margin-top: 76px;
         }
 
         ul {
@@ -28,7 +48,6 @@ $gray:#fafafa;
             font-size: 0;
             -webkit-text-size-adjust: none;
             overflow: hidden;
-
             // &:last-child {
             //     li {
             //         height: 296px;
@@ -37,13 +56,13 @@ $gray:#fafafa;
 
             li {
                 text-align: center;
-                width: 341px;
+                width: 244px;
+                height: 244px;
+                padding: 50px 46px;
                 // float: left;
                 display: inline-block;
-                height: 344px;
+                box-sizing: content-box;
                 overflow: hidden;
-                padding-top: 50px;
-
                 .img-wrap {
                     text-align: center;
 
@@ -64,9 +83,11 @@ $gray:#fafafa;
                 }
 
                 .title {
-                    margin-top: 24px;
-                    margin-bottom: 14px;
-                    font-size: 18px;
+                    margin-top: 12px;
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    line-height: 28px;
+                    height: 28px;
                 }
 
                 .desc {

@@ -1,8 +1,28 @@
+@charset "UTF-8";
 .product-body {
   margin-top: 80px;
   width: 100%;
   background-color: #eee;
-  height: 500px; }
+  height: 500px;
+  background-image: url(../../images/product/产品的副本.png);
+  overflow: hidden;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/product/产品的副本.png', sizingMethod='scale');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  overflow: hidden; }
+  .product-body .title {
+    overflow: hidden;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 23px;
+    font-weight: 100; }
+  .product-body .desc {
+    font-weight: 100;
+    margin-top: 10px;
+    font-size: 28px;
+    color: #fff; }
 
 .product-main {
   width: 100%; }
@@ -14,7 +34,7 @@
       font-size: 36px;
       font-weight: 400;
       text-align: center;
-      margin-top: 84px; }
+      margin-top: 76px; }
     .product-main .main ul {
       text-align: center;
       font-size: 0;
@@ -22,11 +42,12 @@
       overflow: hidden; }
       .product-main .main ul li {
         text-align: center;
-        width: 341px;
+        width: 244px;
+        height: 244px;
+        padding: 50px 46px;
         display: inline-block;
-        height: 344px;
-        overflow: hidden;
-        padding-top: 50px; }
+        box-sizing: content-box;
+        overflow: hidden; }
         .product-main .main ul li .img-wrap {
           text-align: center; }
           .product-main .main ul li .img-wrap a {
@@ -38,9 +59,11 @@
               .product-main .main ul li .img-wrap a img:hover {
                 transform: scale(1.1); }
         .product-main .main ul li .title {
-          margin-top: 24px;
-          margin-bottom: 14px;
-          font-size: 18px; }
+          margin-top: 12px;
+          margin-bottom: 10px;
+          font-size: 16px;
+          line-height: 28px;
+          height: 28px; }
         .product-main .main ul li .desc {
           font-size: 12px;
           text-align: left;
