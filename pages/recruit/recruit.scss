@@ -132,7 +132,9 @@ $gray:#fafafa;
             margin: 24px auto 50px;
             background-color: $gray;
             border-radius: 10px;
-
+            behavior: url(ie-css3.htc);
+            position: relative;
+            z-index: 100;
             ul {
                 li {
                     position: relative;

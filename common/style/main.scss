@@ -59,7 +59,7 @@ img{
     left: 0;
     top: 0;
     right: 0;
-    z-index: 99;
+    z-index: 999;
     transition: .1s;
     transition-timing-function:ease-out;
     overflow: hidden;
@@ -99,6 +99,7 @@ img{
                 top: 50%;
                 margin-top: -30px;
                 cursor: pointer;
+                color: $blue;
             }
 
             .title {
@@ -109,6 +110,7 @@ img{
                 top: 50%;
                 margin-top: -15px;
                 cursor: pointer;
+                color: $blue;
             }
 
         }
@@ -134,9 +136,10 @@ img{
                     float: left;
                     padding: 0 6px;
                     position: relative;
-                    width: 110px;
+                    width: 146px;
+                    padding: 0 18px;
 
-                    @for $i from 1 through 5 {
+                    @for $i from 2 through 5 {
 
                         &.item-#{$i}:after,
                         &.item-#{$i} .after {

@@ -43,7 +43,7 @@ img {
   left: 0;
   top: 0;
   right: 0;
-  z-index: 99;
+  z-index: 999;
   transition: .1s;
   transition-timing-function: ease-out;
   overflow: hidden; }
@@ -74,7 +74,8 @@ img {
         left: 0;
         top: 50%;
         margin-top: -30px;
-        cursor: pointer; }
+        cursor: pointer;
+        color: #0252d9; }
       .navbar .nav-main .logo-wrap .title {
         margin-left: 10px;
         height: 30px;
@@ -82,7 +83,8 @@ img {
         left: 0;
         top: 50%;
         margin-top: -15px;
-        cursor: pointer; }
+        cursor: pointer;
+        color: #0252d9; }
     .navbar .nav-main .logo-title {
       margin-left: 4px;
       font-size: 30px;
@@ -100,17 +102,8 @@ img {
           float: left;
           padding: 0 6px;
           position: relative;
-          width: 110px; }
-          .navbar .nav-main .list-wrap ul li.item-1:after, .navbar .nav-main .list-wrap ul li.item-1 .after {
-            content: "";
-            after: "";
-            position: absolute;
-            width: 1px;
-            height: 12px;
-            right: 0;
-            background-color: #fff;
-            top: 50%;
-            margin-top: -6px; }
+          width: 146px;
+          padding: 0 18px; }
           .navbar .nav-main .list-wrap ul li.item-2:after, .navbar .nav-main .list-wrap ul li.item-2 .after {
             content: "";
             after: "";
@@ -219,3 +212,5 @@ img {
         top: 50%;
         margin-top: -15px;
         height: 30px; }
+
+/*# sourceMappingURL=main.css.map */
