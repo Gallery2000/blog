@@ -25,7 +25,8 @@
     color: #fff; }
 
 .product-main {
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   .product-main .main {
     width: 1366px;
     margin: 0 auto;
@@ -42,6 +43,7 @@
       overflow: hidden; }
       .product-main .main ul li {
         text-align: center;
+        vertical-align: top;
         width: 244px;
         height: 244px;
         padding: 50px 46px;
@@ -70,5 +72,3 @@
           width: 245px;
           margin: 0 auto;
           line-height: 18px; }
-
-/*# sourceMappingURL=product.css.map */

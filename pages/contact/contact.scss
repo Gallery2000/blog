@@ -82,13 +82,13 @@ $gray:#fafafa;
         .right-main {
             
             padding-left: 104px;
-            .img-wrap{
+            .header{
                 overflow: hidden;
                 margin-top: 32px;
-                margin-bottom: 35px;
-                img{
-                    height: 32px;
-                }
+                margin-bottom: 30px;
+                font-size: 28px;
+                color: $blue;
+                font-weight: 200;
             }
             .title {
                 font-size: 28px;

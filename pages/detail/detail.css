@@ -14,8 +14,8 @@
       color: #0252d9; }
     .detail-body .main .phone-wrap {
       width: 308px;
-      height: 500px;
-      background-image: url(../../images/iPhoneX样机.png);
+      height: 530px;
+      background-image: url(../../images/产品介绍/WIFI热点大师.png);
       background-repeat: no-repeat;
       background-position: center center;
       background-size: cover;
@@ -24,8 +24,6 @@
       transition: .5s; }
       .detail-body .main .phone-wrap:hover {
         transform: translate3d(0, -10px, 0); }
-      .detail-body .main .phone-wrap .phone {
-        display: none; }
     .detail-body .main .release-time {
       font-size: 12px;
       margin-bottom: 16px;

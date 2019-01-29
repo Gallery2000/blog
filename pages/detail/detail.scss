@@ -21,21 +21,17 @@ $gray:#fafafa;
 
         .phone-wrap {
             width: 308px;
-            height: 500px;
-            background-image: url(../../images/iPhoneX样机.png);
+            height: 530px;
+            background-image: url(../../images/产品介绍/WIFI热点大师.png);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
             margin: 0 auto;
             filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/iPhoneX样机.png', sizingMethod='scale');
             transition: .5s;
-
+            
             &:hover {
                 transform: translate3d(0, -10px, 0);
-            }
-
-            .phone {
-                display: none;
             }
         }
 

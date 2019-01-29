@@ -138,11 +138,45 @@ $gray:#fafafa;
         }
         .slider-wrap{
             overflow: hidden;
-            width: 1164px;
-            height: 470px;
-            background-color: $blue;
-            margin: 0 auto;
-            margin-top: 68px;
+            width: 1366px;
+            margin: 95px auto 86px;
+            padding: 0 8px;
+            ul{
+                text-align: center;
+                li{
+                    width: 350px;
+                    height: 234px;
+                    display: inline-block;
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .text-wrap{
+                        position: absolute;
+                        left: 52px;
+                        top: 28px;
+                        color: #fff;
+                        text-align: left;
+                        .big-title{
+                            font-size: 36px;
+                        }
+                        .desc{
+                            margin-top: 10px;
+                            font-size: 20px;
+                        }
+                    }
+                    &.item-1{
+                        float: left;
+                    }
+                    &.item-2{
+
+                    }
+                    &.item-3{
+                        float: right;
+                    }
+                }
+            }
         }
         .more-wrap{
             .more-title{

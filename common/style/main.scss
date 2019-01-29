@@ -8,7 +8,13 @@
     url('http://at.alicdn.com/t/font_1002004_ytm4ly2w7w.svg#iconfont') format('svg');
   }
   
-  
+  @font-face{
+      font-family: 'Regular';
+      src: url('../font/庞门正道标题体.ttf') format('truetype');
+  }
+  .regular-font {
+      font-family: 'Regular';
+  }
   .iconfont{
     font-family:"iconfont" !important;
     font-size:16px;font-style:normal;

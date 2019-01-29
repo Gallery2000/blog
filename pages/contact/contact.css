@@ -55,12 +55,13 @@
         width: 100%; }
     .location .main .right-main {
       padding-left: 104px; }
-      .location .main .right-main .img-wrap {
+      .location .main .right-main .header {
         overflow: hidden;
         margin-top: 32px;
-        margin-bottom: 35px; }
-        .location .main .right-main .img-wrap img {
-          height: 32px; }
+        margin-bottom: 30px;
+        font-size: 28px;
+        color: #0252d9;
+        font-weight: 200; }
       .location .main .right-main .title {
         font-size: 28px;
         font-weight: 200px;
