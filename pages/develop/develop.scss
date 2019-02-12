@@ -2,7 +2,7 @@
 $blue:#0252d9;
 $gray:#fafafa;
 .develop-body {
-    margin-top: 80px;
+    // margin-top: 80px;
     position: relative;
     overflow: hidden;
     padding-bottom: 30px;
@@ -33,9 +33,10 @@ $gray:#fafafa;
         font-size: 16px;
         line-height: 26px;
         border-radius: 10px;
-        font-weight: 200;
+        font-weight: 400;
         position: relative;
         z-index: 99;
+
         box-shadow: 0px 0px 6px #fff\0; 
         box-shadow: 0px 0px 6px #fff\9\0; 
         *box-shadow: 0px 0px 6px #fff\0; 
@@ -57,10 +58,10 @@ $gray:#fafafa;
             box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
             border-radius: 4px;
             line-height: 46px;
-            font-size: 14px;
+            font-size: 16px;
             text-align: center;
             margin: 0 auto;
-            font-weight: 400;
+            font-weight: 650;
             position: relative;
             z-index: 99;
             box-shadow: 0px 0px 6px #fff\0; 

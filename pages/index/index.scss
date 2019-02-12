@@ -4,7 +4,7 @@ $gray:#fafafa;
     height: 516px;
     width: 100%;
     background-color: $blue;
-    margin-top: 80px;
+    // margin-top: 80px;
     overflow: hidden;
     &:hover{
         .main{
@@ -107,6 +107,15 @@ $gray:#fafafa;
         width: 1366px;
         margin: 0 auto;
         overflow: hidden;
+        .text-develop{
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 100px;
+            text-align: center;
+            a{
+                color: $blue;
+            }
+        }
         .title{
             font-weight: 400;
             font-style: normal;
@@ -142,6 +151,7 @@ $gray:#fafafa;
             margin: 95px auto 86px;
             padding: 0 8px;
             ul{
+                font-size: 0;
                 text-align: center;
                 li{
                     width: 350px;
@@ -186,46 +196,118 @@ $gray:#fafafa;
                 color: #0252D9;
                 text-align: center;
                 margin-top: 82px;
-                margin-bottom: 46px;
                 overflow: hidden;
                 height: 46px;
                 overflow: hidden;
                 line-height: 46px;
             }
-            .img-wrap{
-                width: 1100px;
-                height: 589px;
-                background-image: url(../../images/index/u29.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/index/u29.png', sizingMethod='scale');
-                margin: 0 auto;
-                overflow: hidden;
+            .more-text{
+                font-size: 20px;
+                margin-top: 20px;
                 text-align: center;
-                padding-top: 34px;
-                img{
-                    width: 776px;
-                    height: 485px;
+                margin-bottom: 40px;
+            }
+            .swiper-container{
+                cursor: pointer;
+                width: 952px;
+                height: 590px;
+                .swiper-button-prev{
+                    background: none;
+                    .iconfont{
+                        color: $blue;
+                        font-size: 40px;
+                    }
+                }
+                .swiper-button-next{
+                    background: none;
+                    .iconfont{
+                        color: $blue;
+                        font-size: 40px;
+                    }
+                }
+                .swiper-wrapper{
+                    .swiper-slide{
+                            .img-wrap{
+                                float: left;
+                                width: 50%;
+                                text-align: right;
+                                padding: 20px 0;
+                                padding-right: 48px;
+                                position: relative;
+                                .bg-mask{
+                                    position: absolute;
+                                    width: 396px;
+                                    height: 330px;
+                                    right: 0;
+                                    opacity: .1;
+                                    /* IE 4-9 */
+                                    filter:alpha(opacity=10);
+                                    background-color: $blue;
+                                    top: 50%;
+                                    margin-top: -165px;
+                                }
+                                img{
+                                    height: 540px;
+                                    position: relative;
+                                    z-index: 9;
+                                }
+                            }
+                            .text-wrap{
+                                float: right;
+                                width: 50%;
+                                padding-left: 76px;
+                                .title{
+                                    font-size: 20px;
+                                    font-weight: 400;
+                                    color: #0252D9;
+                                    text-align: left;
+                                    margin: 160px 0 10px;
+                                }
+                                .desc{
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    width: 242px;
+                                }
+                            }
+                        
+                    }
                 }
             }
+            // .img-wrap{
+            //     width: 1100px;
+            //     height: 589px;
+            //     background-image: url(../../images/index/u29.png);
+            //     background-repeat: no-repeat;
+            //     background-position: center;
+            //     background-size: cover;
+            //     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/index/u29.png', sizingMethod='scale');
+            //     margin: 0 auto;
+            //     overflow: hidden;
+            //     text-align: center;
+            //     padding-top: 34px;
+            //     img{
+            //         width: 776px;
+            //         height: 485px;
+            //     }
+            // }
             .more-link-wrap{
                 text-align: center;
                 margin-top: 28px;
                 margin-bottom: 72px;
                 overflow: hidden;
                 cursor: pointer;
-                span{
+                color: $blue;
+                .more-link{
                     display: inline-block;
                     vertical-align: middle;
                     line-height: 26px;
                     font-weight: 400;
                     font-style: normal;
                     font-size: 20px;
-                    color: #0252D9;
+                    color: $blue;
                 }
                 .iconfont{
-                    color: #afb4e7;
                     font-size: 26px;
                     vertical-align: middle;
                 }
@@ -256,7 +338,7 @@ $gray:#fafafa;
                 font-weight: 400;
                 font-style: normal;
                 font-size: 20px;
-                color: #0B5CF4;
+                color: #333;
                 text-align: center;
             }
             .desc-avatar{
@@ -339,7 +421,7 @@ $gray:#fafafa;
             text-align: center;
             margin-bottom: 64px;
             overflow: hidden;
-            cursor: pointer;
+            display: block;
         }
     }
 }
@@ -373,6 +455,7 @@ $gray:#fafafa;
         .partner-list-wrap{
             margin-top: 45px;
             overflow: hidden;
+            padding-bottom: 50px;
             ul{
                 font-size: 0;
                 text-align: center;

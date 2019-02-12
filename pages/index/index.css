@@ -2,7 +2,6 @@
   height: 516px;
   width: 100%;
   background-color: #0252d9;
-  margin-top: 80px;
   overflow: hidden; }
   .index-body:hover .main .text-wrap .sm-title {
     transform: translate3d(0, 76px, 0); }
@@ -68,6 +67,13 @@
     width: 1366px;
     margin: 0 auto;
     overflow: hidden; }
+    .index-main .brief-introduction .text-develop {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 100px;
+      text-align: center; }
+      .index-main .brief-introduction .text-develop a {
+        color: #0252d9; }
     .index-main .brief-introduction .title {
       font-weight: 400;
       font-style: normal;
@@ -99,6 +105,7 @@
       margin: 95px auto 86px;
       padding: 0 8px; }
       .index-main .brief-introduction .slider-wrap ul {
+        font-size: 0;
         text-align: center; }
         .index-main .brief-introduction .slider-wrap ul li {
           width: 350px;
@@ -130,42 +137,82 @@
       color: #0252D9;
       text-align: center;
       margin-top: 82px;
-      margin-bottom: 46px;
       overflow: hidden;
       height: 46px;
       overflow: hidden;
       line-height: 46px; }
-    .index-main .brief-introduction .more-wrap .img-wrap {
-      width: 1100px;
-      height: 589px;
-      background-image: url(../../images/index/u29.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/index/u29.png', sizingMethod='scale');
-      margin: 0 auto;
-      overflow: hidden;
+    .index-main .brief-introduction .more-wrap .more-text {
+      font-size: 20px;
+      margin-top: 20px;
       text-align: center;
-      padding-top: 34px; }
-      .index-main .brief-introduction .more-wrap .img-wrap img {
-        width: 776px;
-        height: 485px; }
+      margin-bottom: 40px; }
+    .index-main .brief-introduction .more-wrap .swiper-container {
+      cursor: pointer;
+      width: 952px;
+      height: 590px; }
+      .index-main .brief-introduction .more-wrap .swiper-container .swiper-button-prev {
+        background: none; }
+        .index-main .brief-introduction .more-wrap .swiper-container .swiper-button-prev .iconfont {
+          color: #0252d9;
+          font-size: 40px; }
+      .index-main .brief-introduction .more-wrap .swiper-container .swiper-button-next {
+        background: none; }
+        .index-main .brief-introduction .more-wrap .swiper-container .swiper-button-next .iconfont {
+          color: #0252d9;
+          font-size: 40px; }
+      .index-main .brief-introduction .more-wrap .swiper-container .swiper-wrapper .swiper-slide .img-wrap {
+        float: left;
+        width: 50%;
+        text-align: right;
+        padding: 20px 0;
+        padding-right: 48px;
+        position: relative; }
+        .index-main .brief-introduction .more-wrap .swiper-container .swiper-wrapper .swiper-slide .img-wrap .bg-mask {
+          position: absolute;
+          width: 396px;
+          height: 330px;
+          right: 0;
+          opacity: .1;
+          /* IE 4-9 */
+          filter: alpha(opacity=10);
+          background-color: #0252d9;
+          top: 50%;
+          margin-top: -165px; }
+        .index-main .brief-introduction .more-wrap .swiper-container .swiper-wrapper .swiper-slide .img-wrap img {
+          height: 540px;
+          position: relative;
+          z-index: 9; }
+      .index-main .brief-introduction .more-wrap .swiper-container .swiper-wrapper .swiper-slide .text-wrap {
+        float: right;
+        width: 50%;
+        padding-left: 76px; }
+        .index-main .brief-introduction .more-wrap .swiper-container .swiper-wrapper .swiper-slide .text-wrap .title {
+          font-size: 20px;
+          font-weight: 400;
+          color: #0252D9;
+          text-align: left;
+          margin: 160px 0 10px; }
+        .index-main .brief-introduction .more-wrap .swiper-container .swiper-wrapper .swiper-slide .text-wrap .desc {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: normal;
+          width: 242px; }
     .index-main .brief-introduction .more-wrap .more-link-wrap {
       text-align: center;
       margin-top: 28px;
       margin-bottom: 72px;
       overflow: hidden;
-      cursor: pointer; }
-      .index-main .brief-introduction .more-wrap .more-link-wrap span {
+      cursor: pointer;
+      color: #0252d9; }
+      .index-main .brief-introduction .more-wrap .more-link-wrap .more-link {
         display: inline-block;
         vertical-align: middle;
         line-height: 26px;
         font-weight: 400;
         font-style: normal;
         font-size: 20px;
-        color: #0252D9; }
+        color: #0252d9; }
       .index-main .brief-introduction .more-wrap .more-link-wrap .iconfont {
-        color: #afb4e7;
         font-size: 26px;
         vertical-align: middle; }
     .index-main .brief-introduction .describe {
@@ -188,7 +235,7 @@
         font-weight: 400;
         font-style: normal;
         font-size: 20px;
-        color: #0B5CF4;
+        color: #333;
         text-align: center; }
       .index-main .brief-introduction .describe .desc-avatar {
         overflow: hidden;
@@ -253,7 +300,7 @@
       text-align: center;
       margin-bottom: 64px;
       overflow: hidden;
-      cursor: pointer; }
+      display: block; }
 
 .partner-wrap {
   background-color: #333333;
@@ -280,7 +327,8 @@
       text-align: center; }
     .partner-wrap .partner-main .partner-list-wrap {
       margin-top: 45px;
-      overflow: hidden; }
+      overflow: hidden;
+      padding-bottom: 50px; }
       .partner-wrap .partner-main .partner-list-wrap ul {
         font-size: 0;
         text-align: center; }

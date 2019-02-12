@@ -1,13 +1,12 @@
 @font-face {
     font-family: 'iconfont';  /* project id 1002004 */
-    src: url('http://at.alicdn.com/t/font_1002004_ytm4ly2w7w.eot');
-    src: url('http://at.alicdn.com/t/font_1002004_ytm4ly2w7w.eot?#iefix') format('embedded-opentype'),
-    url('http://at.alicdn.com/t/font_1002004_ytm4ly2w7w.woff2') format('woff2'),
-    url('http://at.alicdn.com/t/font_1002004_ytm4ly2w7w.woff') format('woff'),
-    url('http://at.alicdn.com/t/font_1002004_ytm4ly2w7w.ttf') format('truetype'),
-    url('http://at.alicdn.com/t/font_1002004_ytm4ly2w7w.svg#iconfont') format('svg');
+    src: url('http://at.alicdn.com/t/font_1002004_tt6m70g2p3.eot');
+    src: url('http://at.alicdn.com/t/font_1002004_tt6m70g2p3.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_1002004_tt6m70g2p3.woff2') format('woff2'),
+    url('http://at.alicdn.com/t/font_1002004_tt6m70g2p3.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_1002004_tt6m70g2p3.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_1002004_tt6m70g2p3.svg#iconfont') format('svg');
   }
-  
   @font-face{
       font-family: 'Regular';
       src: url('../font/庞门正道标题体.ttf') format('truetype');
@@ -50,6 +49,7 @@ $gray:#fafafa;
 
 body {
     color: #333;
+    padding-top: 80px;
 }
 
 img{
@@ -109,7 +109,7 @@ img{
             }
 
             .title {
-                margin-left: 10px;
+                padding-left: 10px;
                 height: 30px;
                 position: absolute;
                 left: 0;
@@ -257,6 +257,27 @@ img{
                 margin-top: -15px;
                 height: 30px;
             }
+        }
+    }
+}
+
+.footer-banner{
+    width: 100%;
+    background-color: #202324    ;
+    height: 110px;
+    padding: 25px 0 ;
+    .copyright-wrap{
+        margin: 0 auto;
+        width: 1366px;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 200;
+        color: #fff;
+        .copyright{
+        
+        }
+        .copyright-bottom{
+            margin-top: 10px;
         }
     }
 }
