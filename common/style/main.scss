@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'iconfont';  /* project id 1002004 */
-    src: url('http://at.alicdn.com/t/font_1002004_tt6m70g2p3.eot');
-    src: url('http://at.alicdn.com/t/font_1002004_tt6m70g2p3.eot?#iefix') format('embedded-opentype'),
-    url('http://at.alicdn.com/t/font_1002004_tt6m70g2p3.woff2') format('woff2'),
-    url('http://at.alicdn.com/t/font_1002004_tt6m70g2p3.woff') format('woff'),
-    url('http://at.alicdn.com/t/font_1002004_tt6m70g2p3.ttf') format('truetype'),
-    url('http://at.alicdn.com/t/font_1002004_tt6m70g2p3.svg#iconfont') format('svg');
+    src: url('http://at.alicdn.com/t/font_1002004_eixz5mi24k.eot');
+    src: url('http://at.alicdn.com/t/font_1002004_eixz5mi24k.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_1002004_eixz5mi24k.woff2') format('woff2'),
+    url('http://at.alicdn.com/t/font_1002004_eixz5mi24k.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_1002004_eixz5mi24k.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_1002004_eixz5mi24k.svg#iconfont') format('svg');
   }
   @font-face{
       font-family: 'Regular';
@@ -57,7 +57,7 @@ img{
 }
 // header
 
-.navbar {
+.blog-navbar {
     background-color: $blue;
     height: 80px;
     width: 100%;
@@ -267,8 +267,6 @@ img{
     height: 110px;
     padding: 25px 0 ;
     .copyright-wrap{
-        margin: 0 auto;
-        width: 1366px;
         font-size: 12px;
         text-align: center;
         font-weight: 200;
@@ -278,6 +276,64 @@ img{
         }
         .copyright-bottom{
             margin-top: 10px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    body{
+        padding-top: 0;
+    }
+    .phone-navbar{
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        height: 48px;
+        background-color: $blue;
+        z-index: 99;
+        .full-screen{
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            padding-top: 60%;
+            display: none;
+            ul{
+                margin: 0 auto;
+                li{
+                    line-height: 40px;
+                    text-align: center;
+                    a{
+                        font-size: 20px;
+                    color: #fff;
+                    }
+                }
+            }
+        }
+        .img-wrap{
+            z-index: 999;
+            position: relative;
+            height: 30px;
+            padding: 9px;
+            img{
+                width: 100%
+            }
+        }
+        .hamburger{
+            z-index: 999;
+            position: relative;
+            .iconfont{
+                width: 40px;
+                height: 40px;
+                font-size: 40px;
+                padding: 4px 0;
+                color: #fff;
+            }
         }
     }
 }

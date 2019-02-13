@@ -63,7 +63,7 @@
       margin-top: 50px;
       position: relative;
       min-height: 44px; }
-      .develop-body .develop-wrap .develop-detail .tooltip {
+      .develop-body .develop-wrap .develop-detail .btooltip {
         width: 404px;
         height: 44px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -75,13 +75,13 @@
         box-shadow: 0px 0px 6px #fff\9\0;
         *box-shadow: 0px 0px 6px #fff\0;
         _box-shadow: 0px 0px 6px #fff\0; }
-        .develop-body .develop-wrap .develop-detail .tooltip .text {
+        .develop-body .develop-wrap .develop-detail .btooltip .text {
           text-align: center;
           font-size: 13px;
           line-height: 44px;
           font-weight: 650;
           background-color: #fff; }
-        .develop-body .develop-wrap .develop-detail .tooltip .arrow {
+        .develop-body .develop-wrap .develop-detail .btooltip .arrow {
           display: none\0;
           display: none\9\0;
           *display: none\0;
@@ -93,7 +93,7 @@
           height: 18px;
           background-size: cover;
           background-repeat: no-repeat; }
-          .develop-body .develop-wrap .develop-detail .tooltip .arrow img {
+          .develop-body .develop-wrap .develop-detail .btooltip .arrow img {
             width: 100%; }
       .develop-body .develop-wrap .develop-detail .date {
         text-align: center;
@@ -110,20 +110,20 @@
             font-size: 18px;
             width: 60px;
             color: #333; }
-      .develop-body .develop-wrap .develop-detail.right .tooltip {
+      .develop-body .develop-wrap .develop-detail.right .btooltip {
         margin-left: 38px;
         left: 50%; }
-        .develop-body .develop-wrap .develop-detail.right .tooltip .arrow {
+        .develop-body .develop-wrap .develop-detail.right .btooltip .arrow {
           left: -12px;
           background-image: url(../../images/develop/left.png);
           filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/develop/left.png', sizingMethod='scale'); }
       .develop-body .develop-wrap .develop-detail.right .date .iconfont span {
         right: 26px;
         text-align: right; }
-      .develop-body .develop-wrap .develop-detail.left .tooltip {
+      .develop-body .develop-wrap .develop-detail.left .btooltip {
         margin-right: 38px;
         right: 50%; }
-        .develop-body .develop-wrap .develop-detail.left .tooltip .arrow {
+        .develop-body .develop-wrap .develop-detail.left .btooltip .arrow {
           right: -12px;
           background-image: url(../../images/develop/right.png);
           filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/develop/right.png', sizingMethod='scale'); }

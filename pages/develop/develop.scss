@@ -75,7 +75,7 @@ $gray:#fafafa;
             margin-top: 50px;
             position: relative;
             min-height: 44px;
-            .tooltip {
+            .btooltip {
                 width: 404px;
                 height: 44px;
                 box-shadow: 0 0 10px rgba(0,0,0,.1);
@@ -130,7 +130,7 @@ $gray:#fafafa;
                 }
             }
             &.right {
-                .tooltip {
+                .btooltip {
                     margin-left: 38px;
                     left: 50%;
                     .arrow{
@@ -149,7 +149,7 @@ $gray:#fafafa;
                 }
             }
             &.left{
-                .tooltip {
+                .btooltip {
                     margin-right: 38px;
                     right: 50%;
                     .arrow{

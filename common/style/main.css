@@ -2,8 +2,8 @@
 @font-face {
   font-family: 'iconfont';
   /* project id 1002004 */
-  src: url("http://at.alicdn.com/t/font_1002004_tt6m70g2p3.eot");
-  src: url("http://at.alicdn.com/t/font_1002004_tt6m70g2p3.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1002004_tt6m70g2p3.woff2") format("woff2"), url("http://at.alicdn.com/t/font_1002004_tt6m70g2p3.woff") format("woff"), url("http://at.alicdn.com/t/font_1002004_tt6m70g2p3.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1002004_tt6m70g2p3.svg#iconfont") format("svg"); }
+  src: url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.eot");
+  src: url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.woff2") format("woff2"), url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.woff") format("woff"), url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.svg#iconfont") format("svg"); }
 @font-face {
   font-family: 'Regular';
   src: url("../font/庞门正道标题体.ttf") format("truetype"); }
@@ -43,7 +43,7 @@ body {
 img {
   border: none; }
 
-.navbar {
+.blog-navbar {
   background-color: #0252d9;
   height: 80px;
   width: 100%;
@@ -55,27 +55,27 @@ img {
   transition: .1s;
   transition-timing-function: ease-out;
   overflow: hidden; }
-  .navbar:hover {
+  .blog-navbar:hover {
     height: 90px;
     height: 80px\0;
     height: 80px\9\0;
     *height: 80px\0;
     _height: 80px\0; }
-  .navbar .nav-main {
+  .blog-navbar .nav-main {
     width: 1366px;
     margin: 0 auto;
     height: 100%;
     padding-left: 38px;
     padding-right: 38px;
     overflow: hidden; }
-    .navbar .nav-main .logo-wrap {
+    .blog-navbar .nav-main .logo-wrap {
       float: left;
       font-size: 0;
       height: 100%;
       position: relative; }
-      .navbar .nav-main .logo-wrap:first-child {
+      .blog-navbar .nav-main .logo-wrap:first-child {
         width: 60px; }
-      .navbar .nav-main .logo-wrap .logo {
+      .blog-navbar .nav-main .logo-wrap .logo {
         width: 60px;
         height: 60px;
         position: absolute;
@@ -84,7 +84,7 @@ img {
         margin-top: -30px;
         cursor: pointer;
         color: #0252d9; }
-      .navbar .nav-main .logo-wrap .title {
+      .blog-navbar .nav-main .logo-wrap .title {
         padding-left: 10px;
         height: 30px;
         position: absolute;
@@ -93,26 +93,26 @@ img {
         margin-top: -15px;
         cursor: pointer;
         color: #0252d9; }
-    .navbar .nav-main .logo-title {
+    .blog-navbar .nav-main .logo-title {
       margin-left: 4px;
       font-size: 30px;
       color: #fff;
       font-style: italic;
       float: left;
       line-height: 80px; }
-    .navbar .nav-main .list-wrap {
+    .blog-navbar .nav-main .list-wrap {
       float: right;
       height: 100%; }
-      .navbar .nav-main .list-wrap ul {
+      .blog-navbar .nav-main .list-wrap ul {
         height: 100%; }
-        .navbar .nav-main .list-wrap ul li {
+        .blog-navbar .nav-main .list-wrap ul li {
           height: 100%;
           float: left;
           padding: 0 6px;
           position: relative;
           width: 146px;
           padding: 0 18px; }
-          .navbar .nav-main .list-wrap ul li.item-2:after, .navbar .nav-main .list-wrap ul li.item-2 .after {
+          .blog-navbar .nav-main .list-wrap ul li.item-2:after, .blog-navbar .nav-main .list-wrap ul li.item-2 .after {
             content: "";
             after: "";
             position: absolute;
@@ -122,7 +122,7 @@ img {
             background-color: #fff;
             top: 50%;
             margin-top: -6px; }
-          .navbar .nav-main .list-wrap ul li.item-3:after, .navbar .nav-main .list-wrap ul li.item-3 .after {
+          .blog-navbar .nav-main .list-wrap ul li.item-3:after, .blog-navbar .nav-main .list-wrap ul li.item-3 .after {
             content: "";
             after: "";
             position: absolute;
@@ -132,7 +132,7 @@ img {
             background-color: #fff;
             top: 50%;
             margin-top: -6px; }
-          .navbar .nav-main .list-wrap ul li.item-4:after, .navbar .nav-main .list-wrap ul li.item-4 .after {
+          .blog-navbar .nav-main .list-wrap ul li.item-4:after, .blog-navbar .nav-main .list-wrap ul li.item-4 .after {
             content: "";
             after: "";
             position: absolute;
@@ -142,7 +142,7 @@ img {
             background-color: #fff;
             top: 50%;
             margin-top: -6px; }
-          .navbar .nav-main .list-wrap ul li.item-5:after, .navbar .nav-main .list-wrap ul li.item-5 .after {
+          .blog-navbar .nav-main .list-wrap ul li.item-5:after, .blog-navbar .nav-main .list-wrap ul li.item-5 .after {
             content: "";
             after: "";
             position: absolute;
@@ -152,7 +152,7 @@ img {
             background-color: #fff;
             top: 50%;
             margin-top: -6px; }
-          .navbar .nav-main .list-wrap ul li a {
+          .blog-navbar .nav-main .list-wrap ul li a {
             display: inline-block;
             text-align: center;
             width: 100%;
@@ -164,7 +164,7 @@ img {
             display: flex;
             align-items: center;
             justify-content: center; }
-            .navbar .nav-main .list-wrap ul li a:hover:after, .navbar .nav-main .list-wrap ul li a:hover .after {
+            .blog-navbar .nav-main .list-wrap ul li a:hover:after, .blog-navbar .nav-main .list-wrap ul li a:hover .after {
               content: "";
               after: "";
               position: absolute;
@@ -227,13 +227,58 @@ img {
   height: 110px;
   padding: 25px 0; }
   .footer-banner .copyright-wrap {
-    margin: 0 auto;
-    width: 1366px;
     font-size: 12px;
     text-align: center;
     font-weight: 200;
     color: #fff; }
     .footer-banner .copyright-wrap .copyright-bottom {
       margin-top: 10px; }
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 0; }
+
+  .phone-navbar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 48px;
+    background-color: #0252d9;
+    z-index: 99; }
+    .phone-navbar .full-screen {
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding-top: 60%;
+      display: none; }
+      .phone-navbar .full-screen ul {
+        margin: 0 auto; }
+        .phone-navbar .full-screen ul li {
+          line-height: 40px;
+          text-align: center; }
+          .phone-navbar .full-screen ul li a {
+            font-size: 20px;
+            color: #fff; }
+    .phone-navbar .img-wrap {
+      z-index: 999;
+      position: relative;
+      height: 30px;
+      padding: 9px; }
+      .phone-navbar .img-wrap img {
+        width: 100%; }
+    .phone-navbar .hamburger {
+      z-index: 999;
+      position: relative; }
+      .phone-navbar .hamburger .iconfont {
+        width: 40px;
+        height: 40px;
+        font-size: 40px;
+        padding: 4px 0;
+        color: #fff; } }
 
 /*# sourceMappingURL=main.css.map */

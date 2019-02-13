@@ -146,28 +146,28 @@
       margin-top: 20px;
       text-align: center;
       margin-bottom: 40px; }
-    .index-main .brief-introduction .more-wrap .swiper-container {
+    .index-main .brief-introduction .more-wrap .phone-and-msg {
       cursor: pointer;
       width: 952px;
       height: 590px; }
-      .index-main .brief-introduction .more-wrap .swiper-container .swiper-button-prev {
+      .index-main .brief-introduction .more-wrap .phone-and-msg .swiper-button-prev {
         background: none; }
-        .index-main .brief-introduction .more-wrap .swiper-container .swiper-button-prev .iconfont {
+        .index-main .brief-introduction .more-wrap .phone-and-msg .swiper-button-prev .iconfont {
           color: #0252d9;
           font-size: 40px; }
-      .index-main .brief-introduction .more-wrap .swiper-container .swiper-button-next {
+      .index-main .brief-introduction .more-wrap .phone-and-msg .swiper-button-next {
         background: none; }
-        .index-main .brief-introduction .more-wrap .swiper-container .swiper-button-next .iconfont {
+        .index-main .brief-introduction .more-wrap .phone-and-msg .swiper-button-next .iconfont {
           color: #0252d9;
           font-size: 40px; }
-      .index-main .brief-introduction .more-wrap .swiper-container .swiper-wrapper .swiper-slide .img-wrap {
+      .index-main .brief-introduction .more-wrap .phone-and-msg .swiper-wrapper .swiper-slide .img-wrap {
         float: left;
         width: 50%;
         text-align: right;
         padding: 20px 0;
         padding-right: 48px;
         position: relative; }
-        .index-main .brief-introduction .more-wrap .swiper-container .swiper-wrapper .swiper-slide .img-wrap .bg-mask {
+        .index-main .brief-introduction .more-wrap .phone-and-msg .swiper-wrapper .swiper-slide .img-wrap .bg-mask {
           position: absolute;
           width: 396px;
           height: 330px;
@@ -178,21 +178,21 @@
           background-color: #0252d9;
           top: 50%;
           margin-top: -165px; }
-        .index-main .brief-introduction .more-wrap .swiper-container .swiper-wrapper .swiper-slide .img-wrap img {
+        .index-main .brief-introduction .more-wrap .phone-and-msg .swiper-wrapper .swiper-slide .img-wrap img {
           height: 540px;
           position: relative;
           z-index: 9; }
-      .index-main .brief-introduction .more-wrap .swiper-container .swiper-wrapper .swiper-slide .text-wrap {
+      .index-main .brief-introduction .more-wrap .phone-and-msg .swiper-wrapper .swiper-slide .text-wrap {
         float: right;
         width: 50%;
         padding-left: 76px; }
-        .index-main .brief-introduction .more-wrap .swiper-container .swiper-wrapper .swiper-slide .text-wrap .title {
+        .index-main .brief-introduction .more-wrap .phone-and-msg .swiper-wrapper .swiper-slide .text-wrap .title {
           font-size: 20px;
           font-weight: 400;
           color: #0252D9;
           text-align: left;
           margin: 160px 0 10px; }
-        .index-main .brief-introduction .more-wrap .swiper-container .swiper-wrapper .swiper-slide .text-wrap .desc {
+        .index-main .brief-introduction .more-wrap .phone-and-msg .swiper-wrapper .swiper-slide .text-wrap .desc {
           font-size: 14px;
           font-weight: 400;
           line-height: normal;
@@ -307,7 +307,6 @@
   width: 100%;
   overflow: hidden; }
   .partner-wrap .partner-main {
-    width: 1366px;
     margin: 0 auto;
     overflow: hidden; }
     .partner-wrap .partner-main .title {
@@ -325,28 +324,20 @@
       font-size: 20px;
       color: #FFFFFF;
       text-align: center; }
-    .partner-wrap .partner-main .partner-list-wrap {
+    .partner-wrap .partner-main .container-fluid {
       margin-top: 45px;
       overflow: hidden;
       padding-bottom: 50px; }
-      .partner-wrap .partner-main .partner-list-wrap ul {
-        font-size: 0;
-        text-align: center; }
-        .partner-wrap .partner-main .partner-list-wrap ul li {
-          overflow: hidden;
-          margin: 5px;
-          width: 300px;
-          height: 170px;
+      .partner-wrap .partner-main .container-fluid .row .col-lg-3 {
+        padding: 5px; }
+        .partner-wrap .partner-main .container-fluid .row .col-lg-3 .img-wrap {
           border: 1px solid #FFF;
+          height: 170px;
           text-align: center;
-          vertical-align: middle;
-          display: inline-block;
-          position: relative;
-          background-color: #fff;
-          cursor: pointer; }
-          .partner-wrap .partner-main .partner-list-wrap ul li:hover img {
+          background-color: #fff; }
+          .partner-wrap .partner-main .container-fluid .row .col-lg-3 .img-wrap:hover img {
             transform: scale(1.2); }
-          .partner-wrap .partner-main .partner-list-wrap ul li img {
+          .partner-wrap .partner-main .container-fluid .row .col-lg-3 .img-wrap img {
             transition: all .5s;
             height: 40px;
             position: relative;
@@ -355,3 +346,191 @@
 
 .footer-bar {
   background: #333; }
+
+@media (max-width: 768px) {
+  .partner-wrap {
+    background-color: #fff; }
+    .partner-wrap .partner-main {
+      padding: 0; }
+      .partner-wrap .partner-main .desc {
+        color: #0252d9;
+        font-family: 'Regular';
+        font-size: 22px;
+        margin-top: 52px;
+        margin-bottom: 20px; }
+      .partner-wrap .partner-main .container-fluid {
+        padding-bottom: 0; }
+        .partner-wrap .partner-main .container-fluid .row .col-lg-3 {
+          padding: 0; }
+          .partner-wrap .partner-main .container-fluid .row .col-lg-3 .img-wrap {
+            border: none;
+            height: 150px; }
+            .partner-wrap .partner-main .container-fluid .row .col-lg-3 .img-wrap img {
+              border: none;
+              width: 70%;
+              height: auto; }
+
+  .phone-screen {
+    height: 100vh;
+    padding-top: 48px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden; }
+    .phone-screen .footer-text {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 30px;
+      color: #0252d9; }
+    .phone-screen .next-page {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      left: 50%;
+      bottom: 20px;
+      margin-left: -20px; }
+      .phone-screen .next-page i.iconfont {
+        color: #0252d9;
+        font-size: 40px; }
+    .phone-screen .text-wrap {
+      margin-top: 52px;
+      overflow: hidden;
+      text-align: center; }
+      .phone-screen .text-wrap .title {
+        font-size: 22px;
+        color: #0252d9; }
+      .phone-screen .text-wrap .desc {
+        font-size: 14px;
+        margin-top: 15px;
+        color: #000; }
+
+  .phone-screen-1 {
+    background-color: #0252d9;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 64%; }
+    .phone-screen-1 .next-page i.iconfont {
+      color: #fff; }
+    .phone-screen-1 .title {
+      overflow: hidden;
+      font-size: 50px; }
+    .phone-screen-1 .desc {
+      font-size: 25px;
+      margin-top: 20px; }
+
+  .phone-screen-2 .headlines {
+    margin: 22px 14px 42px;
+    box-shadow: 0 0 4px #eee;
+    overflow: hidden;
+    padding-bottom: 76px; }
+    .phone-screen-2 .headlines .title {
+      font-size: 22px;
+      color: #0252d9;
+      margin-top: 24px;
+      margin-bottom: 36px;
+      text-align: center;
+      overflow: hidden; }
+    .phone-screen-2 .headlines .desc {
+      text-align: center;
+      color: #000;
+      font-size: 13px;
+      line-height: 1; }
+  .phone-screen-2 .slider-headlines {
+    padding-bottom: 38px;
+    margin: 0 28px; }
+    .phone-screen-2 .slider-headlines .swiper-wrapper .swiper-slide {
+      position: relative; }
+      .phone-screen-2 .slider-headlines .swiper-wrapper .swiper-slide img {
+        width: 100%;
+        height: 100%; }
+      .phone-screen-2 .slider-headlines .swiper-wrapper .swiper-slide .text-wrap {
+        position: absolute;
+        left: 52px;
+        top: 28px;
+        color: #fff;
+        text-align: left; }
+        .phone-screen-2 .slider-headlines .swiper-wrapper .swiper-slide .text-wrap .big-title {
+          font-size: 36px; }
+        .phone-screen-2 .slider-headlines .swiper-wrapper .swiper-slide .text-wrap .desc {
+          margin-top: 10px;
+          font-size: 20px;
+          color: #fff;
+          font-weight: 100; }
+
+  .phone-screen-3 .phone-slider {
+    overflow: hidden;
+    margin-top: 15px;
+    overflow: hidden;
+    margin: 0 68px;
+    padding-bottom: 28px; }
+    .phone-screen-3 .phone-slider .swiper-wrapper .swiper-slide .img-wrap img {
+      width: 100%; }
+
+  .phone-screen-3 .phone-slider {
+    margin-top: 15px;
+    overflow: hidden;
+    margin: 0 48px;
+    padding-bottom: 28px; }
+    .phone-screen-3 .phone-slider .swiper-wrapper .swiper-slide .img-wrap img {
+      width: 100%; }
+
+  .phone-screen-4 .slider-detail {
+    border-radius: 4px;
+    margin: 62px 24px 0;
+    box-shadow: 0 0 5px #979797; }
+    .phone-screen-4 .slider-detail .swiper-wrapper .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      color: #000; }
+      .phone-screen-4 .slider-detail .swiper-wrapper .swiper-slide .title {
+        margin: 26px 0; }
+      .phone-screen-4 .slider-detail .swiper-wrapper .swiper-slide .desc {
+        margin-top: 48px;
+        margin-bottom: 46px;
+        padding: 0 18px; }
+      .phone-screen-4 .slider-detail .swiper-wrapper .swiper-slide .img-wrap {
+        padding: 13px; }
+        .phone-screen-4 .slider-detail .swiper-wrapper .swiper-slide .img-wrap img {
+          width: 100%;
+          box-shadow: 0 2px 4px #000; }
+
+  .phone-screen-5 .category {
+    margin: 0 20px;
+    margin-top: 46px; }
+    .phone-screen-5 .category ul li {
+      height: 100px;
+      line-height: 100px;
+      font-size: 18px;
+      color: #0252d9;
+      border-radius: 4px;
+      margin-bottom: 22px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 0 4px #979797; }
+      .phone-screen-5 .category ul li:last-child {
+        margin-bottom: 0; }
+
+  .phone-screen-6 .call-me {
+    margin-bottom: 54px;
+    overflow: hidden;
+    padding-left: 40px; }
+    .phone-screen-6 .call-me .call-me-wrap {
+      margin-top: 35px;
+      overflow: hidden; }
+      .phone-screen-6 .call-me .call-me-wrap .row {
+        line-height: 32px; }
+        .phone-screen-6 .call-me .call-me-wrap .row .icon i.iconfont {
+          position: absolute;
+          width: 34px;
+          display: block;
+          float: left;
+          font-size: 25px;
+          margin-right: 4px;
+          vertical-align: middle;
+          position: relative; }
+        .phone-screen-6 .call-me .call-me-wrap .row .text {
+          padding-left: 0;
+          font-size: 13px; }
+  .phone-screen-6 .call-map {
+    height: 400px;
+    border: 1px solid #000; } }
