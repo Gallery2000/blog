@@ -80,9 +80,7 @@ $gray:#fafafa;
     width: 100%;
 
     .main {
-        width: 1366px;
         margin: 0 auto;
-
         .recruit-title {
             margin-top: 18px;
             margin-bottom: 50px;
@@ -137,13 +135,13 @@ $gray:#fafafa;
         }
 
         .recruit-position {
-            width: 1180px;
-            margin: 24px auto 50px;
+            
+            margin: 24px 92px 50px;
             background-color: $gray;
             border-radius: 14px;
             behavior: url(ie-css3.htc);
             position: relative;
-            z-index: 100;
+            z-index: 9;
             ul {
                 li {
                     position: relative;
@@ -202,6 +200,7 @@ $gray:#fafafa;
                         .title {
                             float: left;
                             font-size: 13px;
+                            transition:all .1s;
                         }
 
                         .desc {
@@ -262,4 +261,66 @@ $gray:#fafafa;
             }
         }
     }
+}
+
+@media (max-width: 768px) {
+    body{
+        padding-top: 48px;
+    }
+    .recruit-detail{
+        .main{
+            .category{
+                width: 100%;
+                padding: 26px 0 22px;
+                text-align: center;
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 4px #979797;
+                }
+            }
+            .recruit-position{
+                margin: 0 20px;
+                box-shadow: 0 0 4px #4c4c4c;
+                border-radius: 5px;
+                ul{
+                    li{
+                        padding-left: 16px;
+                        
+                        &.active{
+                            padding: 0 12px;
+                        }
+                        @for $i from 1 through 5 {
+
+                            &.item-#{$i}:after,
+                            &.item-#{$i} .after {
+                                content: "";
+                                after: "";
+                                position: absolute;
+                                right: 100px;
+                                left: 0;
+                                bottom: 0;
+                                border-bottom: 1px solid #d7d7d7;
+                            }
+                        }
+                        .item{
+                            height: 42px;
+                            line-height: 42px;
+                            .title{
+                                font-size: 15px;
+                            }
+                            .iconfont.down,.iconfont.up{
+                                
+                                    color: $blue;
+                                    margin-right: 8px;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+      
 }

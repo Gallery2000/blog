@@ -42,7 +42,17 @@ $gray:#fafafa;
         }
 
         .release-desc {
+            width: 80%;
+            margin: 0 auto;
             font-size: 12px;
         }
+    }
+}
+@media (max-width: 768px) {
+    body{
+        padding-top: 48px;
+    }
+    .detail-body .main .title{
+        margin-bottom: 22px;
     }
 }

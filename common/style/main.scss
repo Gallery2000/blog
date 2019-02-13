@@ -80,7 +80,6 @@ img{
     }
 
     .nav-main {
-        width: 1366px;
         margin: 0 auto;
         height: 100%;
         padding-left: 38px;
@@ -280,7 +279,19 @@ img{
     }
 }
 
-
+@media (max-width: 992px) {
+    .blog-navbar .nav-main{
+        width: 100%;
+        .list-wrap{
+            ul{
+                li{
+                    width: 100px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+  }
 @media (max-width: 768px) {
     body{
         padding-top: 0;
