@@ -730,7 +730,8 @@ $gray:#fafafa;
                 text-align: center;
                 color: #000;
                 font-size: 13px;
-                line-height: 1;
+                line-height: 20px;
+                padding: 0 10px;
                 dl {
                     dd {}
                 }
@@ -820,13 +821,20 @@ $gray:#fafafa;
                         padding: 0 18px;
                     }
                     .img-wrap {
-                        padding: 13px;
+                        padding:0 13px;
                         img {
                             width: 100%;
                             box-shadow: 0 2px 4px #000;
                         }
                     }
                 }
+            }
+        }
+        .custom-pagination{
+            margin: 14px auto 26px;
+            position: relative;
+            .swiper-pagination-bullet{
+                margin:  4px;
             }
         }
     }
@@ -886,4 +894,56 @@ $gray:#fafafa;
             border: 1px solid #000;
         }
     }
+}
+// H5 Adaptation-------------------
+@media (max-height: 736px) {
+    .phone-screen{
+        .text-wrap{
+            margin-top: 12px;
+            .title{
+                font-size: 18px;
+            }
+            .desc{
+                margin-top: 4px;
+            }
+        }
+        .footer-text{
+            margin-top: 10px;
+        }
+    } 
+    .phone-screen-2 .headlines{
+        padding-bottom: 36px;
+        .title{
+            margin-top: 14px;
+            margin-bottom: 26px;
+        }
+    }
+    .phone-screen-3 .phone-slider{
+        margin: 0 60px;
+        padding-bottom: 10px;
+    }
+    .phone-screen-4 .slider-detail{
+        margin-top: 30px;
+        .swiper-wrapper .swiper-slide{
+            .title{
+                margin: 16px 0;
+            }
+            .desc{
+                margin-top: 28px;
+                margin-bottom: 26px;
+            }
+        }
+    }
+    .partner-wrap .partner-main{
+        .desc{
+            margin-top: 32px;
+        }
+        .container-fluid{
+            margin-top: 20px;
+            .row .col-lg-3 .img-wrap{
+                height: 120px;
+            }
+        }
+    } 
+    
 }

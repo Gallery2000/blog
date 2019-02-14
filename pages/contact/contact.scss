@@ -3,26 +3,18 @@ $gray:#fafafa;
 
 //联系我背景
 .call-me {
-    // margin-top: 80px;
-    width: 100%;
-    height: 436px;
-    background-image: url(../../images/recruit-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/recruit-bg.png', sizingMethod='scale');
+    img{
+        width: 100%;
+    }
     position: relative;
-
-    .main {
-        width: 512px;
-        height: 140px;
-        text-align: center;
-        color: #fff;
+    .text-wrap{
         position: absolute;
         left: 50%;
         top: 50%;
         margin-left: -256px;
         margin-top: -70px;
-
+        width: 512px;
+        text-align: center;
         .title {
             font-size: 48px;
             color: #fff;
@@ -64,7 +56,50 @@ $gray:#fafafa;
 
     .main {
         margin: 0 auto;
-        width: 1366px;
+        .row{
+            .map{
+                padding-right: 6%;
+                #container-map{
+                    height: 500px;
+                    background-color: #000;
+                }
+            }
+            .msg{
+                .header{
+                    overflow: hidden;
+                    margin-top: 32px;
+                    margin-bottom: 30px;
+                    font-size: 28px;
+                    color: $blue;
+                    font-weight: 200;
+                }
+                .title {
+                    font-size: 28px;
+                    font-weight: 200px;
+                    margin-top: 36px;
+                    margin-bottom: 13px;
+                    overflow: hidden;
+                }
+    
+                dl {
+                    overflow: hidden;
+                    dd {
+                        i.iconfont{
+                            width: 34px;
+                            display: inline-block;
+                            font-size: 25px;
+                            margin-right: 4px;
+                            vertical-align: middle;
+                            position: relative;
+                            // top: -4px;
+                        }
+                        vertical-align: middle;
+                        font-size: 13px;
+                        line-height: 34px;
+                    }
+                }
+            }
+        }
 
         .left-main,
         .right-main {
@@ -116,5 +151,40 @@ $gray:#fafafa;
                 }
             }
         }
+    }
+}
+@media (max-width: 768px) {
+    body{
+        padding-top: 48px;
+    }
+    .call-me {
+        .text-wrap{
+            margin-top: -42px;
+            width: 70%;
+            margin-left: 0;
+            margin-top: 0;
+            transform: translate3d(-50%,-50%,0);
+            .title {
+                font-size: 30px;
+                padding-bottom: 8px;
+                &:after,
+                & .after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #fff;
+                }
+            }
+    
+            .desc {
+                font-size: 18px;
+            }
+        }
+    }
+    .location .main .row .msg .header{
+        font-size: 24px;
     }
 }

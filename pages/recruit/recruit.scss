@@ -90,8 +90,16 @@ $gray:#fafafa;
         }
 
         .recruit-type {
-            text-align: center;
-
+                .row{
+                    .box{
+                        height: 130px;
+                        text-align: center;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                }
+            
             ul {
                 display: inline-block;
 
@@ -230,7 +238,7 @@ $gray:#fafafa;
                     .item-wrap {
                         overflow: hidden;
                         display: none;
-
+                        padding-right: 28px;
                         dl.contact {
                             // margin: 0;
 
@@ -262,6 +270,23 @@ $gray:#fafafa;
         }
     }
 }
+@media (max-width: 1200px) {
+    .recruit-detail .main{
+        .recruit-type .row .box{
+            height: 100px;
+        }
+    } 
+}
+@media (max-width: 992px) {
+    .recruit-detail .main{
+        .recruit-type .row .box{
+            height: 80px;
+        }
+        .recruit-position{
+            margin: 24px 40px 50px;
+        }
+    } 
+}
 
 @media (max-width: 768px) {
     body{
@@ -289,7 +314,7 @@ $gray:#fafafa;
                         padding-left: 16px;
                         
                         &.active{
-                            padding: 0 12px;
+                            padding-left: 12px;
                         }
                         @for $i from 1 through 5 {
 
@@ -304,14 +329,18 @@ $gray:#fafafa;
                                 border-bottom: 1px solid #d7d7d7;
                             }
                         }
+                        .item-wrap{
+                            padding-right: 12px;
+                        }
+
                         .item{
                             height: 42px;
                             line-height: 42px;
                             .title{
                                 font-size: 15px;
                             }
-                            .iconfont.down,.iconfont.up{
-                                
+                            .iconfont{
+                                    font-size: 20px;
                                     color: $blue;
                                     margin-right: 8px;
                                 

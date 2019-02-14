@@ -12,54 +12,81 @@
 </head>
 
 <body>
-        <div class="blog-navbar">
-                <div class="nav-main">
-                    <a href="../index/index.html">
-                        <div class="logo-wrap">
-                            <img class="logo" src="../../images/logo.png" alt="">
-                        </div>
-                        <div class="logo-wrap">
-                            <img class="title" src="../../images/logit-title.png" alt="">
-                        </div>
-                    </a>
-                    <div class="list-wrap">
-                        <ul class="clear">
-                            <!-- <li class="item-1"><a href="../index/index.html">首页</a></li> -->
-                            <li class="item-2"><a href="../develop/develop.html">发展历程</a></li>
-                            <!-- <li class="item-3"><a href="javascript:;">公司动态</a></li> -->
-                            <li class="item-4"><a href="../product/product.html">产品中心</a></li>
-                            <li class="item-5"><a href="../recruit/recruit.html">招贤纳士</a></li>
-                            <li class="item-6"><a href="../contact/contact.html">联系我们</a></li>
-                        </ul>
-                    </div>
+    <div class="blog-navbar hidden-xs">
+        <div class="nav-main">
+            <a href="../index/index.html">
+                <div class="logo-wrap">
+                    <img class="logo" src="../../images/logo.png" alt="">
                 </div>
+                <div class="logo-wrap">
+                    <img class="title" src="../../images/logit-title.png" alt="">
+                </div>
+            </a>
+            <div class="list-wrap">
+                <ul class="clear">
+                    <!-- <li class="item-1"><a href="../index/index.html">首页</a></li> -->
+                    <li class="item-2"><a href="../develop/develop.html">发展历程</a></li>
+                    <!-- <li class="item-3"><a href="javascript:;">公司动态</a></li> -->
+                    <li class="item-4"><a href="../product/product.html">产品中心</a></li>
+                    <li class="item-5"><a href="../recruit/recruit.html">招贤纳士</a></li>
+                    <li class="item-6"><a href="../contact/contact.html">联系我们</a></li>
+                </ul>
             </div>
+        </div>
+    </div>
+    <div class="phone-navbar container visible-xs">
+        <div class="row">
+            <div class="col-xs-4 img-wrap">
+                <a href="../index/index.html">
+                    <img src="../../images/logit-title.png" alt="">
+                </a>
+            </div>
+            <div class="col-xs-2 col-xs-offset-6 hamburger">
+                <i class="iconfont">&#xe655;</i>
+            </div>
+        </div>
+        <div class="full-screen">
+            <ul>
+                <li><a href="#">发展历程</a></li>
+                <li><a href="#">产品中心</a></li>
+                <li><a href="#">招贤纳士</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="call-me">
-        <div class="main">
+        <img src="../../images/recruit-bg.png" alt="">
+        <div class="text-wrap">
             <h1 class="title">联系我们</h1>
             <p class="desc">Contact us</p>
         </div>
     </div>
     <div class="location">
-        <div class="main clear">
-            <div id="container" class="left-main">
-                <img class="map" src="../../images/map.png" alt="">
-            </div>
-            <div class="right-main">
-                <div class="header regular-font">
-                    广告畅游网络科技有限公司
+        <div class="main clear container">
+            <div class="row">
+                <div class="map col-lg-7 col-md-7">
+                        <div id="container-map">
+                                <img class="map" src="../../images/map.png" alt="">
+                            </div>
                 </div>
-                <dl>
-                    <dd><i class="iconfont">&#xe619;</i>东莞市松山湖高新技术产业开发区工业西路14号2栋首层3-05</dd>
-                    <dd><i class="iconfont">&#xe61d;</i>523808</dd>
-                    <dd><i class="iconfont">&#xe64b;</i>0769-22895462</dd>
-                </dl>
-                <p class="title">商务合作</p>
-                <dl>
-                    <dd><i class="iconfont">&#xe633;</i>1002938477</dd>
-                    <dd><i class="iconfont">&#xe60a;</i>15393864750</dd>
-                    <dd><i class="iconfont">&#xe634;</i>1002938477@qq.com</dd>
-                </dl>
+                <div class="msg col-lg-5 col-md-5">
+                       
+                                <div class="header regular-font">
+                                    广告畅游网络科技有限公司
+                                </div>
+                                <dl>
+                                    <dd><i class="iconfont">&#xe619;</i>东莞市松山湖高新技术产业开发区工业西路14号2栋首层3-05</dd>
+                                    <dd><i class="iconfont">&#xe61d;</i>523808</dd>
+                                    <dd><i class="iconfont">&#xe64b;</i>0769-22895462</dd>
+                                </dl>
+                                <p class="title">商务合作</p>
+                                <dl>
+                                    <dd><i class="iconfont">&#xe633;</i>1002938477</dd>
+                                    <dd><i class="iconfont">&#xe60a;</i>15393864750</dd>
+                                    <dd><i class="iconfont">&#xe634;</i>1002938477@qq.com</dd>
+                                </dl>
+                           
+                </div>
             </div>
         </div>
     </div>
@@ -107,7 +134,7 @@
     <script src="../../common/js/jquery.loadimg.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5tXIMPokB8DvjlXvbeTBQmYFsgMGmls9"></script>
     <script>
-        var map = new BMap.Map("container");
+        var map = new BMap.Map("container-map" class="left-main");
         var point = new BMap.Point(113.893854, 22.933373);
         map.centerAndZoom(point, 18);
         var marker = new BMap.Marker(point); // 创建标注

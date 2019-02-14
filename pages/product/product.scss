@@ -5,26 +5,37 @@ $gray:#fafafa;
     // margin-top: 80px;
     width: 100%;
     background-color: #eee;
-    height: 500px;
-    background-image: url(../../images/product/产品的副本.png);
-    overflow: hidden;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/product/产品的副本.png', sizingMethod='scale');
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
+    // height: 500px;
+    // background-image: url(../../images/product/产品的副本.png);
+    // overflow: hidden;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/product/产品的副本.png', sizingMethod='scale');
+    // background-repeat: no-repeat;
+    // background-size: 100%;
     overflow: hidden;
-    .title{
-        overflow: hidden;
-        font-size: 48px;
-        font-weight: 400;
-        color: #fff;
-        margin-top: 23px;
-        font-weight: 100;
+    position: relative;
+    img{
+        width: 100%;
+        vertical-align: middle;
     }
-    .desc{
-        font-weight: 100;
-        margin-top: 10px;
-        font-size: 28px;
-        color: #fff;
+    .text-wrap{
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 0;
+        .title{
+            overflow: hidden;
+            font-size: 48px;
+            font-weight: 400;
+            color: #fff;
+            margin-top: 23px;
+            font-weight: 100;
+        }
+        .desc{
+            font-weight: 100;
+            margin-top: 10px;
+            font-size: 28px;
+            color: #fff;
+        }
     }
 }
 
