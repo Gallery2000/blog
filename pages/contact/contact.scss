@@ -60,8 +60,7 @@ $gray:#fafafa;
             .map{
                 padding-right: 6%;
                 #container-map{
-                    height: 500px;
-                    background-color: #000;
+                    min-height: 458px;
                 }
             }
             .msg{
@@ -97,57 +96,6 @@ $gray:#fafafa;
                         font-size: 13px;
                         line-height: 34px;
                     }
-                }
-            }
-        }
-
-        .left-main,
-        .right-main {
-            float: left;
-            min-height: 458px;
-        }
-
-        .left-main {
-            width: 704px;
-            img {
-                width: 100%;
-            }
-        }
-
-        .right-main {
-            
-            padding-left: 104px;
-            .header{
-                overflow: hidden;
-                margin-top: 32px;
-                margin-bottom: 30px;
-                font-size: 28px;
-                color: $blue;
-                font-weight: 200;
-            }
-            .title {
-                font-size: 28px;
-                font-weight: 200px;
-                margin-top: 36px;
-                margin-bottom: 13px;
-                overflow: hidden;
-            }
-
-            dl {
-                overflow: hidden;
-                dd {
-                    i.iconfont{
-                        width: 34px;
-                        display: inline-block;
-                        font-size: 25px;
-                        margin-right: 4px;
-                        vertical-align: middle;
-                        position: relative;
-                        // top: -4px;
-                    }
-                    vertical-align: middle;
-                    font-size: 13px;
-                    line-height: 34px;
                 }
             }
         }

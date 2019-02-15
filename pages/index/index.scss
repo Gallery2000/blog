@@ -626,6 +626,7 @@ $gray:#fafafa;
     .partner-wrap {
         background-color: #fff;
         .partner-main {
+            margin-bottom: 8px;
             padding: 0;
             .desc {
                 color: $blue;
@@ -654,24 +655,24 @@ $gray:#fafafa;
         }
     }
     .phone-screen {
-        height: 100vh;
         padding-top: 48px;
-        border: 1px solid #000;
         position: relative;
         overflow: hidden;
         .footer-text {
             text-align: center;
             font-size: 18px;
-            margin-top: 30px;
-            color: $blue;
+            a{
+                color: $blue;
+            }
         }
         .next-page {
-            position: absolute;
+            // position: absolute;
             width: 40px;
             height: 40px;
-            left: 50%;
-            bottom: 20px;
-            margin-left: -20px;
+            margin: 0 auto;
+            // left: 50%;
+            // bottom: 20px;
+            // margin-left: -20px;
             i.iconfont {
                 color: $blue;
                 font-size: 40px;
@@ -697,8 +698,13 @@ $gray:#fafafa;
         color: #fff;
         text-align: center;
         overflow: hidden;
-        padding-top: 64%;
+        padding-top: 36vh;
+        height: 100vh;
         .next-page {
+            position: absolute;
+            left: 50%;
+            margin-left: -20px;
+            bottom: 20px;
             i.iconfont {
                 color: #fff;
             }
@@ -715,6 +721,8 @@ $gray:#fafafa;
     .phone-screen-2 {
         .headlines {
             margin: 22px 14px 42px;
+            -webkit-box-shadow: 0 0 4px #eee;
+            -moz-box-shadow: 0 0 4px #eee;
             box-shadow: 0 0 4px #eee;
             overflow: hidden;
             padding-bottom: 76px;
@@ -739,7 +747,7 @@ $gray:#fafafa;
         }
         .slider-headlines {
             padding-bottom: 38px;
-            margin: 0 28px;
+            margin:  0 28px 80px;
             .swiper-wrapper {
                 .swiper-slide {
                     position: relative;
@@ -772,23 +780,6 @@ $gray:#fafafa;
             overflow: hidden;
             margin-top: 15px;
             overflow: hidden;
-            margin: 0 68px;
-            padding-bottom: 28px;
-            .swiper-wrapper {
-                .swiper-slide {
-                    .img-wrap {
-                        img {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .phone-screen-3 {
-        .phone-slider {
-            margin-top: 15px;
-            overflow: hidden;
             margin: 0 48px;
             padding-bottom: 28px;
             .swiper-wrapper {
@@ -800,6 +791,10 @@ $gray:#fafafa;
                     }
                 }
             }
+        }
+        .footer-text{
+            margin-top: 10px;
+            margin-bottom: 12px;
         }
     }
     .phone-screen-4 {
@@ -831,11 +826,15 @@ $gray:#fafafa;
             }
         }
         .custom-pagination{
-            margin: 14px auto 26px;
+            margin: 14px auto 0;
             position: relative;
             .swiper-pagination-bullet{
                 margin:  4px;
             }
+        }
+        .footer-text{
+            margin-top: 20px;
+            margin-bottom: 40px;
         }
     }
     .phone-screen-5 {
@@ -891,59 +890,64 @@ $gray:#fafafa;
         }
         .call-map {
             height: 400px;
-            border: 1px solid #000;
         }
     }
 }
 // H5 Adaptation-------------------
-@media (max-height: 736px) {
-    .phone-screen{
-        .text-wrap{
-            margin-top: 12px;
-            .title{
-                font-size: 18px;
-            }
-            .desc{
-                margin-top: 4px;
-            }
-        }
-        .footer-text{
-            margin-top: 10px;
-        }
-    } 
-    .phone-screen-2 .headlines{
-        padding-bottom: 36px;
-        .title{
-            margin-top: 14px;
-            margin-bottom: 26px;
-        }
-    }
-    .phone-screen-3 .phone-slider{
-        margin: 0 60px;
-        padding-bottom: 10px;
-    }
-    .phone-screen-4 .slider-detail{
-        margin-top: 30px;
-        .swiper-wrapper .swiper-slide{
-            .title{
-                margin: 16px 0;
-            }
-            .desc{
-                margin-top: 28px;
-                margin-bottom: 26px;
-            }
-        }
-    }
-    .partner-wrap .partner-main{
-        .desc{
-            margin-top: 32px;
-        }
-        .container-fluid{
-            margin-top: 20px;
-            .row .col-lg-3 .img-wrap{
-                height: 120px;
-            }
-        }
-    } 
+// @media (max-height: 736px) {
+//     .phone-screen{
+//         .text-wrap{
+//             margin-top: 12px;
+//             .title{
+//                 font-size: 18px;
+//             }
+//             .desc{
+//                 margin-top: 4px;
+//             }
+//         }
+//         .footer-text{
+//             margin-top: 10px;
+//         }
+//     } 
+//     .phone-screen-2 .headlines{
+//         padding-bottom: 26px;
+//         .title{
+//             margin-top: 10px;
+//             margin-bottom: 20px;
+//         }
+//     }
+//     .phone-screen-3 .phone-slider{
+//         margin: 0 70px;
+//         padding-bottom: 10px;
+//     }
+//     .phone-screen-4{
+//         .custom-pagination{
+//             margin: 10px auto 18px;
+//         }
+//         .slider-detail{
+//             margin-top: 20px;
+//             .swiper-wrapper .swiper-slide{
+//                 .title{
+//                     margin: 16px 0;
+//                 }
+//                 .desc{
+//                     margin-top: 28px;
+//                     margin-bottom: 26px;
+//                 }
+//             }
+//         }
+//     } 
+//     .partner-wrap .partner-main{
+//         .desc{
+//             margin-top: 22px;
+//             margin-bottom: 0;
+//         }
+//         .container-fluid{
+//             margin-top: 20px;
+//             .row .col-lg-3 .img-wrap{
+//                 height: 110px;
+//             }
+//         }
+//     } 
     
-}
+// }

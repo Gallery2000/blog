@@ -40,8 +40,7 @@
     .location .main .row .map {
       padding-right: 6%; }
       .location .main .row .map #container-map {
-        height: 500px;
-        background-color: #000; }
+        min-height: 458px; }
     .location .main .row .msg .header {
       overflow: hidden;
       margin-top: 32px;
@@ -68,42 +67,6 @@
           margin-right: 4px;
           vertical-align: middle;
           position: relative; }
-    .location .main .left-main,
-    .location .main .right-main {
-      float: left;
-      min-height: 458px; }
-    .location .main .left-main {
-      width: 704px; }
-      .location .main .left-main img {
-        width: 100%; }
-    .location .main .right-main {
-      padding-left: 104px; }
-      .location .main .right-main .header {
-        overflow: hidden;
-        margin-top: 32px;
-        margin-bottom: 30px;
-        font-size: 28px;
-        color: #0252d9;
-        font-weight: 200; }
-      .location .main .right-main .title {
-        font-size: 28px;
-        font-weight: 200px;
-        margin-top: 36px;
-        margin-bottom: 13px;
-        overflow: hidden; }
-      .location .main .right-main dl {
-        overflow: hidden; }
-        .location .main .right-main dl dd {
-          vertical-align: middle;
-          font-size: 13px;
-          line-height: 34px; }
-          .location .main .right-main dl dd i.iconfont {
-            width: 34px;
-            display: inline-block;
-            font-size: 25px;
-            margin-right: 4px;
-            vertical-align: middle;
-            position: relative; }
 
 @media (max-width: 768px) {
   body {

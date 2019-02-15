@@ -37,20 +37,22 @@
     <div class="phone-navbar container visible-xs">
             <div class="row">
                 <div class="col-xs-4 img-wrap">
-                    <img src="../../images/logit-title.png" alt="">
+                    <a href="../index/index.html">
+                        <img src="../../images/logit-title.png" alt="">
+                    </a>
                 </div>
-                <div class="col-xs-2 col-xs-offset-6 hamburger">
+                <div class="col-xs-2 col-xs-offset-6 hamburger" id="hamburger">
                     <i class="iconfont">&#xe655;</i>
                 </div>
             </div>
             <div class="full-screen">
-                    <ul>
-                        <li><a href="#">发展历程</a></li>
-                        <li><a href="#">产品中心</a></li>
-                        <li><a href="#">招贤纳士</a></li>
-                        <li><a href="#">联系我们</a></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li><a data-name="develop">发展历程</a></li>
+                    <li><a data-name="product">产品中心</a></li>
+                    <li><a data-name="recruit">招贤纳士</a></li>
+                    <li><a data-name="contact">联系我们</a></li>
+                </ul>
+            </div>
         </div>
     <div class="product-body hidden-xs">
         <img src="../../images/product/产品的副本.png" alt="">
@@ -71,7 +73,7 @@
                     <p class="desc">全面布局打造高端产品</p>
                 </div>
             <div class="container-fluid">
-                <div class="row">
+                <div class="row clear">
                     <div class="col-md-3 col-xs-6">
                         <div class="img-wrap">
                             <a href="../detail/detail.html">
@@ -112,7 +114,7 @@
                                 <p class="desc hidden-xs">一款完全免费的手机优化工具，集合系统优化、网络优化、进程优化、电池优化…众多功能，运行更流畅、更省电</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row clear">
                         <div class="col-md-3 col-xs-6">
                                 <div class="img-wrap">
                                         <a href="../detail/detail.html">
@@ -154,7 +156,7 @@
                                     </p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row clear">
                             <div class="col-md-3 col-xs-6">
                                     <div class="img-wrap">
                                             <a href="../detail/detail.html">
@@ -377,7 +379,7 @@
         </div>
     </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../../common/js/jquery.loadimg.js"></script>
+    <script src="../../common/js/globalPageHadnle.js"></script>
 </body>
 
 </html>

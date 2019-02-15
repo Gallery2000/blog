@@ -56,6 +56,7 @@ $gray:#fafafa;
 body {
     color: #333;
     padding-top: 80px;
+    background-color: #fff;
 }
 
 img{
@@ -310,6 +311,12 @@ img{
         height: 48px;
         background-color: $blue;
         z-index: 99;
+        &.active{
+            .full-screen{
+            transform: scale(1);
+            opacity: 1;
+            }
+        }
         .full-screen{
             position: fixed;
             z-index: 100;
@@ -318,8 +325,11 @@ img{
             left: 0;
             bottom: 0;
             background: rgba(0, 0, 0, 0.8);
-            padding-top: 60%;
-            display: none;
+            padding-top: 32vh;
+            opacity: 0;
+            transform-origin: right top;
+            transform: scale(.2);
+            transition: .3s;
             ul{
                 margin: 0 auto;
                 li{
@@ -336,10 +346,15 @@ img{
             z-index: 999;
             position: relative;
             height: 30px;
-            padding: 9px;
-            img{
-                width: 100%
+            padding: 11px;
+            a{
+                display: block;
+                height: 26px;
+                img{
+                    height: 100%
+                }
             }
+
         }
         .hamburger{
             z-index: 999;

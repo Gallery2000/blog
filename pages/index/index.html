@@ -43,27 +43,27 @@
                     <img src="../../images/logit-title.png" alt="">
                 </a>
             </div>
-            <div class="col-xs-2 col-xs-offset-6 hamburger">
+            <div class="col-xs-2 col-xs-offset-6 hamburger" id="hamburger">
                 <i class="iconfont">&#xe655;</i>
             </div>
         </div>
         <div class="full-screen">
             <ul>
-                <li><a href="#">发展历程</a></li>
-                <li><a href="#">产品中心</a></li>
-                <li><a href="#">招贤纳士</a></li>
-                <li><a href="#">联系我们</a></li>
+                <li><a data-name="develop">发展历程</a></li>
+                <li><a data-name="product">产品中心</a></li>
+                <li><a data-name="recruit">招贤纳士</a></li>
+                <li><a data-name="contact">联系我们</a></li>
             </ul>
         </div>
     </div>
     <div class="phone-screen phone-screen-1 visible-xs">
         <h1 class="title regular-font">有态度。有深度</h1>
         <p class="desc">专注互联网技术研发流量推广</p>
-        <div class="next-page">
+        <div class="next-page" data-index="1">
             <i class="iconfont">&#xe628;</i>
         </div>
     </div>
-    <div class="phone-screen phone-screen-2 visible-xs">
+    <div class="phone-screen phone-screen-2 visible-xs" id="develop">
         <div class="headlines">
             <div class="title regular-font">
                 以互联网为基础的<br>
@@ -106,11 +106,11 @@
             <!-- 如果需要分页器 -->
             <div class="swiper-pagination"></div>
         </div>
-        <div class="next-page">
+        <div class="next-page" data-index="2">
             <i class="iconfont">&#xe628;</i>
         </div>
     </div>
-    <div class="phone-screen phone-screen-3 visible-xs">
+    <div class="phone-screen phone-screen-3 visible-xs" id="product">
         <div class="text-wrap">
             <h1 class="title">
                 在产品研发上，我们开足马力
@@ -139,13 +139,15 @@
             <div class="swiper-pagination"></div>
         </div>
         <div class="footer-text regular-font">
-            加入我们
+            <a href="../product/product.html">
+                查看更多
+            </a>
         </div>
-        <div class="next-page">
+        <div class="next-page" data-index="3">
             <i class="iconfont">&#xe628;</i>
         </div>
     </div>
-    <div class="phone-screen phone-screen-4 visible-xs">
+    <div class="phone-screen phone-screen-4 visible-xs" id="recruit">
         <div class="text-wrap">
             <h1 class="title">
                 在产品研发上，我们开足马力
@@ -191,9 +193,11 @@
         </div>
         <div class="swiper-pagination custom-pagination"></div>
         <div class="footer-text regular-font">
-            加入我们
+            <a href="../recruit/recruit.html">
+                加入我们
+            </a>
         </div>
-        <div class="next-page">
+        <div class="next-page" data-index="4">
             <i class="iconfont">&#xe628;</i>
         </div>
     </div>
@@ -268,29 +272,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <ul>
-                    <li class="item-1">
-                        <img src="../../images/index/新科技.png" alt="">
-                        <div class="text-wrap">
-                            <p class="big-title regular-font">新科技</p>
-                            <p class="desc">构筑智慧未来</p>
-                        </div>
-                    </li>
-                    <li class="item-2">
-                        <img src="../../images/index/新文化.png" alt="">
-                        <div class="text-wrap">
-                            <p class="big-title regular-font">新文化</p>
-                            <p class="desc">丰富精神生活</p>
-                        </div>
-                    </li>
-                    <li class="item-3">
-                        <img src="../../images/index/社会责任.png" alt="">
-                        <div class="text-wrap">
-                            <p class="big-title regular-font">社会责任</p>
-                            <p class="desc">履行使命担当</p>
-                        </div>
-                    </li>
-                </ul> -->
             </div>
             <div class="text-develop">
                 <a href="../develop/develop.html">发展历程</a>
@@ -501,56 +482,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <ul>
-                        <li>
-                            <div class="action-wrap">
-                                <img data-src="../../images/index/办公环境.jpg" alt="">
-                                <div class="more-act">
-                                    了解更多
-                                </div>
-                            </div>
-                            <div class="desc-wrap">
-                                <div class="text">
-                                    办公环境
-                                </div>
-                                <div class="desc-text">
-                                    公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="action-wrap">
-                                <img data-src="../../images/index/公司团建.jpg" alt="">
-                                <div class="more-act">
-                                    了解更多
-                                </div>
-                            </div>
-                            <div class="desc-wrap">
-                                <div class="text">
-                                    公司团建
-                                </div>
-                                <div class="desc-text">
-                                    每年一到两次公司组织外出旅行，不定时聚餐
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="action-wrap">
-                                <img data-src="../../images/index/五险一金.png" alt="">
-                                <div class="more-act">
-                                    了解更多
-                                </div>
-                            </div>
-                            <div class="desc-wrap">
-                                <div class="text">
-                                    五险一金
-                                </div>
-                                <div class="desc-text">
-                                    员工转正后，公司就会给其办理无线一金福利待遇优厚
-                                </div>
-                            </div>
-                        </li>
-                    </ul> -->
                 </div>
             </div>
             <a href="../recruit/recruit.html" class="join-us">
@@ -562,49 +493,6 @@
         <div class="partner-main container">
             <div class="title regular-font  hidden-xs">合作伙伴 </div>
             <p class="desc">当你足够优秀时总会被选择 </p>
-            <!-- <div class="partner-list-wrap">
-                <ul>
-                    <li>
-                        <img data-src="../../images/合作伙伴/腾讯logo_03.png" alt="">
-                    </li>
-                    <li>
-                        <img data-src="../../images/合作伙伴/阿里巴巴.png" alt="">
-                    </li>
-                    <li>
-                        <img data-src="../../images/合作伙伴/百度_03.png" alt="">
-                    </li>
-                    <li>
-                        <img data-src="../../images/合作伙伴/360_03.png" alt="">
-                    </li>
-                    <li>
-                        <img data-src="../../images/合作伙伴/2345导航logo.jpg" alt="">
-                    </li>
-                    <li>
-                        <img data-src="../../images/合作伙伴/d2f340b50e246cd937a4a79df04f0f81.png" alt="">
-                    </li>
-
-                    <li>
-                        <img data-src="../../images/合作伙伴/d5692f7250bd3a02f53dc71224b27fdf.jpg" alt="">
-                    </li>
-
-
-                    <li>
-                        <img data-src="../../images/合作伙伴/猎豹_03.png" alt="">
-                    </li>
-                    <li>
-                        <img data-src="../../images/合作伙伴/腾讯视频.jpg" alt="">
-                    </li>
-                    <li>
-                        <img data-src="../../images/合作伙伴/应用宝_03.png" alt="">
-                    </li>
-                    <li>
-                        <img data-src="../../images/合作伙伴/酷狗_03.png" alt="">
-                    </li>
-                    <li>
-                        <img data-src="../../images/合作伙伴/酷我_03.png" alt="">
-                    </li>
-                </ul>
-            </div> -->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 col-xs-6">
@@ -636,7 +524,7 @@
                         <div class="img-wrap"><img data-src="../../images/合作伙伴/猎豹_03.png" alt=""></div>
                     </div>
                 </div>
-                <!-- <div class="row .hidden-xs">
+                <div class="row hidden-xs">
                     <div class="col-lg-3 col-xs-6">
                         <div class="img-wrap"><img data-src="../../images/合作伙伴/腾讯视频.jpg" alt=""></div>
                     </div>
@@ -649,43 +537,14 @@
                     <div class="col-lg-3 col-xs-6">
                         <div class="img-wrap"><img data-src="../../images/合作伙伴/酷我_03.png" alt=""></div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
-        <div class="next-page">
+        <div class="next-page"  data-index="5">
             <i class="iconfont">&#xe628;</i>
         </div>
     </div>
-    <!-- <div class="footer-bar">
-        <div class="main clear">
-            <div class="footer-wrap clear">
-                <dl>
-                    <dt>关注我们</dt>
-                    <dd><a href="javascript:;">公众号</a></dd>
-                </dl>
-                <dl>
-                    <dt>加入我们</dt>
-                    <dd><a href="javascript:;">社会招聘</a></dd>
-                    <dd><a href="javascript:;">校园招聘</a></dd>
-                </dl>
-                <dl>
-                    <dt>合作洽谈</dt>
-                    <dd><a href="javascript:;">客户服务</a></dd>
-                    <dd><a href="javascript:;">咨询合作</a></dd>
-                </dl>
-                <dl class="child-node">
-                    <dt>法律信息</dt>
-                    <dd><a href="javascript:;">知识产权</a></dd>
-                    <dd><a href="javascript:;">服务协议</a></dd>
-                </dl>
-            </div>
-
-            <div class="logo-title">
-                <img data-src="../../images/logit-title.png" alt="">
-            </div>
-        </div>
-    </div> -->
-    <div class="phone-screen phone-screen-6 visible-xs">
+    <div class="phone-screen phone-screen-6 visible-xs" id="contact">
         <div class="text-wrap">
             <h1 class="title regular-font">
                 联系我们
@@ -734,9 +593,9 @@
                         <dd class="clear"><i class="iconfont">&#xe634;</i><p class="message">1002938477@qq.com</p></dd>
                     </dl> -->
         </div>
-        <div class="call-map"></div>
+        <div class="call-map" id="container-map"></div>
     </div>
-    <div class="footer-banner hidden-xs">
+    <div class="footer-banner hidden-xs phone-screen ">
         <div class="copyright-wrap container">
             <div class="copyright">
                 Copyright © 2015 - 2019 thinkabout.cn. All Rights Reserved.<br />
@@ -750,32 +609,29 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../../common/js/jquery.loadimg.js"></script>
+    <script src="../../common/js/globalPageHadnle.js"></script>
+    <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5tXIMPokB8DvjlXvbeTBQmYFsgMGmls9"></script> -->
     <script>
         $(document).ready(function () {
+            $('.next-page').click(function(){
+                var screenIndex = $(this).attr('data-index');
+                 var top = $('.phone-screen').eq(screenIndex).offset().top;
+                $('html,body').animate({
+                    scrollTop:top
+                })
+            })
+            // console.log( $('.next-page'));
             var mySwiper1 = new Swiper('.slider-headlines', {
-                loop: true, // 循环模式选项
-                autoplay: {
-                    delay: 3000
-                },
                 pagination: {
                     el: '.swiper-pagination',
                 }
             })
             var mySwiper2 = new Swiper('.phone-slider', {
-                loop: true, // 循环模式选项
-                autoplay: {
-                    delay: 3000
-                },
                 pagination: {
                     el: '.swiper-pagination',
                 }
             })
             var mySwiper4 = new Swiper('.slider-detail', {
-                loop: true, // 循环模式选项
-                autoplay: {
-                    delay: 3000
-                },
                 paginationType: 'custom',
                 pagination: {
                     el: '.custom-pagination',
@@ -817,8 +673,25 @@
             }
         })
     </script>
-
-    </script>
+        <!-- <script>
+            var map = new BMap.Map("container-map");
+            var point = new BMap.Point(113.893854, 22.933373);
+            map.centerAndZoom(point, 18);
+            var marker = new BMap.Marker(point); // 创建标注
+    
+            var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(46, 29), {
+                anchor: new BMap.Size(15, 54),
+                imageOffset: new BMap.Size(22, 0 - 12 * 25) // 设置图片偏移    
+            });
+            var marker = new BMap.Marker(point, {
+                icon: myIcon
+            });
+    
+    
+            map.addOverlay(marker)
+    
+            map.enableScrollWheelZoom(true);
+        </script> -->
 </body>
 
 </html>

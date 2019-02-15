@@ -87,8 +87,7 @@
       position: relative;
       z-index: 9; }
       .recruit-detail .main .recruit-position ul li {
-        position: relative;
-        padding-left: 28px; }
+        position: relative; }
         .recruit-detail .main .recruit-position ul li.item-1:after, .recruit-detail .main .recruit-position ul li.item-1 .after {
           content: "";
           after: "";
@@ -141,7 +140,8 @@
           display: block; }
         .recruit-detail .main .recruit-position ul li .item {
           height: 70px;
-          line-height: 70px; }
+          line-height: 70px;
+          padding-left: 28px; }
           .recruit-detail .main .recruit-position ul li .item:hover {
             cursor: pointer; }
             .recruit-detail .main .recruit-position ul li .item:hover .desc {
@@ -169,7 +169,7 @@
         .recruit-detail .main .recruit-position ul li .item-wrap {
           overflow: hidden;
           display: none;
-          padding-right: 28px; }
+          padding: 0 28px; }
           .recruit-detail .main .recruit-position ul li .item-wrap dl.contact dd {
             line-height: 36px;
             font-size: 18px;
@@ -209,60 +209,57 @@
     margin: 0 20px;
     box-shadow: 0 0 4px #4c4c4c;
     border-radius: 5px; }
-    .recruit-detail .main .recruit-position ul li {
-      padding-left: 16px; }
-      .recruit-detail .main .recruit-position ul li.active {
-        padding-left: 12px; }
-      .recruit-detail .main .recruit-position ul li.item-1:after, .recruit-detail .main .recruit-position ul li.item-1 .after {
-        content: "";
-        after: "";
-        position: absolute;
-        right: 100px;
-        left: 0;
-        bottom: 0;
-        border-bottom: 1px solid #d7d7d7; }
-      .recruit-detail .main .recruit-position ul li.item-2:after, .recruit-detail .main .recruit-position ul li.item-2 .after {
-        content: "";
-        after: "";
-        position: absolute;
-        right: 100px;
-        left: 0;
-        bottom: 0;
-        border-bottom: 1px solid #d7d7d7; }
-      .recruit-detail .main .recruit-position ul li.item-3:after, .recruit-detail .main .recruit-position ul li.item-3 .after {
-        content: "";
-        after: "";
-        position: absolute;
-        right: 100px;
-        left: 0;
-        bottom: 0;
-        border-bottom: 1px solid #d7d7d7; }
-      .recruit-detail .main .recruit-position ul li.item-4:after, .recruit-detail .main .recruit-position ul li.item-4 .after {
-        content: "";
-        after: "";
-        position: absolute;
-        right: 100px;
-        left: 0;
-        bottom: 0;
-        border-bottom: 1px solid #d7d7d7; }
-      .recruit-detail .main .recruit-position ul li.item-5:after, .recruit-detail .main .recruit-position ul li.item-5 .after {
-        content: "";
-        after: "";
-        position: absolute;
-        right: 100px;
-        left: 0;
-        bottom: 0;
-        border-bottom: 1px solid #d7d7d7; }
-      .recruit-detail .main .recruit-position ul li .item-wrap {
-        padding-right: 12px; }
-      .recruit-detail .main .recruit-position ul li .item {
-        height: 42px;
-        line-height: 42px; }
-        .recruit-detail .main .recruit-position ul li .item .title {
-          font-size: 15px; }
-        .recruit-detail .main .recruit-position ul li .item .iconfont {
-          font-size: 20px;
-          color: #0252d9;
-          margin-right: 8px; } }
+    .recruit-detail .main .recruit-position ul li.item-1:after, .recruit-detail .main .recruit-position ul li.item-1 .after {
+      content: "";
+      after: "";
+      position: absolute;
+      right: 100px;
+      left: 0;
+      bottom: 0;
+      border-bottom: 1px solid #d7d7d7; }
+    .recruit-detail .main .recruit-position ul li.item-2:after, .recruit-detail .main .recruit-position ul li.item-2 .after {
+      content: "";
+      after: "";
+      position: absolute;
+      right: 100px;
+      left: 0;
+      bottom: 0;
+      border-bottom: 1px solid #d7d7d7; }
+    .recruit-detail .main .recruit-position ul li.item-3:after, .recruit-detail .main .recruit-position ul li.item-3 .after {
+      content: "";
+      after: "";
+      position: absolute;
+      right: 100px;
+      left: 0;
+      bottom: 0;
+      border-bottom: 1px solid #d7d7d7; }
+    .recruit-detail .main .recruit-position ul li.item-4:after, .recruit-detail .main .recruit-position ul li.item-4 .after {
+      content: "";
+      after: "";
+      position: absolute;
+      right: 100px;
+      left: 0;
+      bottom: 0;
+      border-bottom: 1px solid #d7d7d7; }
+    .recruit-detail .main .recruit-position ul li.item-5:after, .recruit-detail .main .recruit-position ul li.item-5 .after {
+      content: "";
+      after: "";
+      position: absolute;
+      right: 100px;
+      left: 0;
+      bottom: 0;
+      border-bottom: 1px solid #d7d7d7; }
+    .recruit-detail .main .recruit-position ul li .item-wrap {
+      padding: 0 12px; }
+    .recruit-detail .main .recruit-position ul li .item {
+      padding-left: 16px;
+      height: 42px;
+      line-height: 42px; }
+      .recruit-detail .main .recruit-position ul li .item .title {
+        font-size: 15px; }
+      .recruit-detail .main .recruit-position ul li .item .iconfont {
+        font-size: 20px;
+        color: #0252d9;
+        margin-right: 8px; } }
 
 /*# sourceMappingURL=recruit.css.map */

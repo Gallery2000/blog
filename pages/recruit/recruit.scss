@@ -153,8 +153,6 @@ $gray:#fafafa;
             ul {
                 li {
                     position: relative;
-                    padding-left: 28px;
-
                     @for $i from 1 through 5 {
 
                         &.item-#{$i}:after,
@@ -196,7 +194,7 @@ $gray:#fafafa;
                     .item {
                         height: 70px;
                         line-height: 70px;
-
+                        padding-left: 28px;
                         &:hover {
                             cursor: pointer;
 
@@ -238,7 +236,7 @@ $gray:#fafafa;
                     .item-wrap {
                         overflow: hidden;
                         display: none;
-                        padding-right: 28px;
+                        padding:0 28px;
                         dl.contact {
                             // margin: 0;
 
@@ -310,11 +308,9 @@ $gray:#fafafa;
                 box-shadow: 0 0 4px #4c4c4c;
                 border-radius: 5px;
                 ul{
-                    li{
-                        padding-left: 16px;
-                        
+                    li{                        
                         &.active{
-                            padding-left: 12px;
+                            
                         }
                         @for $i from 1 through 5 {
 
@@ -330,10 +326,11 @@ $gray:#fafafa;
                             }
                         }
                         .item-wrap{
-                            padding-right: 12px;
+                            padding:0 12px;
                         }
 
                         .item{
+                            padding-left: 16px;
                             height: 42px;
                             line-height: 42px;
                             .title{
