@@ -420,7 +420,8 @@
   .phone-screen {
     padding-top: 48px;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    min-height: 100vh; }
     .phone-screen .footer-text {
       text-align: center;
       font-size: 18px; }
@@ -456,7 +457,7 @@
       position: absolute;
       left: 50%;
       margin-left: -20px;
-      bottom: 20px; }
+      bottom: 14px; }
       .phone-screen-1 .next-page i.iconfont {
         color: #fff; }
     .phone-screen-1 .title {
@@ -564,26 +565,151 @@
       .phone-screen-5 .category ul li:last-child {
         margin-bottom: 0; }
 
-  .phone-screen-6 .call-me {
-    margin-bottom: 54px;
+  .phone-screen-6 {
+    padding-top: 0; }
+    .phone-screen-6 .contact {
+      overflow: hidden;
+      height: 60vh;
+      padding-top: 32px; }
+      .phone-screen-6 .contact .call-me {
+        overflow: hidden;
+        padding-left: 40px; }
+        .phone-screen-6 .contact .call-me .call-me-wrap {
+          margin-top: 35px;
+          overflow: hidden; }
+          .phone-screen-6 .contact .call-me .call-me-wrap .row {
+            line-height: 32px; }
+            .phone-screen-6 .contact .call-me .call-me-wrap .row .icon i.iconfont {
+              position: absolute;
+              width: 34px;
+              display: block;
+              float: left;
+              font-size: 25px;
+              margin-right: 4px;
+              vertical-align: middle;
+              position: relative; }
+            .phone-screen-6 .contact .call-me .call-me-wrap .row .text {
+              padding-left: 0;
+              font-size: 13px; }
+    .phone-screen-6 .call-map {
+      height: 40vh; } }
+@media (max-height: 736px) {
+  .phone-screen .text-wrap {
+    margin-top: 12px; }
+    .phone-screen .text-wrap .title {
+      font-size: 18px; }
+    .phone-screen .text-wrap .desc {
+      margin-top: 4px; }
+  .phone-screen .footer-text {
+    margin-top: 10px; }
+
+  .phone-screen-2 .slider-headlines {
+    margin-bottom: 0px; }
+  .phone-screen-2 .headlines {
+    margin: 22px 14px 22px;
+    padding-bottom: 20px; }
+    .phone-screen-2 .headlines .title {
+      margin-top: 10px;
+      margin-bottom: 20px; }
+
+  .phone-screen-3 .phone-slider {
+    margin: 0 90px;
+    padding-bottom: 4px; }
+  .phone-screen-3 .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 0; }
+  .phone-screen-3 .footer-text {
+    margin: 10px 0 6px; }
+
+  .phone-screen-4 .custom-pagination {
+    margin: 8px auto 6px; }
+  .phone-screen-4 .slider-detail {
+    margin: 20px 24px 0; }
+    .phone-screen-4 .slider-detail .swiper-wrapper .swiper-slide .title {
+      margin: 14px 0; }
+    .phone-screen-4 .slider-detail .swiper-wrapper .swiper-slide .desc {
+      margin-top: 24px;
+      margin-bottom: 20px; }
+  .phone-screen-4 .footer-text {
+    margin-top: 0;
+    margin-bottom: 6px; }
+
+  .partner-wrap .partner-main .desc {
+    margin-top: 36px; }
+  .partner-wrap .partner-main .container-fluid {
+    margin-top: 20px; }
+    .partner-wrap .partner-main .container-fluid .row .col-lg-3 .img-wrap {
+      height: 110px; }
+
+  .phone-screen-6 .text-wrap {
+    margin-top: 42px; }
+  .phone-screen-6 .contact .call-me .call-me-wrap {
+    margin-top: 20px; } }
+@media (max-height: 620px) {
+  .phone-screen .text-wrap {
+    margin-top: 12px; }
+    .phone-screen .text-wrap .title {
+      font-size: 18px; }
+    .phone-screen .text-wrap .desc {
+      margin-top: 4px; }
+  .phone-screen .footer-text {
+    margin-top: 10px; }
+
+  .phone-screen-2 .slider-headlines {
+    padding-bottom: 20px;
+    margin: 0 40px 10px; }
+    .phone-screen-2 .slider-headlines .swiper-pagination.swiper-pagination-bullets {
+      bottom: 0; }
+  .phone-screen-2 .headlines {
+    padding-bottom: 16px;
+    margin: 22px 14px 20px; }
+    .phone-screen-2 .headlines .title {
+      margin-top: 8px;
+      margin-bottom: 10px; }
+
+  .phone-screen-3 .phone-slider {
+    margin: 0 88px; }
+
+  .phone-screen-4 .text-wrap .desc {
+    margin-top: 10px; }
+  .phone-screen-4 .custom-pagination {
+    margin: 6px auto 2px; }
+  .phone-screen-4 .slider-detail {
+    margin: 10px 40px 0; }
+    .phone-screen-4 .slider-detail .swiper-wrapper .swiper-slide .title {
+      margin: 10px 0; }
+    .phone-screen-4 .slider-detail .swiper-wrapper .swiper-slide .desc {
+      margin-top: 28px;
+      margin-bottom: 20px; }
+  .phone-screen-4 .footer-text {
+    margin: 4px 0 0; }
+
+  .partner-wrap .partner-main .desc {
+    margin: 22px 0 10px; }
+  .partner-wrap .partner-main .container-fluid {
+    margin-top: 10px; }
+    .partner-wrap .partner-main .container-fluid .row .col-lg-3 .img-wrap {
+      height: 96px; }
+
+  .phone-screen-6 .text-wrap {
     overflow: hidden;
-    padding-left: 40px; }
-    .phone-screen-6 .call-me .call-me-wrap {
-      margin-top: 35px;
-      overflow: hidden; }
-      .phone-screen-6 .call-me .call-me-wrap .row {
-        line-height: 32px; }
-        .phone-screen-6 .call-me .call-me-wrap .row .icon i.iconfont {
-          position: absolute;
-          width: 34px;
-          display: block;
-          float: left;
-          font-size: 25px;
-          margin-right: 4px;
-          vertical-align: middle;
-          position: relative; }
-        .phone-screen-6 .call-me .call-me-wrap .row .text {
-          padding-left: 0;
-          font-size: 13px; }
-  .phone-screen-6 .call-map {
-    height: 400px; } }
+    margin-top: 36px; }
+  .phone-screen-6 .contact .call-me .call-me-wrap {
+    margin-top: 20px; } }
+@media (max-width: 360px) {
+  .phone-screen-1 .title {
+    font-size: 40px; }
+  .phone-screen-1 .desc {
+    font-size: 18px; }
+
+  .phone-screen-2 .headlines .title {
+    font-size: 18px; }
+  .phone-screen-2 .headlines .desc {
+    font-size: 12px; }
+
+  .phone-screen-4 .slider-detail .swiper-wrapper .swiper-slide {
+    font-size: 14px; }
+
+  .phone-screen-6 .contact .call-me .call-me-wrap {
+    margin-top: 10px; }
+  .phone-screen-6 .text-wrap {
+    margin-top: 30px; } }

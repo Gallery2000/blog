@@ -94,3 +94,7 @@
           .product-main .main .container-fluid .row .col-md-3 {
             height: auto;
             margin-bottom: 10px; } }
+@media (max-height: 736px) {
+  .product-main .main .text-wrap {
+    margin-top: 32px;
+    margin-bottom: 26px; } }

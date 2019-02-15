@@ -545,53 +545,42 @@
         </div>
     </div>
     <div class="phone-screen phone-screen-6 visible-xs" id="contact">
-        <div class="text-wrap">
-            <h1 class="title regular-font">
-                联系我们
-            </h1>
-        </div>
-        <div class="call-me container-fluid">
-            <div class="call-me-wrap">
-                <div class="row" style="height: 40px;line-height:40px;">
-                    <div class="col-xs-2 icon"><i class="iconfont">&#xe619;</div>
-                    <div class="col-xs-10 text" style="line-height:20px;">东莞市松山湖高新技术产业开发区工业西路14号2栋首层3-05</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-2 icon"><i class="iconfont">&#xe61d;</div>
-                    <div class="col-xs-10 text">523808</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-2 icon"><i class="iconfont">&#xe619;</div>
-                    <div class="col-xs-10 text">0769-22895462</div>
-                </div>
-            </div>
-            <div class="call-me-wrap">
-                <div class="row">
-                    <div class="col-xs-2 icon"><i class="iconfont">&#xe633;</div>
-                    <div class="col-xs-10 text">1002938477</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-2 icon"><i class="iconfont">&#xe60a;</div>
-                    <div class="col-xs-10 text">15393864750</div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-2 icon"><i class="iconfont">&#xe634;</div>
-                    <div class="col-xs-10 text">1002938477@qq.com</div>
-                </div>
-            </div>
-
-            <!-- <dl>
-                        <dd class="clear"><i class="iconfont">&#xe619;</i>
-                            <p class="message">东莞市松山湖高新技术产业开发区工业西路14号2栋首层3-05</p>
-                            </dd>
-                        <dd class="clear"><i class="iconfont">&#xe61d;</i><p class="message">523808</p></dd>
-                        <dd class="clear"><i class="iconfont">&#xe64b;</i><p class="message">0769-22895462</p></dd>
-                    </dl>
-                    <dl>
-                        <dd class="clear"><i class="iconfont">&#xe633;</i><p class="message">1002938477</p></dd>
-                        <dd class="clear"><i class="iconfont">&#xe60a;</i><p class="message">15393864750</p></dd>
-                        <dd class="clear"><i class="iconfont">&#xe634;</i><p class="message">1002938477@qq.com</p></dd>
-                    </dl> -->
+        <div class="contact">
+                <div class="text-wrap">
+                        <h1 class="title regular-font">
+                            联系我们
+                        </h1>
+                    </div>
+                    <div class="call-me container-fluid">
+                        <div class="call-me-wrap">
+                            <div class="row" style="height: 40px;line-height:40px;">
+                                <div class="col-xs-2 icon"><i class="iconfont">&#xe619;</div>
+                                <div class="col-xs-10 text" style="line-height:20px;">东莞市松山湖高新技术产业开发区工业西路14号2栋首层3-05</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 icon"><i class="iconfont">&#xe61d;</div>
+                                <div class="col-xs-10 text">523808</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 icon"><i class="iconfont">&#xe619;</div>
+                                <div class="col-xs-10 text">0769-22895462</div>
+                            </div>
+                        </div>
+                        <div class="call-me-wrap">
+                            <div class="row">
+                                <div class="col-xs-2 icon"><i class="iconfont">&#xe633;</div>
+                                <div class="col-xs-10 text">1002938477</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 icon"><i class="iconfont">&#xe60a;</div>
+                                <div class="col-xs-10 text">15393864750</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 icon"><i class="iconfont">&#xe634;</div>
+                                <div class="col-xs-10 text">1002938477@qq.com</div>
+                            </div>
+                        </div>
+                    </div>
         </div>
         <div class="call-map" id="container-map"></div>
     </div>
@@ -610,7 +599,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="../../common/js/globalPageHadnle.js"></script>
-    <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5tXIMPokB8DvjlXvbeTBQmYFsgMGmls9"></script> -->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5tXIMPokB8DvjlXvbeTBQmYFsgMGmls9"></script>
     <script>
         $(document).ready(function () {
             $('.next-page').click(function(){
@@ -620,60 +609,60 @@
                     scrollTop:top
                 })
             })
-            // console.log( $('.next-page'));
-            var mySwiper1 = new Swiper('.slider-headlines', {
-                pagination: {
-                    el: '.swiper-pagination',
-                }
-            })
-            var mySwiper2 = new Swiper('.phone-slider', {
-                pagination: {
-                    el: '.swiper-pagination',
-                }
-            })
-            var mySwiper4 = new Swiper('.slider-detail', {
-                paginationType: 'custom',
-                pagination: {
-                    el: '.custom-pagination',
-                },
-                paginationCustomRender: function (swiper, current, total) {
-                    var customPaginationHtml = "";
-                    for (var i = 0; i < total; i++) {
-                        if (i == (current - 1)) {
-                            customPaginationHtml += '<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>'
-                        } else {
-                            customPaginationHtml += '<span class="swiper-pagination-bullet"></span>';
-                        }
-                    }
-                    return customPaginationHtml;
 
-                }
-            })
+        //     var mySwiper1 = new Swiper('.slider-headlines', {
+        //         pagination: {
+        //             el: '.swiper-pagination',
+        //         }
+        //     })
+        //     var mySwiper2 = new Swiper('.phone-slider', {
+        //         pagination: {
+        //             el: '.swiper-pagination',
+        //         }
+        //     })
+        //     var mySwiper4 = new Swiper('.slider-detail', {
+        //         paginationType: 'custom',
+        //         pagination: {
+        //             el: '.custom-pagination',
+        //         },
+        //         paginationCustomRender: function (swiper, current, total) {
+        //             var customPaginationHtml = "";
+        //             for (var i = 0; i < total; i++) {
+        //                 if (i == (current - 1)) {
+        //                     customPaginationHtml += '<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>'
+        //                 } else {
+        //                     customPaginationHtml += '<span class="swiper-pagination-bullet"></span>';
+        //                 }
+        //             }
+        //             return customPaginationHtml;
 
-            var mySwiper2 = new Swiper('.phone-and-msg', {
-                direction: 'horizontal', // 垂直切换选项
-                loop: true, // 循环模式选项
-                speed: 1000,
-                allowTouchMove: false,
-                noSwiping: true,
-                autoplay: {
-                    delay: 3000
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                }
-            })
+        //         }
+        //     })
 
-            mySwiper2.el.onmouseover = function () { //鼠标放上暂停轮播
-                mySwiper2.autoplay.stop();
-            }
-            mySwiper2.el.onmouseleave = function () {
-                mySwiper2.autoplay.start();
-            }
+        //     var mySwiper2 = new Swiper('.phone-and-msg', {
+        //         direction: 'horizontal', // 垂直切换选项
+        //         loop: true, // 循环模式选项
+        //         speed: 1000,
+        //         allowTouchMove: false,
+        //         noSwiping: true,
+        //         autoplay: {
+        //             delay: 3000
+        //         },
+        //         navigation: {
+        //             nextEl: '.swiper-button-next',
+        //             prevEl: '.swiper-button-prev',
+        //         }
+        //     })
+
+        //     mySwiper2.el.onmouseover = function () { //鼠标放上暂停轮播
+        //         mySwiper2.autoplay.stop();
+        //     }
+        //     mySwiper2.el.onmouseleave = function () {
+        //         mySwiper2.autoplay.start();
+        //     }
         })
     </script>
-        <!-- <script>
+        <script>
             var map = new BMap.Map("container-map");
             var point = new BMap.Point(113.893854, 22.933373);
             map.centerAndZoom(point, 18);
@@ -691,7 +680,7 @@
             map.addOverlay(marker)
     
             map.enableScrollWheelZoom(true);
-        </script> -->
+        </script>
 </body>
 
 </html>

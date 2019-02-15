@@ -189,3 +189,9 @@ $gray:#fafafa;
         }
     }
 }
+@media (max-height: 736px) {
+    .product-main .main .text-wrap{
+        margin-top: 32px;
+    margin-bottom: 26px;
+    }
+}

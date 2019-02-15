@@ -21,17 +21,19 @@ $gray:#fafafa;
 
         .phone-wrap {
             width: 308px;
-            height: 530px;
-            background-image: url(../../images/产品介绍/WIFI热点大师.png);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
+            // background-image: url(../../images/产品介绍/WIFI热点大师.png);
+            // background-repeat: no-repeat;
+            // background-position: center center;
+            // background-size: cover;
             margin: 0 auto;
-            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/iPhoneX样机.png', sizingMethod='scale');
+            // filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/iPhoneX样机.png', sizingMethod='scale');
             transition: .5s;
             
             &:hover {
                 transform: translate3d(0, -10px, 0);
+            }
+            img{
+                width: 100%;
             }
         }
 
@@ -54,5 +56,14 @@ $gray:#fafafa;
     }
     .detail-body .main .title{
         margin-bottom: 22px;
+    }
+}
+@media (max-height: 736px) {
+    .detail-body .main .title{
+        margin-top: 22px;
+        margin-bottom: 10px;
+    }
+    .detail-body .main .phone-wrap{
+        width: 240px;
     }
 }
