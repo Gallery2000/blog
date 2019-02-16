@@ -253,7 +253,7 @@ img {
     right: 0;
     left: 0;
     top: 0;
-    height: 48px;
+    height: .96rem;
     background-color: #0252d9;
     z-index: 99; }
     .phone-navbar.active .full-screen {
@@ -267,7 +267,7 @@ img {
       left: 0;
       bottom: 0;
       background: rgba(0, 0, 0, 0.8);
-      padding-top: 32vh;
+      padding-top: 3.8rem;
       opacity: 0;
       transform-origin: right top;
       transform: scale(0.2);
@@ -275,29 +275,29 @@ img {
       .phone-navbar .full-screen ul {
         margin: 0 auto; }
         .phone-navbar .full-screen ul li {
-          line-height: 40px;
+          line-height: .8rem;
           text-align: center; }
           .phone-navbar .full-screen ul li a {
-            font-size: 20px;
+            font-size: .4rem;
             color: #fff; }
     .phone-navbar .img-wrap {
       z-index: 999;
       position: relative;
-      height: 30px;
-      padding: 11px; }
+      height: .6rem;
+      padding: .22rem; }
       .phone-navbar .img-wrap a {
         display: block;
-        height: 26px; }
+        height: .52rem; }
         .phone-navbar .img-wrap a img {
           height: 100%; }
     .phone-navbar .hamburger {
       z-index: 999;
       position: relative; }
       .phone-navbar .hamburger .iconfont {
-        width: 40px;
-        height: 40px;
-        font-size: 40px;
-        padding: 4px 0;
+        width: .8rem;
+        height: .8rem;
+        font-size: .8rem;
+        padding: .08rem 0;
         color: #fff; } }
 
 /*# sourceMappingURL=main.css.map */

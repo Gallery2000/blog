@@ -34,8 +34,10 @@ $(document).ready(function () {
         if(!(/index/.test(pathname))){
             window.location.href = '../index/index.html#'+name;
         }else{
-            location.hash = "";
-            location.hash = name;
+            var top = (parseInt($('html').css('font-size'))*130)/100;
+            $('html,body').scrollTop($('#'+name).offset().top-top);
+            // location.hash = "";
+            // location.hash = name;
         }
         $('.phone-navbar').removeClass('active');
     })

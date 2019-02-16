@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
     <link rel="stylesheet" href="../../common/style/bootstrap.css">
+    <script src="../../common/js/rem.js"></script>
 </head>
 
 <body>
@@ -106,9 +107,9 @@
             <!-- 如果需要分页器 -->
             <div class="swiper-pagination"></div>
         </div>
-        <div class="next-page" data-index="2">
+        <!-- <div class="next-page" data-index="2">
             <i class="iconfont">&#xe628;</i>
-        </div>
+        </div> -->
     </div>
     <div class="phone-screen phone-screen-3 visible-xs" id="product">
         <div class="text-wrap">
@@ -143,9 +144,9 @@
                 查看更多
             </a>
         </div>
-        <div class="next-page" data-index="3">
+        <!-- <div class="next-page" data-index="3">
             <i class="iconfont">&#xe628;</i>
-        </div>
+        </div> -->
     </div>
     <div class="phone-screen phone-screen-4 visible-xs" id="recruit">
         <div class="text-wrap">
@@ -157,37 +158,43 @@
         <div class="swiper-container slider-detail">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="title">
-                        办公环境
-                    </div>
-                    <div class="img-wrap">
-                        <img src="../../images/index/五险一金.png" alt="">
-                    </div>
-                    <div class="desc">
-                        公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
-                    </div>
+                        <div class="slider-wrap">
+                                <div class="title">
+                                        办公环境
+                                    </div>
+                                    <div class="img-wrap">
+                                        <img src="../../images/index/五险一金.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
+                                    </div>
+                        </div>
+                </div>
+                <div class="swiper-slide"><div class="slider-wrap">
+                        <div class="title">
+                                办公环境
+                            </div>
+                            <div class="img-wrap">
+                                <img src="../../images/index/五险一金.png" alt="">
+                            </div>
+                            <div class="desc">
+                                公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
+                            </div>
+                </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="title">
-                        办公环境
-                    </div>
-                    <div class="img-wrap">
-                        <img src="../../images/index/五险一金.png" alt="">
-                    </div>
-                    <div class="desc">
-                        公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="title">
-                        办公环境
-                    </div>
-                    <div class="img-wrap">
-                        <img src="../../images/index/五险一金.png" alt="">
-                    </div>
-                    <div class="desc">
-                        公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
-                    </div>
+                        <div class="slider-wrap">
+                                <div class="title">
+                                        办公环境
+                                    </div>
+                                    <div class="img-wrap">
+                                        <img src="../../images/index/五险一金.png" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
+                                    </div>
+                        </div>
+
                 </div>
             </div>
         </div>
@@ -197,9 +204,9 @@
                 加入我们
             </a>
         </div>
-        <div class="next-page" data-index="4">
+        <!-- <div class="next-page" data-index="4">
             <i class="iconfont">&#xe628;</i>
-        </div>
+        </div> -->
     </div>
     <!-- <div class="phone-screen phone-screen-5 visible-xs">
             <div class="text-wrap">
@@ -540,9 +547,9 @@
                 </div>
             </div>
         </div>
-        <div class="next-page"  data-index="5">
+        <!-- <div class="next-page"  data-index="5">
             <i class="iconfont">&#xe628;</i>
-        </div>
+        </div> -->
     </div>
     <div class="phone-screen phone-screen-6 visible-xs" id="contact">
         <div class="contact">
@@ -603,63 +610,63 @@
     <script>
         $(document).ready(function () {
             $('.next-page').click(function(){
-                var screenIndex = $(this).attr('data-index');
-                 var top = $('.phone-screen').eq(screenIndex).offset().top;
+                var top = (parseInt($('html').css('font-size'))*130)/100;
+                var oScroll = $('#develop').offset().top-top;
                 $('html,body').animate({
-                    scrollTop:top
+                    scrollTop:oScroll
                 })
             })
 
-        //     var mySwiper1 = new Swiper('.slider-headlines', {
-        //         pagination: {
-        //             el: '.swiper-pagination',
-        //         }
-        //     })
-        //     var mySwiper2 = new Swiper('.phone-slider', {
-        //         pagination: {
-        //             el: '.swiper-pagination',
-        //         }
-        //     })
-        //     var mySwiper4 = new Swiper('.slider-detail', {
-        //         paginationType: 'custom',
-        //         pagination: {
-        //             el: '.custom-pagination',
-        //         },
-        //         paginationCustomRender: function (swiper, current, total) {
-        //             var customPaginationHtml = "";
-        //             for (var i = 0; i < total; i++) {
-        //                 if (i == (current - 1)) {
-        //                     customPaginationHtml += '<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>'
-        //                 } else {
-        //                     customPaginationHtml += '<span class="swiper-pagination-bullet"></span>';
-        //                 }
-        //             }
-        //             return customPaginationHtml;
+            var mySwiper1 = new Swiper('.slider-headlines', {
+                pagination: {
+                    el: '.swiper-pagination',
+                }
+            })
+            var mySwiper2 = new Swiper('.phone-slider', {
+                pagination: {
+                    el: '.swiper-pagination',
+                }
+            })
+            var mySwiper4 = new Swiper('.slider-detail', {
+                paginationType: 'custom',
+                pagination: {
+                    el: '.custom-pagination',
+                },
+                paginationCustomRender: function (swiper, current, total) {
+                    var customPaginationHtml = "";
+                    for (var i = 0; i < total; i++) {
+                        if (i == (current - 1)) {
+                            customPaginationHtml += '<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>'
+                        } else {
+                            customPaginationHtml += '<span class="swiper-pagination-bullet"></span>';
+                        }
+                    }
+                    return customPaginationHtml;
 
-        //         }
-        //     })
+                }
+            })
 
-        //     var mySwiper2 = new Swiper('.phone-and-msg', {
-        //         direction: 'horizontal', // 垂直切换选项
-        //         loop: true, // 循环模式选项
-        //         speed: 1000,
-        //         allowTouchMove: false,
-        //         noSwiping: true,
-        //         autoplay: {
-        //             delay: 3000
-        //         },
-        //         navigation: {
-        //             nextEl: '.swiper-button-next',
-        //             prevEl: '.swiper-button-prev',
-        //         }
-        //     })
+            var mySwiper2 = new Swiper('.phone-and-msg', {
+                direction: 'horizontal', // 垂直切换选项
+                loop: true, // 循环模式选项
+                speed: 1000,
+                allowTouchMove: false,
+                noSwiping: true,
+                autoplay: {
+                    delay: 3000
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }
+            })
 
-        //     mySwiper2.el.onmouseover = function () { //鼠标放上暂停轮播
-        //         mySwiper2.autoplay.stop();
-        //     }
-        //     mySwiper2.el.onmouseleave = function () {
-        //         mySwiper2.autoplay.start();
-        //     }
+            mySwiper2.el.onmouseover = function () { //鼠标放上暂停轮播
+                mySwiper2.autoplay.stop();
+            }
+            mySwiper2.el.onmouseleave = function () {
+                mySwiper2.autoplay.start();
+            }
         })
     </script>
         <script>

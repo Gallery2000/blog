@@ -626,23 +626,23 @@ $gray:#fafafa;
     .partner-wrap {
         background-color: #fff;
         .partner-main {
-            margin-bottom: 8px;
+            margin-bottom: .08rem;
             padding: 0;
             .desc {
                 color: $blue;
                 font-family: 'Regular';
-                font-size: 22px;
-                margin-top: 52px;
-                margin-bottom: 20px;
+                font-size: .44rem;
+                margin-bottom: .4rem;
             }
             .container-fluid {
+                margin-top: 0;
                 padding-bottom: 0;
                 .row {
                     .col-lg-3 {
                         padding: 0;
                         .img-wrap {
                             border: none;
-                            height: 150px;
+                            height: 2.4rem;
                             img {
                                 border: none;
                                 width: 70%;
@@ -655,41 +655,42 @@ $gray:#fafafa;
         }
     }
     .phone-screen {
-        padding-top: 48px;
+        margin-top: 1.04rem;
+        // padding-top: 48px;
         position: relative;
-        overflow: hidden;
-        min-height: 100vh;
+        // overflow: hidden;
+        // min-height: 100vh;
         .footer-text {
             text-align: center;
-            font-size: 18px;
+            font-size: .36rem;
             a{
                 color: $blue;
             }
         }
         .next-page {
             // position: absolute;
-            width: 40px;
-            height: 40px;
+            width: .8rem;
+            height: .8rem;
             margin: 0 auto;
             // left: 50%;
             // bottom: 20px;
             // margin-left: -20px;
             i.iconfont {
                 color: $blue;
-                font-size: 40px;
+                font-size: .8rem;
             }
         }
         .text-wrap {
-            margin-top: 52px;
+            // margin-top: 52px;
             overflow: hidden;
             text-align: center;
             .title {
-                font-size: 22px;
+                font-size: .44rem;
                 color: $blue;
             }
             .desc {
-                font-size: 14px;
-                margin-top: 15px;
+                font-size: .28rem;
+                margin-top: .3rem;
                 color: #000;
             }
         }
@@ -699,56 +700,57 @@ $gray:#fafafa;
         color: #fff;
         text-align: center;
         overflow: hidden;
-        padding-top: 36vh;
+        padding-top: 4.66rem;
         height: 100vh;
+        margin-top: 0;
         .next-page {
             position: absolute;
             left: 50%;
-            margin-left: -20px;
-            bottom: 20px;
+            margin-left: -0.4rem;
+            bottom: .4rem;
             i.iconfont {
                 color: #fff;
             }
         }
         .title {
             overflow: hidden;
-            font-size: 50px;
+            font-size: 1rem;
         }
         .desc {
-            font-size: 25px;
-            margin-top: 20px;
+            font-size: .5rem;
+            margin-top: .4rem;
         }
     }
     .phone-screen-2 {
         .headlines {
-            margin: 22px 14px 42px;
-            -webkit-box-shadow: 0 0 4px #eee;
-            -moz-box-shadow: 0 0 4px #eee;
-            box-shadow: 0 0 4px #eee;
+            margin: 0px .28rem .84rem;
+            -webkit-box-shadow: 0 0 0.08rem #eee;
+            -moz-box-shadow: 0 0 0.08rem #eee;
+            box-shadow: 0 0 0.08rem #eee;
             overflow: hidden;
-            padding-bottom: 76px;
+            padding-bottom: .48rem;
             .title {
-                font-size: 22px;
+                font-size: .44rem;
                 color: $blue;
-                margin-top: 24px;
-                margin-bottom: 36px;
+                margin-top: .48rem;
+                margin-bottom: .72rem;
                 text-align: center;
                 overflow: hidden;
             }
             .desc {
                 text-align: center;
                 color: #000;
-                font-size: 13px;
-                line-height: 20px;
-                padding: 0 10px;
+                font-size: .26rem;
+                line-height: .4rem;
+                padding: 0 .1rem;
                 dl {
                     dd {}
                 }
             }
         }
         .slider-headlines {
-            padding-bottom: 38px;
-            margin:  0 28px 80px;
+            padding-bottom: .76rem;
+            margin:  0 .56rem 0px;
             .swiper-wrapper {
                 .swiper-slide {
                     position: relative;
@@ -758,16 +760,16 @@ $gray:#fafafa;
                     }
                     .text-wrap {
                         position: absolute;
-                        left: 52px;
-                        top: 28px;
+                        left: 1.04rem;
+                        top: .54rem;
                         color: #fff;
                         text-align: left;
                         .big-title {
-                            font-size: 36px;
+                            font-size: .72rem;
                         }
                         .desc {
-                            margin-top: 10px;
-                            font-size: 20px;
+                            margin-top: .2rem;
+                            font-size: .4rem;
                             color: #fff;
                             font-weight: 100;
                         }
@@ -779,10 +781,9 @@ $gray:#fafafa;
     .phone-screen-3 {
         .phone-slider {
             overflow: hidden;
-            margin-top: 15px;
-            overflow: hidden;
-            margin: 0 48px;
-            padding-bottom: 28px;
+            padding-bottom: .4rem;
+            width: 5.6rem;
+            margin: .3rem .96rem 0;
             .swiper-wrapper {
                 .swiper-slide {
                     .img-wrap {
@@ -794,65 +795,69 @@ $gray:#fafafa;
             }
         }
         .footer-text{
-            margin-top: 10px;
-            margin-bottom: 12px;
+            margin-top: .2rem;
+            margin-bottom: .24rem;
         }
     }
     .phone-screen-4 {
         .slider-detail {
-            border-radius: 4px;
-            margin: 62px 24px 0;
-            box-shadow: 0 0 5px #979797;
+            margin: .5rem .28rem 0;
             .swiper-wrapper {
                 .swiper-slide {
+                    padding: 10px;
                     text-align: center;
-                    font-size: 18px;
+                    font-size: .36rem;
                     color: #000;
-                    .title {
-                        margin: 26px 0;
-                    }
-                    .desc {
-                        margin-top: 48px;
-                        margin-bottom: 46px;
-                        padding: 0 18px;
-                    }
-                    .img-wrap {
-                        padding:0 13px;
-                        img {
-                            width: 100%;
-                            box-shadow: 0 2px 4px #000;
+                    .slider-wrap{
+                        border-radius: .08rem;
+                        overflow: hidden;
+                        .title {
+                            margin: .52rem 0;
                         }
+                        .desc {
+                            margin-top: .96rem;
+                            margin-bottom: .92rem;
+                            padding: 0 .36rem;
+                        }
+                        .img-wrap {
+                            padding:0 .26rem;
+                            img {
+                                width: 100%;
+                                box-shadow: 0 .04rem .08rem #000;
+                            }
+                        }
+                        box-shadow: 0 0 .1rem #979797;
                     }
                 }
             }
         }
         .custom-pagination{
-            margin: 14px auto 0;
+            margin: .08rem auto 0;
             position: relative;
             .swiper-pagination-bullet{
-                margin:  4px;
+                margin:  .08rem;
             }
         }
         .footer-text{
-            margin-top: 20px;
-            margin-bottom: 40px;
+            margin-top: .4rem;
+            margin-bottom: .8rem;
         }
     }
     .phone-screen-5 {
         .category {
-            margin: 0 20px;
-            margin-top: 46px;
+            margin: 0 .4rem;
+            margin-top: .92rem;
             ul {
                 li {
-                    height: 100px;
-                    line-height: 100px;
-                    font-size: 18px;
+                    height: 2rem;
+                    line-height: 2rem;
+                    font-size: .36rem;
                     color: $blue;
-                    border-radius: 4px;
-                    margin-bottom: 22px;
+                    border-radius: 0.08rem;
+                    margin-bottom: .44rem;
                     overflow: hidden;
                     text-align: center;
-                    box-shadow: 0 0 4px #979797;
+                    box-shadow: 0 0 .08rem #979797;
                     &:last-child {
                         margin-bottom: 0;
                     }
@@ -864,239 +869,238 @@ $gray:#fafafa;
         padding-top: 0;
         .contact{
             overflow: hidden;
-            height: 60vh;
-            padding-top: 32px;
+            margin-bottom: 1.08rem;
             .call-me {
                 overflow: hidden;
-                padding-left: 40px;
+                padding-left: .8rem;
                 .call-me-wrap {
-                    margin-top: 35px;
+                    margin-top: .7rem;
                     overflow: hidden;
                     .row {
-                        line-height: 32px;
+                        line-height: .64rem;
                         .icon {
                             i.iconfont {
                                 position: absolute;
-                                width: 34px;
+                                width: .68rem;
                                 display: block;
                                 float: left;
-                                font-size: 25px;
-                                margin-right: 4px;
+                                font-size: .5rem;
+                                margin-right: .08rem;
                                 vertical-align: middle;
                                 position: relative; // top: -4px;
                             }
                         }
                         .text {
                             padding-left: 0;
-                            font-size: 13px;
+                            font-size: .26rem;
                         }
                     }
                 }
             }
         }
         .call-map {
-            height: 40vh;
+            height: 6rem;
         }
     }
 }
 // H5 Adaptation-------------------
-@media (max-height: 736px) {
-    .phone-screen{
-        .text-wrap{
-            margin-top: 12px;
-            .title{
-                font-size: 18px;
-            }
-            .desc{
-                margin-top: 4px;
-            }
-        }
-        .footer-text{
-            margin-top: 10px;
-        }
-    } 
-    .phone-screen-2{
-        .slider-headlines{
-            margin-bottom: 0px;
-        }  
-        .headlines{
-            margin: 22px 14px 22px;
-            padding-bottom: 20px;
-            .title{
-                margin-top: 10px;
-                margin-bottom: 20px;
-            }
-        }
-    } 
-    .phone-screen-3{
-        .phone-slider{
-            margin: 0 90px;
-            padding-bottom: 4px;
-        }
-        .swiper-container-horizontal>.swiper-pagination-bullets{
-            bottom: 0;
-        }
-        .footer-text{
-            margin: 10px 0 6px;
-        }
-    } 
-    .phone-screen-4{
-        .custom-pagination{
-            margin: 8px auto 6px;
-        }
-        .slider-detail{
-            margin: 20px 24px 0;
-            .swiper-wrapper .swiper-slide{
-                .title{
-                    margin: 14px 0;
-                }
-                .desc{
-                    margin-top: 24px;
-                    margin-bottom: 20px;
-                }
-            }
-        }
-        .footer-text{
-            margin-top: 0;
-            margin-bottom: 6px;
-        }
-    } 
-    .partner-wrap .partner-main{
-        .desc{
-            margin-top: 36px;
-        }
-        .container-fluid{
-            margin-top: 20px;
-            .row .col-lg-3 .img-wrap{
-                height: 110px;
-            }
-        }
-    } 
-    .phone-screen-6{
-        .text-wrap{
-            margin-top: 42px;
-        }
-        .contact .call-me .call-me-wrap{
-            margin-top: 20px;
-        }
-    }
-}
+// @media (max-height: 736px) {
+//     .phone-screen{
+//         .text-wrap{
+//             margin-top: 12px;
+//             .title{
+//                 font-size: 18px;
+//             }
+//             .desc{
+//                 margin-top: 4px;
+//             }
+//         }
+//         .footer-text{
+//             margin-top: 10px;
+//         }
+//     } 
+//     .phone-screen-2{
+//         .slider-headlines{
+//             margin-bottom: 0px;
+//         }  
+//         .headlines{
+//             margin: 22px 14px 22px;
+//             padding-bottom: 20px;
+//             .title{
+//                 margin-top: 10px;
+//                 margin-bottom: 20px;
+//             }
+//         }
+//     } 
+//     .phone-screen-3{
+//         .phone-slider{
+//             margin: 0 90px;
+//             padding-bottom: 4px;
+//         }
+//         .swiper-container-horizontal>.swiper-pagination-bullets{
+//             bottom: 0;
+//         }
+//         .footer-text{
+//             margin: 10px 0 6px;
+//         }
+//     } 
+//     .phone-screen-4{
+//         .custom-pagination{
+//             margin: 8px auto 6px;
+//         }
+//         .slider-detail{
+//             margin: 20px 24px 0;
+//             .swiper-wrapper .swiper-slide{
+//                 .title{
+//                     margin: 14px 0;
+//                 }
+//                 .desc{
+//                     margin-top: 24px;
+//                     margin-bottom: 20px;
+//                 }
+//             }
+//         }
+//         .footer-text{
+//             margin-top: 0;
+//             margin-bottom: 6px;
+//         }
+//     } 
+//     .partner-wrap .partner-main{
+//         .desc{
+//             margin-top: 36px;
+//         }
+//         .container-fluid{
+//             margin-top: 20px;
+//             .row .col-lg-3 .img-wrap{
+//                 height: 110px;
+//             }
+//         }
+//     } 
+//     .phone-screen-6{
+//         .text-wrap{
+//             margin-top: 42px;
+//         }
+//         .contact .call-me .call-me-wrap{
+//             margin-top: 20px;
+//         }
+//     }
+// }
 // H5 Adaptation-------------------
-@media (max-height: 620px) {
-    .phone-screen{
-        .text-wrap{
-            margin-top: 12px;
-            .title{
-                font-size: 18px;
-            }
-            .desc{
-                margin-top: 4px;
-            }
-        }
-        .footer-text{
-            margin-top: 10px;
-        }
-    } 
-    .phone-screen-2{
-        .slider-headlines{
-            padding-bottom: 20px;
-            margin: 0 40px 10px;
-            .swiper-pagination.swiper-pagination-bullets{
-                bottom: 0;
-            }
-        }  
-        .headlines{
-            padding-bottom: 16px;
-            margin: 22px 14px 20px;
-            .title{
-                margin-top: 8px;
-                margin-bottom: 10px;
-            }
-        }
+// @media (max-height: 620px) {
+//     .phone-screen{
+//         .text-wrap{
+//             margin-top: 12px;
+//             .title{
+//                 font-size: 18px;
+//             }
+//             .desc{
+//                 margin-top: 4px;
+//             }
+//         }
+//         .footer-text{
+//             margin-top: 10px;
+//         }
+//     } 
+//     .phone-screen-2{
+//         .slider-headlines{
+//             padding-bottom: 20px;
+//             margin: 0 40px 10px;
+//             .swiper-pagination.swiper-pagination-bullets{
+//                 bottom: 0;
+//             }
+//         }  
+//         .headlines{
+//             padding-bottom: 16px;
+//             margin: 22px 14px 20px;
+//             .title{
+//                 margin-top: 8px;
+//                 margin-bottom: 10px;
+//             }
+//         }
 
-    } 
-    .phone-screen-3{
-        .phone-slider{
-            margin: 0 88px;
-        }
-    } 
-    .phone-screen-4{
-        .text-wrap{
-            .desc{
-                margin-top: 10px;
-            }
-        }
-        .custom-pagination{
-            margin: 6px auto 2px;
-        }
-        .slider-detail{
-            margin: 10px 40px 0;
-            .swiper-wrapper .swiper-slide{
-                .title{
-                    margin: 10px 0;
-                }
-                .desc{
-                    margin-top: 28px;
-                    margin-bottom: 20px;
-                }
-            }
-        }
-        .footer-text{
-            margin: 4px 0 0;
-        }
-    } 
-    .partner-wrap .partner-main{
-        .desc{
-            margin: 22px 0 10px;
-        }
-        .container-fluid{
-            margin-top: 10px;
-            .row .col-lg-3 .img-wrap{
-                height: 96px;
-            }
-        }
-    } 
-    .phone-screen-6{
-        .text-wrap{
-            overflow: hidden;
-            margin-top: 36px;
-        }
-        .contact .call-me .call-me-wrap{
-            margin-top: 20px;
-        }
-    }
-}
-@media (max-width: 360px) {
-    .phone-screen-1{
-        .title{
-            font-size: 40px;
-        }
-        .desc{
-            font-size: 18px;
-        }
-    }
-    .phone-screen-2{
-         .headlines{
-            .title{
-                font-size: 18px;
-            }
-            .desc{
-                font-size: 12px;
-            }
-         } 
-    }
-    .phone-screen-4 .slider-detail .swiper-wrapper .swiper-slide{
-        font-size: 14px;
-    }
-    .phone-screen-6{
-        .contact .call-me .call-me-wrap{
-            margin-top: 10px;
-            .row{
-                line-height: 26px;
-            }
-        }
-        .text-wrap{
-            margin-top: 30px;
-        }
-    }
-}
+//     } 
+//     .phone-screen-3{
+//         .phone-slider{
+//             margin: 0 88px;
+//         }
+//     } 
+//     .phone-screen-4{
+//         .text-wrap{
+//             .desc{
+//                 margin-top: 10px;
+//             }
+//         }
+//         .custom-pagination{
+//             margin: 6px auto 2px;
+//         }
+//         .slider-detail{
+//             margin: 10px 40px 0;
+//             .swiper-wrapper .swiper-slide{
+//                 .title{
+//                     margin: 10px 0;
+//                 }
+//                 .desc{
+//                     margin-top: 28px;
+//                     margin-bottom: 20px;
+//                 }
+//             }
+//         }
+//         .footer-text{
+//             margin: 4px 0 0;
+//         }
+//     } 
+//     .partner-wrap .partner-main{
+//         .desc{
+//             margin: 22px 0 10px;
+//         }
+//         .container-fluid{
+//             margin-top: 10px;
+//             .row .col-lg-3 .img-wrap{
+//                 height: 96px;
+//             }
+//         }
+//     } 
+//     .phone-screen-6{
+//         .text-wrap{
+//             overflow: hidden;
+//             margin-top: 36px;
+//         }
+//         .contact .call-me .call-me-wrap{
+//             margin-top: 20px;
+//         }
+//     }
+// }
+// @media (max-width: 360px) {
+//     .phone-screen-1{
+//         .title{
+//             font-size: 40px;
+//         }
+//         .desc{
+//             font-size: 18px;
+//         }
+//     }
+//     .phone-screen-2{
+//          .headlines{
+//             .title{
+//                 font-size: 18px;
+//             }
+//             .desc{
+//                 font-size: 12px;
+//             }
+//          } 
+//     }
+//     .phone-screen-4 .slider-detail .swiper-wrapper .swiper-slide{
+//         font-size: 14px;
+//     }
+//     .phone-screen-6{
+//         .contact .call-me .call-me-wrap{
+//             margin-top: 10px;
+//             .row{
+//                 line-height: 26px;
+//             }
+//         }
+//         .text-wrap{
+//             margin-top: 30px;
+//         }
+//     }
+// }
