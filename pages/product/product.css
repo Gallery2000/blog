@@ -70,22 +70,22 @@
 
 @media (max-width: 768px) {
   .product-main {
-    padding-top: 48px;
+    padding-top: .96rem;
     overflow: hidden; }
     .product-main .main {
       overflow: hidden; }
       .product-main .main .text-wrap {
-        margin-top: 52px;
-        margin-bottom: 36px;
+        margin-top: 1.04rem;
+        margin-bottom: .72rem;
         overflow: hidden;
         text-align: center; }
         .product-main .main .text-wrap .title {
-          font-size: 22px;
+          font-size: .44rem;
           color: #0252d9;
           margin-top: 0; }
         .product-main .main .text-wrap .desc {
-          font-size: 14px;
-          margin-top: 15px;
+          font-size: .28rem;
+          margin-top: .3rem;
           color: #000; }
       .product-main .main .container-fluid {
         margin-bottom: 0; }
@@ -93,8 +93,8 @@
           margin-top: 0; }
           .product-main .main .container-fluid .row .col-md-3 {
             height: auto;
-            margin-bottom: 10px; } }
+            margin-bottom: .2rem; } }
 @media (max-height: 736px) {
   .product-main .main .text-wrap {
-    margin-top: 32px;
-    margin-bottom: 26px; } }
+    margin-top: .64rem;
+    margin-bottom: .52rem; } }

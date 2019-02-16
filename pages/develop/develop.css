@@ -178,5 +178,12 @@
     top: 50%;
     transform: translate3d(0, -50%, 0);
     padding: 0 10px; } }
+@media (max-width: 750) {
+  .develop-body .desx-text {
+    width: 14rem;
+    padding: .32rem; }
+
+  .develop-body .develop-wrap .develop-detail .btooltip {
+    width: 5.2rem; } }
 
 /*# sourceMappingURL=develop.css.map */

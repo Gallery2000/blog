@@ -155,23 +155,23 @@ $gray:#fafafa;
 }
 @media (max-width: 768px) {
     .product-main{
-        padding-top: 48px;
+        padding-top: .96rem;
         overflow: hidden;
         .main{
             overflow: hidden;
             .text-wrap{
-                margin-top: 52px;
-                margin-bottom: 36px;
+                margin-top: 1.04rem;
+                margin-bottom: .72rem;
                 overflow: hidden;
                 text-align: center;
                 .title{
-                    font-size: 22px;
+                    font-size: .44rem;
                     color: $blue;
                     margin-top: 0;
                 }
                 .desc{
-                    font-size: 14px;
-                    margin-top: 15px;
+                    font-size: .28rem;
+                    margin-top: .3rem;
                     color: #000;
                 }
             }
@@ -181,7 +181,7 @@ $gray:#fafafa;
                     margin-top: 0;
                     .col-md-3{
                         height: auto;
-                        margin-bottom: 10px;
+                        margin-bottom: .2rem;
                     }
                 }
             }
@@ -190,7 +190,7 @@ $gray:#fafafa;
 }
 @media (max-height: 736px) {
     .product-main .main .text-wrap{
-        margin-top: 32px;
-    margin-bottom: 26px;
+        margin-top: .64rem;
+    margin-bottom: .52rem;
     }
 }

@@ -29,16 +29,16 @@
 
 @media (max-width: 768px) {
   body {
-    padding-top: 48px; }
+    padding-top: .96rem; }
 
   .detail-body .main .title {
-    margin-bottom: 22px; } }
+    margin-bottom: .44rem; } }
 @media (max-height: 736px) {
   .detail-body .main .title {
-    margin-top: 22px;
-    margin-bottom: 10px; }
+    margin-top: .44rem;
+    margin-bottom: .2rem; }
 
   .detail-body .main .phone-wrap {
-    width: 240px; } }
+    width: 4.8rem; } }
 
 /*# sourceMappingURL=detail.css.map */

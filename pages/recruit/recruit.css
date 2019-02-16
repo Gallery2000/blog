@@ -194,26 +194,27 @@
     margin: 24px 40px 50px; } }
 @media (max-width: 768px) {
   body {
-    padding-top: 48px; }
+    padding-top: .96rem;
+    padding-bottom: 1rem; }
 
   .recruit-detail .main .category {
     width: 100%;
-    padding: 26px 0 22px;
+    padding: .52rem 0 .44rem;
     text-align: center; }
     .recruit-detail .main .category img {
-      width: 100px;
-      height: 100px;
+      width: 2rem;
+      height: 2rem;
       border-radius: 50%;
-      box-shadow: 0 0 4px #979797; }
+      box-shadow: 0 0 .08rem #979797; }
   .recruit-detail .main .recruit-position {
-    margin: 0 20px;
-    box-shadow: 0 0 4px #4c4c4c;
-    border-radius: 5px; }
+    margin: 0 .4rem;
+    box-shadow: 0 0 .08rem #4c4c4c;
+    border-radius: .1rem; }
     .recruit-detail .main .recruit-position ul li.item-1:after, .recruit-detail .main .recruit-position ul li.item-1 .after {
       content: "";
       after: "";
       position: absolute;
-      right: 100px;
+      right: 2rem;
       left: 0;
       bottom: 0;
       border-bottom: 1px solid #d7d7d7; }
@@ -221,7 +222,7 @@
       content: "";
       after: "";
       position: absolute;
-      right: 100px;
+      right: 2rem;
       left: 0;
       bottom: 0;
       border-bottom: 1px solid #d7d7d7; }
@@ -229,7 +230,7 @@
       content: "";
       after: "";
       position: absolute;
-      right: 100px;
+      right: 2rem;
       left: 0;
       bottom: 0;
       border-bottom: 1px solid #d7d7d7; }
@@ -237,7 +238,7 @@
       content: "";
       after: "";
       position: absolute;
-      right: 100px;
+      right: 2rem;
       left: 0;
       bottom: 0;
       border-bottom: 1px solid #d7d7d7; }
@@ -245,21 +246,21 @@
       content: "";
       after: "";
       position: absolute;
-      right: 100px;
+      right: 2rem;
       left: 0;
       bottom: 0;
       border-bottom: 1px solid #d7d7d7; }
     .recruit-detail .main .recruit-position ul li .item-wrap {
-      padding: 0 12px; }
+      padding: 0 .24rem; }
     .recruit-detail .main .recruit-position ul li .item {
-      padding-left: 16px;
-      height: 42px;
-      line-height: 42px; }
+      padding-left: .32rem;
+      height: .84rem;
+      line-height: .84rem; }
       .recruit-detail .main .recruit-position ul li .item .title {
-        font-size: 15px; }
+        font-size: .3rem; }
       .recruit-detail .main .recruit-position ul li .item .iconfont {
-        font-size: 20px;
+        font-size: .4rem;
         color: #0252d9;
-        margin-right: 8px; } }
+        margin-right: .16rem; } }
 
 /*# sourceMappingURL=recruit.css.map */
