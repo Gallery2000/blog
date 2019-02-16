@@ -291,6 +291,62 @@ $gray:#fafafa;
         padding-top: .96rem;
         padding-bottom: 1rem;
     }
+    
+    .phone-screen-5 {
+        margin: .64rem 0;
+        &.active{
+            .text-wrap{
+                display: none;
+            }
+            .category{
+                margin: 0 .4rem 0;
+                ul{
+                    li{
+                        display: none;
+                        &.active{
+                            display: block;
+                            width: 2rem;
+                            height: 2rem;
+                            border-radius: 50%;
+                            text-align: center;
+                            margin: 0 auto 0;
+                        }
+                    }
+
+                }
+            }
+        }
+        .text-wrap {
+            // margin-top: 52px;
+            overflow: hidden;
+            text-align: center;
+            .title {
+                font-size: .44rem;
+                color: $blue;
+            }
+        }
+        .category {
+            // transition: all 1s;
+            margin: .92rem .4rem 0;
+            ul {
+                li {
+                    // transition: all .5s;
+                    height: 2rem;
+                    line-height: 2rem;
+                    font-size: .36rem;
+                    color: $blue;
+                    border-radius: 0.08rem;
+                    margin-bottom: .44rem;
+                    overflow: hidden;
+                    text-align: center;
+                    box-shadow: 0 0 .08rem #979797;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
     .recruit-detail{
         .main{
             .category{
@@ -305,6 +361,7 @@ $gray:#fafafa;
                 }
             }
             .recruit-position{
+                display: none;
                 margin: 0 .4rem;
                 box-shadow: 0 0 .08rem #4c4c4c;
                 border-radius: .1rem;

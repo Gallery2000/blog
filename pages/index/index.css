@@ -549,22 +549,6 @@
     margin-top: .4rem;
     margin-bottom: .8rem; }
 
-  .phone-screen-5 .category {
-    margin: 0 .4rem;
-    margin-top: .92rem; }
-    .phone-screen-5 .category ul li {
-      height: 2rem;
-      line-height: 2rem;
-      font-size: .36rem;
-      color: #0252d9;
-      border-radius: 0.08rem;
-      margin-bottom: .44rem;
-      overflow: hidden;
-      text-align: center;
-      box-shadow: 0 0 .08rem #979797; }
-      .phone-screen-5 .category ul li:last-child {
-        margin-bottom: 0; }
-
   .phone-screen-6 {
     padding-top: 0; }
     .phone-screen-6 .contact {

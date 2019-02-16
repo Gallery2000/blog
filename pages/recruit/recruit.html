@@ -58,6 +58,22 @@
             </ul>
         </div>
     </div>
+    <div class="phone-screen phone-screen-5 visible-xs">
+        <div class="text-wrap">
+                <h1 class="title">
+                    在产品研发上，我们开足马力
+                </h1>
+            </div>
+        <div class="category">
+            <ul>
+                <li class="regular-font">职能类</li>
+                <li class="regular-font">技术类</li>
+                <li class="regular-font">产品类</li>
+                <li class="regular-font">运营类</li>
+                <li class="regular-font">营销类</li>
+            </ul>
+        </div>
+</div>
     <div class="recruit-body hidden-xs">
         <img src="../../images/recruit/recruit.png" alt="">
     </div>
@@ -91,9 +107,6 @@
                         <li class="item-operations"><img src="../../images/recruit/operations1.png" alt=""></li>
                         <li class="item-marketing"><img src="../../images/recruit/marketing1.png" alt=""></li>
                     </ul> -->
-            </div>
-            <div class="category visible-xs">
-                <img src="../../images/recruit/function1.png" alt="">
             </div>
             <div class="recruit-position">
                 <ul class="posWrap">
@@ -527,13 +540,25 @@
                             var htmlHeight = document.documentElement.offsetHeight;
                             if (htmlHeight < window.innerHeight) {
                                 var oldBottom = parseInt($('.recruit-position').css('margin-bottom'));
-                                console.log(oldBottom, window.innerHeight - htmlHeight);
-
                                 $('.recruit-position').css('margin-bottom', window.innerHeight - htmlHeight + oldBottom)
                             }
                         }
                     })
             }, 1000);
+            function clickHadnle(){
+                $('.category ul').find('li').on('click',function(){
+                $('.phone-screen-5').addClass('active');
+                $(this).addClass('active');
+                $('.recruit-position').show();
+                $(this).one('click',function(){
+                    $('.phone-screen-5').removeClass('active');
+                    $(this).removeClass('active');
+                    $('.recruit-position').hide();
+                    clickHadnle();
+                })
+            })
+            }
+            clickHadnle();
             $('.posWrap li').on('click', '.item', function (ev) {
                 var $parent = $(this).parent()
                 if ($parent.hasClass('active')) {
