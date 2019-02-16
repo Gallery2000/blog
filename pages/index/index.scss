@@ -705,7 +705,7 @@ $gray:#fafafa;
             position: absolute;
             left: 50%;
             margin-left: -20px;
-            bottom: 14px;
+            bottom: 20px;
             i.iconfont {
                 color: #fff;
             }
@@ -1091,6 +1091,9 @@ $gray:#fafafa;
     .phone-screen-6{
         .contact .call-me .call-me-wrap{
             margin-top: 10px;
+            .row{
+                line-height: 26px;
+            }
         }
         .text-wrap{
             margin-top: 30px;
