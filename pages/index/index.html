@@ -602,6 +602,62 @@
                     scrollTop: oScroll
                 })
             })
+            init();
+            function init() {
+                if (document.documentElement.clientWidth > 750) {
+
+                    var mySwiper2 = new Swiper('.phone-and-msg', {
+                        direction: 'horizontal', // 垂直切换选项
+                        loop: true, // 循环模式选项
+                        speed: 1000,
+                        allowTouchMove: false,
+                        noSwiping: true,
+                        autoplay: {
+                            delay: 3000
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        }
+                    })
+
+                    mySwiper2.el.onmouseover = function () { //鼠标放上暂停轮播
+                        mySwiper2.autoplay.stop();
+                    }
+                    mySwiper2.el.onmouseleave = function () {
+                        mySwiper2.autoplay.start();
+                    }
+                } else {
+                    var mySwiper1 = new Swiper('.slider-headlines', {
+                        pagination: {
+                            el: '.swiper-pagination',
+                        }
+                    })
+                    var mySwiper2 = new Swiper('.phone-slider', {
+                        pagination: {
+                            el: '.swiper-pagination',
+                        }
+                    })
+                    var mySwiper4 = new Swiper('.slider-detail', {
+                        paginationType: 'custom',
+                        pagination: {
+                            el: '.custom-pagination',
+                        },
+                        paginationCustomRender: function (swiper, current, total) {
+                            var customPaginationHtml = "";
+                            for (var i = 0; i < total; i++) {
+                                if (i == (current - 1)) {
+                                    customPaginationHtml += '<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>'
+                                } else {
+                                    customPaginationHtml += '<span class="swiper-pagination-bullet"></span>';
+                                }
+                            }
+                            return customPaginationHtml;
+
+                        }
+                    })
+                }
+            }
             var time = new Date().getTime();
             window.onresize = function () {
                 var newTime = new Date().getTime();
@@ -609,59 +665,7 @@
                     time = newTime;
                     setTimeout(function () {
                         if (time === newTime) {
-                            if (document.documentElement.clientWidth > 750) {
-
-                                var mySwiper2 = new Swiper('.phone-and-msg', {
-                                    direction: 'horizontal', // 垂直切换选项
-                                    loop: true, // 循环模式选项
-                                    speed: 1000,
-                                    allowTouchMove: false,
-                                    noSwiping: true,
-                                    autoplay: {
-                                        delay: 3000
-                                    },
-                                    navigation: {
-                                        nextEl: '.swiper-button-next',
-                                        prevEl: '.swiper-button-prev',
-                                    }
-                                })
-
-                                mySwiper2.el.onmouseover = function () { //鼠标放上暂停轮播
-                                    mySwiper2.autoplay.stop();
-                                }
-                                mySwiper2.el.onmouseleave = function () {
-                                    mySwiper2.autoplay.start();
-                                }
-                            }
-                        } else {
-                            var mySwiper1 = new Swiper('.slider-headlines', {
-                                pagination: {
-                                    el: '.swiper-pagination',
-                                }
-                            })
-                            var mySwiper2 = new Swiper('.phone-slider', {
-                                pagination: {
-                                    el: '.swiper-pagination',
-                                }
-                            })
-                            var mySwiper4 = new Swiper('.slider-detail', {
-                                paginationType: 'custom',
-                                pagination: {
-                                    el: '.custom-pagination',
-                                },
-                                paginationCustomRender: function (swiper, current, total) {
-                                    var customPaginationHtml = "";
-                                    for (var i = 0; i < total; i++) {
-                                        if (i == (current - 1)) {
-                                            customPaginationHtml += '<span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>'
-                                        } else {
-                                            customPaginationHtml += '<span class="swiper-pagination-bullet"></span>';
-                                        }
-                                    }
-                                    return customPaginationHtml;
-
-                                }
-                            })
+                            init();
                         }
                     }, 500);
                 }
