@@ -171,15 +171,25 @@ $gray:#fafafa;
 }
 @media (max-width: 768px) {
     body{
-        padding-top: 48px;
+        padding-top: .96rem;
     }
     .develop-body{
         .desx-text{
-            width: 80%;
-            padding: 16px;
+            width: 88%;
+            padding: .32rem;
+            font-size: .32rem;
+            line-height: .52rem;
+            .desc{
+                font-size: .28rem;
+            }
+        }
+        .develop-body .develop-wrap .develop-date{
+            width: 2.86rem;
+            height: .92rem;
+            font-size: .32rem;
         }
         .develop-wrap{
-            padding-bottom: 30px;
+            padding-bottom: .6rem;
             .develop-detail{
                 .btooltip{
                     width: 40%;
@@ -187,15 +197,30 @@ $gray:#fafafa;
                     top: 50%;
                     transform: translate3d(0,-50%,0);
                     padding:0 10px ;
+                    .text{
+                        line-height: .88rem;
+                        font-size: .26rem;
+                    }
+                    .arrow{
+                        margin-top: -0.18rem;
+                        width: .24rem;
+                        height: .36rem;
+                    }
                 }
                 &.left{
                     .btooltip{
-                        margin-right: 24px;
+                        margin-right: .48rem;
+                        .arrow{
+                            right: -0.24rem;
+                        }
                     }
                 }
                 &.right{
                     .btooltip{
-                        margin-left: 24px;
+                        margin-left: .48rem;
+                        .arrow{
+                            left: -0.24rem;
+                        }
                     }
                 }
             }

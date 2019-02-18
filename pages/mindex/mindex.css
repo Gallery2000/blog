@@ -1,0 +1,100 @@
+#fullpage .section .container {
+  overflow: hidden;
+  height: 100%;
+  padding-top: .96rem; }
+#fullpage .section .next-page {
+  position: absolute;
+  width: .8rem;
+  height: .8rem;
+  color: #0252d9;
+  bottom: .4rem;
+  left: 50%;
+  margin-left: -.4rem; }
+  #fullpage .section .next-page .iconfont {
+    font-size: .8rem; }
+#fullpage .section .text-wrap {
+  text-align: center;
+  margin-top: .52rem;
+  overflow: hidden; }
+  #fullpage .section .text-wrap .title {
+    font-size: .44rem;
+    color: #0252d9;
+    margin-bottom: .3rem; }
+  #fullpage .section .text-wrap .desc {
+    color: #000;
+    font-size: 0.28rem; }
+#fullpage .section .custom-pagination {
+  text-align: center; }
+  #fullpage .section .custom-pagination .swiper-pagination-bullet {
+    margin: 0 .08rem; }
+#fullpage .section .footer-text {
+  font-size: .36rem;
+  text-align: center; }
+  #fullpage .section .footer-text a {
+    color: #0252d9; }
+
+#fullpage .phone-screen-1 {
+  background-color: #0252d9; }
+  #fullpage .phone-screen-1 .container {
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 4.66rem;
+    margin-top: 0;
+    height: 100%; }
+    #fullpage .phone-screen-1 .container .title {
+      overflow: hidden;
+      font-size: 1rem; }
+    #fullpage .phone-screen-1 .container .desc {
+      font-size: .5rem;
+      margin-top: .4rem; }
+  #fullpage .phone-screen-1 .next-page {
+    color: #fff; }
+
+#fullpage .phone-screen-2 .container .headlines {
+  padding: .48rem 0;
+  text-align: center;
+  box-shadow: 0 0 0.08rem #eee;
+  margin: .56rem .28rem .86rem; }
+  #fullpage .phone-screen-2 .container .headlines .title {
+    font-size: .44rem;
+    color: #0252d9;
+    line-height: .44rem;
+    margin-bottom: .74rem; }
+  #fullpage .phone-screen-2 .container .headlines .desc {
+    color: #000;
+    font-size: .26rem;
+    line-height: .36rem; }
+#fullpage .phone-screen-2 .container .slider-headlines {
+  margin: 0 auto;
+  width: 6.4rem; }
+  #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide {
+    position: relative;
+    height: 4.28rem; }
+    #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide img {
+      width: 100%;
+      height: 100%; }
+    #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap {
+      position: absolute;
+      top: .92rem;
+      left: .96rem;
+      color: #fff; }
+      #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .big-title {
+        font-weight: 400;
+        font-size: .7rem;
+        margin-bottom: .26rem; }
+      #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .desc {
+        font-size: .36rem;
+        font-weight: 100;
+        color: #fff; }
+
+#fullpage .phone-screen-3 .container .phone-slider {
+  width: 4.6rem; }
+  #fullpage .phone-screen-3 .container .phone-slider .swiper-slide .img-wrap {
+    font-size: 0; }
+    #fullpage .phone-screen-3 .container .phone-slider .swiper-slide .img-wrap img {
+      vertical-align: middle;
+      width: 100%; }
+#fullpage .phone-screen-3 .container .custom-pagination.swiper-pagination-bullets {
+  margin-top: -0.2rem;
+  margin-bottom: .2rem; }

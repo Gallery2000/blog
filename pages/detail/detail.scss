@@ -14,7 +14,7 @@ $gray:#fafafa;
         .title {
             overflow: hidden;
             margin-top: 52px;
-            margin-bottom: 44px;
+            margin-bottom: 20px;
             font-size: 28px;
             color: $blue;
         }
@@ -36,17 +36,20 @@ $gray:#fafafa;
                 width: 100%;
             }
         }
-
-        .release-time {
-            font-size: 12px;
-            margin-bottom: 16px;
-            margin-top: 20px;
-        }
-
-        .release-desc {
-            width: 80%;
-            margin: 0 auto;
-            font-size: 12px;
+        .text-wrap{
+            margin-top: -34px;
+            overflow: hidden;
+            .release-time {
+                font-size: 12px;
+                margin-bottom: 16px;
+                margin-top: 20px;
+            }
+    
+            .release-desc {
+                width: 80%;
+                margin: 0 auto;
+                font-size: 12px;
+            }
         }
     }
 }
@@ -55,15 +58,18 @@ $gray:#fafafa;
         padding-top: .96rem;
     }
     .detail-body .main .title{
-        margin-bottom: .44rem;
-    }
-}
-@media (max-height: 736px) {
-    .detail-body .main .title{
-        margin-top: .44rem;
-        margin-bottom: .2rem;
+        margin-bottom: 0;
+        margin-top: .64rem;
     }
     .detail-body .main .phone-wrap{
-        width: 4.8rem;
+        width: 6rem;
+    }
+    .detail-body .main .text-wrap .release-time{
+        font-size: .24rem;
+        margin-bottom: .32rem;
+        margin-top: .4rem;
+    }
+    .detail-body .main .text-wrap .release-desc{
+        font-size: .24rem;
     }
 }

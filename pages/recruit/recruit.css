@@ -198,9 +198,9 @@
     line-height: 60px; }
 
   .recruit-detail .main .recruit-type .row .box .text-wrap {
-    height: 100px;
-    width: 100px;
-    line-height: 100px;
+    height: 110px;
+    width: 110px;
+    line-height: 110px;
     font-size: 24px; } }
 @media (max-width: 768px) {
   body {
@@ -312,5 +312,3 @@
           font-size: .4rem;
           color: #0252d9;
           margin-right: .16rem; } }
-
-/*# sourceMappingURL=recruit.css.map */

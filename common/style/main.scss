@@ -293,7 +293,7 @@ img{
             ul{
                 li{
                     width: 100px;
-                    padding: 10px;
+                    padding:0 10px;
                 }
             }
         }
@@ -339,6 +339,31 @@ img{
                         font-size: .4rem;
                     color: #fff;
                     }
+                }
+            }
+        }
+        .navbar-wrap{
+            .logo{
+                float: left;
+                font-size: 0;
+                padding: .26rem 0 .2rem; 
+                margin-left: .28rem;
+                z-index: 999;
+                img{
+                    vertical-align: middle;
+                    height: .5rem;
+                }
+            }
+            .icon{
+                z-index: 999;
+                float: right;
+                padding: .04rem 0;
+                margin-right: .16rem;
+                .iconfont{
+                    width: .8rem;
+                    height: .8rem;
+                    font-size: .8rem;
+                    color: #fff;
                 }
             }
         }

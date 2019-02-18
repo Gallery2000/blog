@@ -243,7 +243,7 @@ img {
     width: 100%; }
     .blog-navbar .nav-main .list-wrap ul li {
       width: 100px;
-      padding: 10px; } }
+      padding: 0 10px; } }
 @media (max-width: 768px) {
   body {
     padding-top: 0; }
@@ -280,6 +280,25 @@ img {
           .phone-navbar .full-screen ul li a {
             font-size: .4rem;
             color: #fff; }
+    .phone-navbar .navbar-wrap .logo {
+      float: left;
+      font-size: 0;
+      padding: .26rem 0 .2rem;
+      margin-left: .28rem;
+      z-index: 999; }
+      .phone-navbar .navbar-wrap .logo img {
+        vertical-align: middle;
+        height: .5rem; }
+    .phone-navbar .navbar-wrap .icon {
+      z-index: 999;
+      float: right;
+      padding: .04rem 0;
+      margin-right: .16rem; }
+      .phone-navbar .navbar-wrap .icon .iconfont {
+        width: .8rem;
+        height: .8rem;
+        font-size: .8rem;
+        color: #fff; }
     .phone-navbar .img-wrap {
       z-index: 999;
       position: relative;
