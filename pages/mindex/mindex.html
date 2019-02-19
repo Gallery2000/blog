@@ -181,17 +181,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination custom-pagination"></div>
+                <div class="custom-pagination" id="detail-pagination"></div>
                 <div class="footer-text regular-font">
                     <a href="../recruit/recruit.html">
                         加入我们
                     </a>
                 </div>
             </div>
+            <div class="next-page" data-index="2">
+                    <i class="iconfont">&#xe628;</i>
+                </div>
         </div>
         <div class="section phone-screen-5">
             <div class="container">
-                第五屏
+                    <div class="text-wrap">
+                            <p class="desc">当你足够优秀总会被选择</p>
+                        </div>
+                <div class="cooperation">
+                    <ul>
+                        <li>
+                            <img src="" alt="">
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="section phone-screen-6">
@@ -203,15 +215,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="../../common/js/jquery.easing.min.js"></script>
+    <script src="../../common/js/jquery.slimscroll.min.js"></script>
     <script src="../../common/js/jquery.fullPage.min.js"></script>
+    <script src="./mindex.js"></script>
     <script>
         $(function () {
             $('#fullpage').fullpage({
+                scrollOverflow:true,
                 verticalCentered: false,
                 resize: true,
                 paddingBottom: '1.2rem'
             });
-            $.fn.fullpage.moveTo(3);
+            $.fn.fullpage.moveTo(4);
+            $('.next-page').click(function(){
+                $.fn.fullpage.moveSectionDown();
+            })
             function createDot(swiper, current, total) {
                 var customPaginationHtml = "";
                 for (var i = 0; i < total; i++) {
@@ -235,6 +253,13 @@
                 paginationType: 'custom',
                 pagination: {
                     el: '#phone-pagination',
+                },
+                paginationCustomRender: createDot
+            })
+            new Swiper('.slider-detail', {
+                paginationType: 'custom',
+                pagination: {
+                    el: '#detail-pagination',
                 },
                 paginationCustomRender: createDot
             })

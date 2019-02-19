@@ -98,3 +98,26 @@
 #fullpage .phone-screen-3 .container .custom-pagination.swiper-pagination-bullets {
   margin-top: -0.2rem;
   margin-bottom: .2rem; }
+
+#fullpage .phone-screen-4 .container .slider-detail {
+  margin: .52rem .38rem; }
+  #fullpage .phone-screen-4 .container .slider-detail .swiper-slide {
+    padding: .2rem;
+    text-align: center;
+    font-size: .36rem;
+    color: #000; }
+    #fullpage .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap {
+      border-radius: .08rem;
+      overflow: hidden;
+      box-shadow: 0 0 .1rem #979797; }
+      #fullpage .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .title {
+        margin: .52rem 0; }
+      #fullpage .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .desc {
+        margin-top: .96rem;
+        margin-bottom: .94rem;
+        padding: 0 .36rem; }
+      #fullpage .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .img-wrap {
+        padding: 0 .26rem; }
+        #fullpage .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .img-wrap img {
+          width: 100%;
+          box-shadow: 0 .04rem .08rem #000; }
