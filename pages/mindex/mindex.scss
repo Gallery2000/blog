@@ -26,7 +26,7 @@ $gray:#fafafa;
             font-size: .44rem;
             color: $blue;
             margin-bottom: .3rem;
-            font-family: 'Regular'
+            font-family: 'Regular';
         }
         .desc {
             color: #000;
@@ -119,6 +119,9 @@ $gray:#fafafa;
             }
         }
     }
+    .custom-pagination {
+        margin-top: .2rem;
+    }
 }
 
 #fullpage .phone-screen-3 {
@@ -192,11 +195,19 @@ $gray:#fafafa;
         }
         .cooperation {
             ul {
+                
+                display:-webkit-box;
+                display: -webkit-flex;
                 display: flex;
+                -webkit-flex-wrap: wrap;
                 flex-wrap: wrap;
                 li {
+                    display:-webkit-box;
+                    display: -webkit-flex;
                     display: flex;
+                    -webkit-justify-content: center;
                     justify-content: center;
+                    -webkit-align-items: center;
                     align-items: center;
                     width: 50%;
                     height: 3rem;
@@ -250,74 +261,128 @@ $gray:#fafafa;
 
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
     /* 兼容iphone5 */
-}
-
-@media(min-device-width:375px)and(max-device-height:667px)and(-webkit-min-device-pixel-ratio:2) {
+    #fullpage .section {
+        .next-page {
+            position: absolute;
+            width: .8rem;
+            height: .8rem;
+            color: $blue;
+            bottom: .4rem;
+            left: 50%;
+            margin-left: -.4rem;
+            .iconfont {
+                font-size: .8rem;
+            }
+        }
+        .text-wrap {
+            text-align: center;
+            margin-top: .52rem*0.7;
+            overflow: hidden;
+            .title {
+                font-size: .44rem*0.9;
+                color: $blue;
+                margin-bottom: .3rem*0.7;
+                font-family: 'Regular'
+            }
+            .desc {
+                color: #000;
+                font-size: .28rem*0.9;
+            }
+        }
+        .custom-pagination {
+            text-align: center;
+            .swiper-pagination-bullet {
+                margin: 0 .08rem;
+            }
+        }
+        .footer-text {
+            font-size: .36rem;
+            text-align: center;
+            a {
+                color: $blue;
+            }
+        }
+    }
     #fullpage .phone-screen-2 {
         .container {
             .headlines {
-                padding: .48rem*0.8 0;
-                margin: .56rem*0.8 .28rem*0.8 .86rem*0.8;
+                padding: .48rem*0.7 0;
+                margin: .56rem*0.7 .28rem .86rem*0.7;
                 .title {
-                    font-size: .44rem;
-                    line-height: .44rem;
-                    margin-bottom: .74rem*0.8;
+                    font-size: .44rem*0.9;
+                    line-height: .44rem*0.9;
+                    margin-bottom: .74rem*0.7;
                 }
                 .desc {
-                    font-size: .26rem;
-                    line-height: .36rem;
+                    font-size: .26rem*0.9;
+                    line-height: .36rem*0.9;
                 }
             }
             .slider-headlines {
-                width: 6.4rem;
+                width: 6.4rem*0.84;
                 .swiper-slide {
                     position: relative;
-                    height: 4.28rem;
+                    height: 4.28rem*0.84;
                     .text-wrap {
                         position: absolute;
-                        top: .92rem;
-                        left: .96rem;
+                        top: .92rem*0.84;
+                        left: .96rem*0.84;
                         color: #fff;
                         .big-title {
                             font-weight: 400;
-                            font-size: .7rem;
-                            margin-bottom: .26rem;
+                            font-size: .7rem*0.84;
+                            margin-bottom: .26rem*0.84;
                         }
                         .desc {
-                            font-size: .36rem;
+                            font-size: .36rem*0.84;
                             font-weight: 100;
                         }
                     }
                 }
             }
         }
+        margin-top: .2rem*0.7;
     }
     #fullpage .phone-screen-3 {
         .container {
             .phone-slider {
-                width: 4.6rem*0.88;
+                width: 4.6rem*0.72;
+                .swiper-slide {
+                    .img-wrap {
+                        font-size: 0;
+                        img {
+                            vertical-align: middle;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .custom-pagination.swiper-pagination-bullets {
+                margin-top: -0.2rem*0.6;
+                margin-bottom: .2rem*0.6;
             }
         }
     }
+    
     #fullpage .phone-screen-4 {
         .container {
             .slider-detail {
-                margin: .52rem*0.6 auto 0;
+                margin: .52rem*0.44 auto 0;
                 width: 6.92rem*0.7 ;
                 .swiper-slide {
                     text-align: center;
-                    font-size: .36rem*0.9;
+                    font-size: .36rem*0.8;
                     color: #000;
                     padding: .2rem*0.7 ;
                     .slider-wrap {
                         width: 6.52rem*0.7;
                         overflow: hidden;
                         .title {
-                            margin: .52rem*0.6 0;
+                            margin: .52rem*0.44 0;
                         }
                         .desc {
-                            margin-top: .96rem*0.6;
-                            margin-bottom: .94rem*0.6;
+                            margin-top: .96rem*0.44;
+                            margin-bottom: .94rem*0.44;
                             padding: 0 .36rem*0.7;
                         }
                         .img-wrap {
@@ -330,29 +395,36 @@ $gray:#fafafa;
                 }
             }
             .custom-pagination {
-                margin-bottom: .4rem*0.6;
+                margin-bottom: .4rem*0.3;
             }
+        }
+    }
+    #fullpage .phone-screen-5 .container {
+        .text-wrap{
+            margin-bottom:.4rem*0.7;
+        }
+        .cooperation ul li{
+            height: 2.5rem;
         }
     }
     #fullpage .phone-screen-6 {
         .container {
             .contact {
                 dl {
-                    padding: 0 .8rem*0.8;
-                    margin-top: .7rem*0.8;
+                    padding: 0 .8rem*0.76;
+                    margin-top: .7rem*0.5;
                     dd {
-                        padding: .08rem*0.8 0;
+                        padding: .08rem*0.7 0;
                         display: flex;
                         align-items: center;
                         .iconfont {
-                            width: .8rem*0.8;
-                            font-size: .5rem*0.8;
+                            font-size: .5rem*0.76;
                             flex: 1;
                         }
                         .text {
-                            flex: 6;
-                            font-size: .26rem*0.8;
-                            line-height: .4rem*0.8;
+                            flex: 7;
+                            font-size: .26rem*0.76;
+                            line-height: .4rem*0.76;
                             display: inline-block;
                         }
                     }
@@ -364,11 +436,371 @@ $gray:#fafafa;
             bottom: 0;
             right: 0;
             left: 0;
-            height: 8rem*0.6;
+            height: 8rem*0.56;
         }
-    }    
+    }
+}
+
+@media(min-device-width:375px)and(max-device-width:667px)and(-webkit-min-device-pixel-ratio:2) {
+    #fullpage .section {
+        .next-page {
+            position: absolute;
+            width: .8rem;
+            height: .8rem;
+            color: $blue;
+            bottom: .4rem;
+            left: 50%;
+            margin-left: -.4rem;
+            .iconfont {
+                font-size: .8rem;
+            }
+        }
+        .text-wrap {
+            text-align: center;
+            margin-top: .52rem*0.8;
+            overflow: hidden;
+            .title {
+                font-size: .44rem*0.9;
+                color: $blue;
+                margin-bottom: .3rem*0.8;
+                font-family: 'Regular'
+            }
+            .desc {
+                color: #000;
+                font-size: .28rem*0.9;
+            }
+        }
+        .custom-pagination {
+            text-align: center;
+            .swiper-pagination-bullet {
+                margin: 0 .08rem;
+            }
+        }
+        .footer-text {
+            font-size: .36rem;
+            text-align: center;
+            a {
+                color: $blue;
+            }
+        }
+    }
+    #fullpage .phone-screen-2 {
+        .container {
+            .headlines {
+                padding: .48rem*0.74 0;
+                margin: .56rem*0.78 .28rem .86rem*0.78;
+                .title {
+                    font-size: .44rem*0.9;
+                    line-height: .44rem*0.9;
+                    margin-bottom: .74rem*0.74;
+                }
+                .desc {
+                    font-size: .26rem*0.9;
+                    line-height: .36rem*0.9;
+                }
+            }
+            .slider-headlines {
+                width: 6.4rem*0.9;
+                .swiper-slide {
+                    position: relative;
+                    height: 4.28rem*0.9;
+                    .text-wrap {
+                        position: absolute;
+                        top: .92rem*0.9;
+                        left: .96rem*0.9;
+                        color: #fff;
+                        .big-title {
+                            font-weight: 400;
+                            font-size: .7rem*0.9;
+                            margin-bottom: .26rem*0.9;
+                        }
+                        .desc {
+                            font-size: .36rem*0.9;
+                            font-weight: 100;
+                        }
+                    }
+                }
+            }
+        }
+        .custom-pagination {
+            margin-top: .2rem*0.78;
+        }
+    }
+    #fullpage .phone-screen-3 {
+        .container {
+            .phone-slider {
+                width: 4.6rem*0.82;
+                .swiper-slide {
+                    .img-wrap {
+                        font-size: 0;
+                        img {
+                            vertical-align: middle;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .custom-pagination.swiper-pagination-bullets {
+                margin-top: -0.2rem*0.8;
+                margin-bottom: .2rem*0.8;
+            }
+        }
+    }
+    
+    #fullpage .phone-screen-4 {
+        .container {
+            .slider-detail {
+                margin: .52rem*0.58 auto 0;
+                width: 6.92rem*0.78 ;
+                .swiper-slide {
+                    text-align: center;
+                    font-size: .36rem*0.84;
+                    color: #000;
+                    padding: .2rem*0.7 ;
+                    .slider-wrap {
+                        width: 6.52rem*0.78;
+                        overflow: hidden;
+                        .title {
+                            margin: .52rem*0.58 0;
+                        }
+                        .desc {
+                            margin-top: .96rem*0.58;
+                            margin-bottom: .94rem*0.58;
+                            padding: 0 .36rem*0.7;
+                        }
+                        .img-wrap {
+                            img {
+                                width: 6rem*0.78;
+                                height: 4rem*0.78;
+                            }
+                        }
+                    }
+                }
+            }
+            .custom-pagination {
+                margin-bottom: .4rem*0.3;
+            }
+        }
+    }
+    #fullpage .phone-screen-5 .container {
+        .text-wrap{
+            margin-bottom:.4rem*0.8;
+        }
+        .cooperation ul li{
+            height: 2.8rem;
+        }
+    }
+    #fullpage .phone-screen-6 {
+        .container {
+            .contact {
+                dl {
+                    padding: 0 .8rem*0.76;
+                    margin-top: .7rem*0.5;
+                    dd {
+                        padding: .08rem*0.7 0;
+                        display: flex;
+                        align-items: center;
+                        .iconfont {
+                            font-size: .5rem*0.76;
+                            flex: 1;
+                        }
+                        .text {
+                            flex: 7;
+                            font-size: .26rem*0.76;
+                            line-height: .4rem*0.76;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        .call-map {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 8rem*0.56;
+        }
+    }
 }
 
 @media(min-device-width:414px)and(max-device-width:736px)and(-webkit-min-device-pixel-ratio:3) {
     /*iphone6plus*/
+    #fullpage .section {
+        .next-page {
+            position: absolute;
+            width: .8rem;
+            height: .8rem;
+            color: $blue;
+            bottom: .4rem;
+            left: 50%;
+            margin-left: -.4rem;
+            .iconfont {
+                font-size: .8rem;
+            }
+        }
+        .text-wrap {
+            text-align: center;
+            margin-top: .52rem*0.8;
+            overflow: hidden;
+            .title {
+                font-size: .44rem*0.9;
+                color: $blue;
+                margin-bottom: .3rem*0.8;
+                font-family: 'Regular'
+            }
+            .desc {
+                color: #000;
+                font-size: .28rem*0.9;
+            }
+        }
+        .custom-pagination {
+            text-align: center;
+            .swiper-pagination-bullet {
+                margin: 0 .08rem;
+            }
+        }
+        .footer-text {
+            font-size: .36rem;
+            text-align: center;
+            a {
+                color: $blue;
+            }
+        }
+    }
+    #fullpage .phone-screen-2 {
+        .container {
+            .headlines {
+                padding: .48rem*0.84 0;
+                margin: .56rem*0.78 .28rem .86rem*0.78;
+                .title {
+                    font-size: .44rem*0.9;
+                    line-height: .44rem*0.9;
+                    margin-bottom: .74rem*0.84;
+                }
+                .desc {
+                    font-size: .26rem*0.9;
+                    line-height: .36rem*0.9;
+                }
+            }
+            .slider-headlines {
+                width: 6.4rem*0.9;
+                .swiper-slide {
+                    position: relative;
+                    height: 4.28rem*0.9;
+                    .text-wrap {
+                        position: absolute;
+                        top: .92rem*0.9;
+                        left: .96rem*0.9;
+                        color: #fff;
+                        .big-title {
+                            font-weight: 400;
+                            font-size: .7rem*0.9;
+                            margin-bottom: .26rem*0.9;
+                        }
+                        .desc {
+                            font-size: .36rem*0.9;
+                            font-weight: 100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #fullpage .phone-screen-3 {
+        .container {
+            .phone-slider {
+                width: 4.6rem*0.8;
+                .swiper-slide {
+                    .img-wrap {
+                        font-size: 0;
+                        img {
+                            vertical-align: middle;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .custom-pagination.swiper-pagination-bullets {
+                margin-top: -0.2rem*0.7;
+                margin-bottom: .2rem*0.7;
+            }
+        }
+    }
+    
+    #fullpage .phone-screen-4 {
+        .container {
+            .slider-detail {
+                margin: .52rem*0.52 auto 0;
+                width: 6.92rem*0.78 ;
+                .swiper-slide {
+                    text-align: center;
+                    font-size: .36rem*0.84;
+                    color: #000;
+                    padding: .2rem*0.7 ;
+                    .slider-wrap {
+                        width: 6.52rem*0.78;
+                        overflow: hidden;
+                        .title {
+                            margin: .52rem*0.52 0;
+                        }
+                        .desc {
+                            margin-top: .96rem*0.52;
+                            margin-bottom: .94rem*0.52;
+                            padding: 0 .36rem*0.7;
+                        }
+                        .img-wrap {
+                            img {
+                                width: 6rem*0.78;
+                                height: 4rem*0.78;
+                            }
+                        }
+                    }
+                }
+            }
+            .custom-pagination {
+                margin-bottom: .4rem*0.3;
+            }
+        }
+    }
+    #fullpage .phone-screen-5 .container {
+        .text-wrap{
+            margin-bottom:.4rem*0.8;
+        }
+        .cooperation ul li{
+            height: 2.8rem;
+        }
+    }
+    #fullpage .phone-screen-6 {
+        .container {
+            .contact {
+                dl {
+                    padding: 0 .8rem*0.76;
+                    margin-top: .7rem*0.5;
+                    dd {
+                        padding: .08rem*0.7 0;
+                        display: flex;
+                        align-items: center;
+                        .iconfont {
+                            font-size: .5rem*0.76;
+                            flex: 1;
+                        }
+                        .text {
+                            flex: 7;
+                            font-size: .26rem*0.76;
+                            line-height: .4rem*0.76;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        .call-map {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 8rem*0.56;
+        }
+    }
 }
