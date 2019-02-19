@@ -195,21 +195,80 @@
         <div class="section phone-screen-5">
             <div class="container">
                     <div class="text-wrap">
-                            <p class="desc">当你足够优秀总会被选择</p>
+                            <p class="title">当你足够优秀总会被选择</p>
                         </div>
                 <div class="cooperation">
                     <ul>
                         <li>
-                            <img src="" alt="">
+                            <img src="../../images/合作伙伴/腾讯logo_03.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../../images/合作伙伴/阿里巴巴.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../../images/合作伙伴/百度_03.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../../images/合作伙伴/360_03.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../../images/合作伙伴/2345导航logo.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="../../images/合作伙伴/d2f340b50e246cd937a4a79df04f0f81.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../../images/合作伙伴/d5692f7250bd3a02f53dc71224b27fdf.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="../../images/合作伙伴/猎豹_03.png" alt="">
                         </li>
                     </ul>
                 </div>
             </div>
+            <div class="next-page" data-index="2">
+                <i class="iconfont">&#xe628;</i>
+            </div>
         </div>
         <div class="section phone-screen-6">
             <div class="container">
-                第六屏
+                <div class="text-wrap">
+                    <div class="title">
+                        联系我们
+                    </div>
+                </div>
+                <div class="contact">
+                    <dl>
+                        <dd class="clear">
+                            <i class="iconfont">&#xe619;</i>
+                            <span class="text">东莞市松山湖高新技术产业开发区工业西路14号2栋首层3-05</span>
+                        </dd>
+                        <dd class="clear">
+                            <i class="iconfont">&#xe61d;</i>
+                            <span class="text">523808</span>
+                        </dd>
+                        <dd class="clear">
+                            <i class="iconfont">&#xe619;</i>
+                            <span class="text">0769-22895462</span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dd class="clear">
+                            <i class="iconfont">&#xe633;</i>
+                            <span class="text">1002938477</span>
+                        </dd>
+                        <dd class="clear">
+                            <i class="iconfont">&#xe60a;</i>
+                            <span class="text">15393864750</span>
+                        </dd>
+                        <dd class="clear">
+                            <i class="iconfont">&#xe634;</i>
+                            <span class="text">1002938477@qq.com</span>
+                        </dd>
+                    </dl>
+                </div>
             </div>
+            <div class="call-map" id="container-map"></div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
@@ -218,6 +277,7 @@
     <script src="../../common/js/jquery.slimscroll.min.js"></script>
     <script src="../../common/js/jquery.fullPage.min.js"></script>
     <script src="./mindex.js"></script>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=5tXIMPokB8DvjlXvbeTBQmYFsgMGmls9"></script>
     <script>
         $(function () {
             $('#fullpage').fullpage({
@@ -265,6 +325,25 @@
             })
         });
     </script>
+        <script>
+            var map = new BMap.Map("container-map");
+            var point = new BMap.Point(113.893854, 22.933373);
+            map.centerAndZoom(point, 18);
+            var marker = new BMap.Marker(point); // 创建标注
+    
+            var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(46, 29), {
+                anchor: new BMap.Size(15, 54),
+                imageOffset: new BMap.Size(22, 0 - 12 * 25) // 设置图片偏移    
+            });
+            var marker = new BMap.Marker(point, {
+                icon: myIcon
+            });
+    
+    
+            map.addOverlay(marker)
+    
+            map.enableScrollWheelZoom(true);
+        </script>
 </body>
 
 </html>

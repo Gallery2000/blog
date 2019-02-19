@@ -1,13 +1,12 @@
 $blue:#0252d9;
 $gray:#fafafa;
-
-#fullpage .section{
-    .container{
+#fullpage .section {
+    .container {
         overflow: hidden;
         height: 100%;
-        padding-top:.96rem;
+        padding-top: .96rem;
     }
-    .next-page{
+    .next-page {
         position: absolute;
         width: .8rem;
         height: .8rem;
@@ -15,41 +14,43 @@ $gray:#fafafa;
         bottom: .4rem;
         left: 50%;
         margin-left: -.4rem;
-        .iconfont{
+        .iconfont {
             font-size: .8rem;
         }
     }
-    .text-wrap{
+    .text-wrap {
         text-align: center;
         margin-top: .52rem;
         overflow: hidden;
-        .title{
+        .title {
             font-size: .44rem;
             color: $blue;
             margin-bottom: .3rem;
+            font-family: 'Regular'
         }
-        .desc{
+        .desc {
             color: #000;
             font-size: .28rem
         }
     }
     .custom-pagination {
         text-align: center;
-        .swiper-pagination-bullet{
+        .swiper-pagination-bullet {
             margin: 0 .08rem;
         }
     }
-    .footer-text{
+    .footer-text {
         font-size: .36rem;
         text-align: center;
-        a{
+        a {
             color: $blue;
         }
     }
 }
+
 #fullpage .phone-screen-1 {
     background-color: $blue;
-    .container{
+    .container {
         color: #fff;
         text-align: center;
         overflow: hidden;
@@ -65,52 +66,51 @@ $gray:#fafafa;
             margin-top: .4rem;
         }
     }
-    .next-page{
+    .next-page {
         color: #fff;
     }
 }
 
-#fullpage .phone-screen-2{
-    .container{
-        .headlines{
+#fullpage .phone-screen-2 {
+    .container {
+        .headlines {
             padding: .48rem 0;
             text-align: center;
             box-shadow: 0 0 0.08rem #eee;
             margin: .56rem .28rem .86rem;
-            .title{
+            .title {
                 font-size: .44rem;
                 color: $blue;
                 line-height: .44rem;
                 margin-bottom: .74rem;
             }
-            .desc{
+            .desc {
                 color: #000;
                 font-size: .26rem;
                 line-height: .36rem;
             }
         }
-        .slider-headlines{
+        .slider-headlines {
             margin: 0 auto;
             width: 6.4rem;
-            .swiper-slide{
+            .swiper-slide {
                 position: relative;
-                
                 height: 4.28rem;
-                img{
+                img {
                     width: 100%;
                     height: 100%;
                 }
-                .text-wrap{
+                .text-wrap {
                     position: absolute;
                     top: .92rem;
                     left: .96rem;
                     color: #fff;
-                    .big-title{
+                    .big-title {
                         font-weight: 400;
                         font-size: .7rem;
                         margin-bottom: .26rem;
                     }
-                    .desc{
+                    .desc {
                         font-size: .36rem;
                         font-weight: 100;
                         color: #fff;
@@ -121,41 +121,39 @@ $gray:#fafafa;
     }
 }
 
-
-
-
-#fullpage .phone-screen-3{
-    .container{
-        .phone-slider{
+#fullpage .phone-screen-3 {
+    .container {
+        .phone-slider {
             width: 4.6rem;
-            .swiper-slide{
-                .img-wrap{
+            .swiper-slide {
+                .img-wrap {
                     font-size: 0;
-                    img{
+                    img {
                         vertical-align: middle;
                         width: 100%;
                     }
                 }
             }
         }
-        .custom-pagination.swiper-pagination-bullets{
+        .custom-pagination.swiper-pagination-bullets {
             margin-top: -0.2rem;
             margin-bottom: .2rem;
         }
     }
 }
 
-
-#fullpage .phone-screen-4{
-    .container{
-        .slider-detail{
-            margin: .52rem .38rem;
+#fullpage .phone-screen-4 {
+    .container {
+        .slider-detail {
+            margin: .52rem auto 0;
+            width: 6.92rem;
             .swiper-slide {
-                padding: .2rem;
                 text-align: center;
                 font-size: .36rem;
                 color: #000;
-                .slider-wrap{
+                padding: .2rem;
+                .slider-wrap {
+                    width: 6.52rem;
                     border-radius: .08rem;
                     overflow: hidden;
                     .title {
@@ -167,9 +165,9 @@ $gray:#fafafa;
                         padding: 0 .36rem;
                     }
                     .img-wrap {
-                        padding:0 .26rem;
                         img {
-                            width: 100%;
+                            width: 6rem;
+                            height: 4rem;
                             box-shadow: 0 .04rem .08rem #000;
                         }
                     }
@@ -177,5 +175,200 @@ $gray:#fafafa;
                 }
             }
         }
+        .custom-pagination {
+            margin-bottom: .4rem;
+        }
     }
+}
+
+#fullpage .phone-screen-5 {
+    .container {
+        .text-wrap {
+            margin-bottom: .4rem;
+            font-size: 0;
+            .title {
+                margin-bottom: 0;
+            }
+        }
+        .cooperation {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50%;
+                    height: 3rem;
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#fullpage .phone-screen-6 {
+    .container {
+        .text-wrap {
+            .title {
+                margin-bottom: 0;
+            }
+        }
+        .contact {
+            dl {
+                padding: 0 .8rem;
+                margin-top: .7rem;
+                dd {
+                    padding: .08rem 0;
+                    display: flex;
+                    align-items: center;
+                    .iconfont {
+                        width: .8rem;
+                        font-size: .5rem;
+                        flex: 1;
+                    }
+                    .text {
+                        flex: 6;
+                        font-size: .26rem;
+                        line-height: .4rem;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .call-map {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 8rem;
+    }
+}
+
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+    /* 兼容iphone5 */
+}
+
+@media(min-device-width:375px)and(max-device-height:667px)and(-webkit-min-device-pixel-ratio:2) {
+    #fullpage .phone-screen-2 {
+        .container {
+            .headlines {
+                padding: .48rem*0.8 0;
+                margin: .56rem*0.8 .28rem*0.8 .86rem*0.8;
+                .title {
+                    font-size: .44rem;
+                    line-height: .44rem;
+                    margin-bottom: .74rem*0.8;
+                }
+                .desc {
+                    font-size: .26rem;
+                    line-height: .36rem;
+                }
+            }
+            .slider-headlines {
+                width: 6.4rem;
+                .swiper-slide {
+                    position: relative;
+                    height: 4.28rem;
+                    .text-wrap {
+                        position: absolute;
+                        top: .92rem;
+                        left: .96rem;
+                        color: #fff;
+                        .big-title {
+                            font-weight: 400;
+                            font-size: .7rem;
+                            margin-bottom: .26rem;
+                        }
+                        .desc {
+                            font-size: .36rem;
+                            font-weight: 100;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #fullpage .phone-screen-3 {
+        .container {
+            .phone-slider {
+                width: 4.6rem*0.88;
+            }
+        }
+    }
+    #fullpage .phone-screen-4 {
+        .container {
+            .slider-detail {
+                margin: .52rem*0.6 auto 0;
+                width: 6.92rem*0.7 ;
+                .swiper-slide {
+                    text-align: center;
+                    font-size: .36rem*0.9;
+                    color: #000;
+                    padding: .2rem*0.7 ;
+                    .slider-wrap {
+                        width: 6.52rem*0.7;
+                        overflow: hidden;
+                        .title {
+                            margin: .52rem*0.6 0;
+                        }
+                        .desc {
+                            margin-top: .96rem*0.6;
+                            margin-bottom: .94rem*0.6;
+                            padding: 0 .36rem*0.7;
+                        }
+                        .img-wrap {
+                            img {
+                                width: 6rem*0.7;
+                                height: 4rem*0.7;
+                            }
+                        }
+                    }
+                }
+            }
+            .custom-pagination {
+                margin-bottom: .4rem*0.6;
+            }
+        }
+    }
+    #fullpage .phone-screen-6 {
+        .container {
+            .contact {
+                dl {
+                    padding: 0 .8rem*0.8;
+                    margin-top: .7rem*0.8;
+                    dd {
+                        padding: .08rem*0.8 0;
+                        display: flex;
+                        align-items: center;
+                        .iconfont {
+                            width: .8rem*0.8;
+                            font-size: .5rem*0.8;
+                            flex: 1;
+                        }
+                        .text {
+                            flex: 6;
+                            font-size: .26rem*0.8;
+                            line-height: .4rem*0.8;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        .call-map {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 8rem*0.6;
+        }
+    }    
+}
+
+@media(min-device-width:414px)and(max-device-width:736px)and(-webkit-min-device-pixel-ratio:3) {
+    /*iphone6plus*/
 }
