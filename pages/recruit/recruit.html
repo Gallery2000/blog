@@ -20,7 +20,9 @@
         <div class="nav-main container clear">
             <a href="../index/index.html">
                 <div class="logo-wrap">
+
                     <img class="logo" src="../../images/logo.png" alt="">
+
                 </div>
                 <div class="logo-wrap">
                     <img class="title" src="../../images/logit-title.png" alt="">
@@ -38,14 +40,14 @@
             </div>
         </div>
     </div>
-    <div class="phone-navbar container visible-xs">
-        <div class="row">
-            <div class="col-xs-4 img-wrap">
-                <a href="../index/index.html">
+    <div class="phone-navbar visible-xs">
+        <div class="navbar-wrap clear">
+            <div class="logo">
+                <a href="../mindex/mindex.html">
                     <img src="../../images/logit-title.png" alt="">
                 </a>
             </div>
-            <div class="col-xs-2 col-xs-offset-6 hamburger" id="hamburger">
+            <div class="icon">
                 <i class="iconfont">&#xe655;</i>
             </div>
         </div>
@@ -60,10 +62,10 @@
     </div>
     <div class="phone-screen phone-screen-5 visible-xs">
         <div class="text-wrap">
-                <h1 class="title">
-                    在产品研发上，我们开足马力
-                </h1>
-            </div>
+            <h1 class="title">
+                在产品研发上，我们开足马力
+            </h1>
+        </div>
         <div class="category">
             <ul>
                 <li class="regular-font">职能类</li>
@@ -73,7 +75,7 @@
                 <li class="regular-font">营销类</li>
             </ul>
         </div>
-</div>
+    </div>
     <div class="recruit-body hidden-xs">
         <img src="../../images/recruit/recruit.png" alt="">
     </div>
@@ -100,13 +102,6 @@
                         <div class="text-wrap">职能类</div>
                     </div>
                 </div>
-                <!-- <ul class="clear">
-                        <li class="item-function"><img src="../../images/recruit/function1.png" alt=""></li>
-                        <li class="item-technology"><img src="../../images/recruit/technology1.png" alt=""></li>
-                        <li class="item-products"><img src="../../images/recruit/products1.png" alt=""></li>
-                        <li class="item-operations"><img src="../../images/recruit/operations1.png" alt=""></li>
-                        <li class="item-marketing"><img src="../../images/recruit/marketing1.png" alt=""></li>
-                    </ul> -->
             </div>
             <div class="recruit-position">
                 <ul class="posWrap">
@@ -528,40 +523,74 @@
     </div>
     <script src="../../common/js/globalPageHadnle.js"></script>
     <script>
-        (function () {
-            $('.recruit-body img').addClass('bounceIn');
-            setTimeout(() => {
-                var recruitBodyHeight = $('.recruit-body').get(0).offsetHeight;
-                console.log(recruitBodyHeight);
-                $('body,html').animate({
-                    scrollTop:recruitBodyHeight
-                },
-                    {
-                        step: function () {
-                            var htmlHeight = document.documentElement.offsetHeight;
-                            if (htmlHeight < window.innerHeight) {
-                                var oldBottom = parseInt($('.recruit-position').css('margin-bottom'));
-                                $('.recruit-position').css('margin-bottom', window.innerHeight - htmlHeight + oldBottom)
+        $(document).ready(function () {
+            if (document.documentElement.clientWidth > 750) {
+                $('.recruit-body').height(window.innerHeight - 120);
+                $('.recruit-body img').addClass('bounceIn');
+                setTimeout(() => {
+                    var recruitBodyHeight = $('.recruit-body').get(0).offsetHeight;
+                    $('body,html').animate({
+                        scrollTop: recruitBodyHeight
+                    },
+                        {
+                            step: function () {
+                                var htmlHeight = document.documentElement.offsetHeight;
+                                if (htmlHeight < window.innerHeight) {
+                                    var oldBottom = parseInt($('.recruit-position').css('margin-bottom'));
+                                    $('.recruit-position').css('margin-bottom', window.innerHeight - htmlHeight + oldBottom)
+                                }
                             }
-                        }
-                    })
-            }, 1000,function(){
-                $('.recruit-body').hide();
-            });
-            function clickHadnle(){
-                $('.category ul').find('li').on('click',function(){
-                $('.phone-screen-5').addClass('active');
-                $(this).addClass('active');
-                $('.recruit-position').show();
-                $(this).one('click',function(){
-                    $('.phone-screen-5').removeClass('active');
-                    $(this).removeClass('active');
-                    $('.recruit-position').hide();
-                    clickHadnle();
+                        })
+                }, 1000);
+            } else {
+                $('.category').on('click', 'li', function () {
+                    var top = $(this).offset().top;
+                    var left = $(this).offset().left;
+                    var text = $(this).text();
+                    var box = $('<div>').addClass('animation-box').css({ top: top, left: left }).text(text);
+                    var index = $(this).index();
+                    $('body').append(box);
+                    $('.phone-screen-5').removeClass('visible-xs').hide();
+                    $('.recruit-detail').show();
+                    box.animate({
+                        'width': '2rem',
+                        'borderRadius': '1rem',
+                        'left': '50%',
+                        'margin-left': '-1rem'
+                    }, 200, function () {
+                        $(this).unbind('click').on('click', function () {
+                            $('.phone-screen-5').show();
+                            $('.recruit-detail').hide();
+                            $('.category').find('li').eq(index).css('visibility', 'hidden');
+                            box.animate({
+                                'width': '6.68rem',
+                                'borderRadius': '0.08rem',
+                                'margin-left': '-3.34rem',
+                                'top': top
+                            }, 400, function () {
+                                $('.category').find('li').eq(index).css('visibility', 'visible');
+                                $(this).remove();
+                            })
+                        })
+                    }).animate({
+                        'top': '1.48rem'
+                    }, 400)
                 })
-            })
             }
-            clickHadnle();
+            // function clickHadnle(){
+            //     $('.category ul').find('li').on('click',function(){
+            //     $('.phone-screen-5').addClass('active');
+            //     $(this).addClass('active');
+            //     $('.recruit-position').show();
+            //     $(this).one('click',function(){
+            //         $('.phone-screen-5').removeClass('active');
+            //         $(this).removeClass('active');
+            //         $('.recruit-position').hide();
+            //         clickHadnle();
+            //     })
+            // })
+            // }
+            // clickHadnle();
             $('.posWrap li').on('click', '.item', function (ev) {
                 var $parent = $(this).parent()
                 if ($parent.hasClass('active')) {
@@ -570,7 +599,7 @@
                     $parent.addClass('active');
                 }
             })
-        })()
+        })
     </script>
 </body>
 

@@ -26,7 +26,7 @@
         margin-bottom: 16px;
         margin-top: 20px; }
       .detail-body .main .text-wrap .release-desc {
-        width: 80%;
+        width: 84%;
         margin: 0 auto;
         font-size: 12px; }
 
@@ -36,10 +36,14 @@
 
   .detail-body .main .title {
     margin-bottom: 0;
-    margin-top: .64rem; }
+    margin-top: .52rem;
+    font-size: .44rem; }
 
   .detail-body .main .phone-wrap {
-    width: 6rem; }
+    width: 4rem; }
+
+  .detail-body .main .text-wrap {
+    margin-top: -.6rem; }
 
   .detail-body .main .text-wrap .release-time {
     font-size: .24rem;

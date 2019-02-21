@@ -75,8 +75,8 @@
     .product-main .main {
       overflow: hidden; }
       .product-main .main .text-wrap {
-        margin-top: 1.04rem;
-        margin-bottom: .72rem;
+        margin-top: .52rem;
+        margin-bottom: .36rem;
         overflow: hidden;
         text-align: center; }
         .product-main .main .text-wrap .title {
@@ -94,7 +94,5 @@
           .product-main .main .container-fluid .row .col-md-3 {
             height: auto;
             margin-bottom: .2rem; } }
-@media (max-height: 736px) {
-  .product-main .main .text-wrap {
-    margin-top: .64rem;
-    margin-bottom: .52rem; } }
+
+/*# sourceMappingURL=product.css.map */

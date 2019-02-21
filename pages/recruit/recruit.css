@@ -1,11 +1,10 @@
 .recruit-body {
   width: 100%;
   padding: 20px 0;
-  height: 100vh;
   background-color: #0252d9;
   text-align: center; }
   .recruit-body img {
-    width: 774px; }
+    height: 100%; }
 
 .fade {
   animation: fade 1s; }
@@ -204,24 +203,28 @@
     font-size: 24px; } }
 @media (max-width: 768px) {
   body {
-    padding-top: .96rem;
-    padding-bottom: 1rem; }
+    padding-top: .96rem; }
+
+  .recruit-detail .main .recruit-position ul li.active.item .item .title {
+    font-size: .3rem; }
 
   .phone-screen-5 {
-    margin: .64rem 0; }
-    .phone-screen-5.active .text-wrap {
-      display: none; }
-    .phone-screen-5.active .category {
-      margin: 0 .4rem 0; }
-      .phone-screen-5.active .category ul li {
+    margin: .52rem 0 .44rem; }
+    .phone-screen-5.active {
+      display: none !important; }
+      .phone-screen-5.active .text-wrap {
         display: none; }
-        .phone-screen-5.active .category ul li.active {
-          display: block;
-          width: 2rem;
-          height: 2rem;
-          border-radius: 50%;
-          text-align: center;
-          margin: 0 auto 0; }
+      .phone-screen-5.active .category {
+        margin: 0 .4rem 0; }
+        .phone-screen-5.active .category ul li {
+          display: none; }
+          .phone-screen-5.active .category ul li.active {
+            display: block;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            text-align: center;
+            margin: 0 auto 0; }
     .phone-screen-5 .text-wrap {
       overflow: hidden;
       text-align: center; }
@@ -229,86 +232,116 @@
         font-size: .44rem;
         color: #0252d9; }
     .phone-screen-5 .category {
-      margin: .92rem .4rem 0; }
-      .phone-screen-5 .category ul li {
-        height: 2rem;
-        line-height: 2rem;
-        font-size: .36rem;
-        color: #0252d9;
-        border-radius: 0.08rem;
-        margin-bottom: .44rem;
-        overflow: hidden;
-        text-align: center;
-        box-shadow: 0 0 .08rem #979797; }
-        .phone-screen-5 .category ul li:last-child {
-          margin-bottom: 0; }
-
-  .recruit-detail .main {
-    padding: 0; }
-    .recruit-detail .main .category {
-      width: 100%;
-      padding: .52rem 0 .44rem;
-      text-align: center; }
-      .recruit-detail .main .category img {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        box-shadow: 0 0 .08rem #979797; }
-    .recruit-detail .main .recruit-position {
-      display: none;
-      margin: 0 .4rem;
-      width: auto;
-      box-shadow: 0 0 .08rem #4c4c4c;
-      border-radius: .1rem; }
-      .recruit-detail .main .recruit-position ul li.item-1:after, .recruit-detail .main .recruit-position ul li.item-1 .after {
-        content: "";
-        after: "";
-        position: absolute;
-        right: 2rem;
-        left: 0;
-        bottom: 0;
-        border-bottom: 1px solid #d7d7d7; }
-      .recruit-detail .main .recruit-position ul li.item-2:after, .recruit-detail .main .recruit-position ul li.item-2 .after {
-        content: "";
-        after: "";
-        position: absolute;
-        right: 2rem;
-        left: 0;
-        bottom: 0;
-        border-bottom: 1px solid #d7d7d7; }
-      .recruit-detail .main .recruit-position ul li.item-3:after, .recruit-detail .main .recruit-position ul li.item-3 .after {
-        content: "";
-        after: "";
-        position: absolute;
-        right: 2rem;
-        left: 0;
-        bottom: 0;
-        border-bottom: 1px solid #d7d7d7; }
-      .recruit-detail .main .recruit-position ul li.item-4:after, .recruit-detail .main .recruit-position ul li.item-4 .after {
-        content: "";
-        after: "";
-        position: absolute;
-        right: 2rem;
-        left: 0;
-        bottom: 0;
-        border-bottom: 1px solid #d7d7d7; }
-      .recruit-detail .main .recruit-position ul li.item-5:after, .recruit-detail .main .recruit-position ul li.item-5 .after {
-        content: "";
-        after: "";
-        position: absolute;
-        right: 2rem;
-        left: 0;
-        bottom: 0;
-        border-bottom: 1px solid #d7d7d7; }
-      .recruit-detail .main .recruit-position ul li .item-wrap {
-        padding: 0 .24rem; }
-      .recruit-detail .main .recruit-position ul li .item {
-        padding-left: .32rem;
-        height: .84rem;
-        line-height: .84rem; }
-        .recruit-detail .main .recruit-position ul li .item .title {
-          font-size: .3rem; }
-        .recruit-detail .main .recruit-position ul li .item .iconfont {
-          font-size: .4rem;
+      margin: .52rem auto 0;
+      width: 6.68rem; }
+      .phone-screen-5 .category ul {
+        text-align: center; }
+        .phone-screen-5 .category ul li {
+          height: 2rem;
+          line-height: 2rem;
+          font-size: .36rem;
           color: #0252d9;
-          margin-right: .16rem; } }
+          border-radius: 0.08rem;
+          margin-bottom: .44rem;
+          overflow: hidden;
+          text-align: center;
+          box-shadow: 0 0 .08rem #979797; }
+          .phone-screen-5 .category ul li:last-child {
+            margin-bottom: 0; }
+
+  .recruit-detail {
+    margin: 2.96rem auto 0;
+    width: 6.68rem;
+    display: none; }
+    .recruit-detail .main {
+      padding: 0; }
+      .recruit-detail .main .category {
+        width: 100%;
+        padding: .52rem 0 .44rem;
+        text-align: center; }
+        .recruit-detail .main .category img {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          box-shadow: 0 0 .08rem #979797; }
+      .recruit-detail .main .recruit-position {
+        box-shadow: 0 0 .08rem #4c4c4c;
+        border-radius: .1rem; }
+        .recruit-detail .main .recruit-position ul li.item-1:after, .recruit-detail .main .recruit-position ul li.item-1 .after {
+          content: "";
+          after: "";
+          width: 6.5rem;
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          margin: 0 auto;
+          border-bottom: 1px solid #d7d7d7; }
+        .recruit-detail .main .recruit-position ul li.item-2:after, .recruit-detail .main .recruit-position ul li.item-2 .after {
+          content: "";
+          after: "";
+          width: 6.5rem;
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          margin: 0 auto;
+          border-bottom: 1px solid #d7d7d7; }
+        .recruit-detail .main .recruit-position ul li.item-3:after, .recruit-detail .main .recruit-position ul li.item-3 .after {
+          content: "";
+          after: "";
+          width: 6.5rem;
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          margin: 0 auto;
+          border-bottom: 1px solid #d7d7d7; }
+        .recruit-detail .main .recruit-position ul li.item-4:after, .recruit-detail .main .recruit-position ul li.item-4 .after {
+          content: "";
+          after: "";
+          width: 6.5rem;
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          margin: 0 auto;
+          border-bottom: 1px solid #d7d7d7; }
+        .recruit-detail .main .recruit-position ul li.item-5:after, .recruit-detail .main .recruit-position ul li.item-5 .after {
+          content: "";
+          after: "";
+          width: 6.5rem;
+          position: absolute;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          margin: 0 auto;
+          border-bottom: 1px solid #d7d7d7; }
+        .recruit-detail .main .recruit-position ul li .item-wrap {
+          padding: 0 .24rem; }
+        .recruit-detail .main .recruit-position ul li .item {
+          padding-left: .32rem;
+          height: .84rem;
+          line-height: .84rem; }
+          .recruit-detail .main .recruit-position ul li .item .title {
+            font-size: .3rem; }
+          .recruit-detail .main .recruit-position ul li .item .iconfont {
+            font-size: .4rem;
+            color: #0252d9;
+            margin-right: .16rem; } }
+.animation-box {
+  height: 2rem;
+  width: 6.68rem;
+  line-height: 2rem;
+  font-size: .36rem;
+  color: #0252d9;
+  border-radius: 0.08rem;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 .08rem #979797;
+  position: fixed;
+  z-index: 11;
+  font-family: 'Regular';
+  background-color: #fff; }
+
+/*# sourceMappingURL=recruit.css.map */

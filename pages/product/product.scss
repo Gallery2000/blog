@@ -160,8 +160,8 @@ $gray:#fafafa;
         .main{
             overflow: hidden;
             .text-wrap{
-                margin-top: 1.04rem;
-                margin-bottom: .72rem;
+                margin-top: .52rem;
+                margin-bottom: .36rem;
                 overflow: hidden;
                 text-align: center;
                 .title{
@@ -186,11 +186,5 @@ $gray:#fafafa;
                 }
             }
         }
-    }
-}
-@media (max-height: 736px) {
-    .product-main .main .text-wrap{
-        margin-top: .64rem;
-    margin-bottom: .52rem;
     }
 }

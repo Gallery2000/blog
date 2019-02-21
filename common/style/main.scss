@@ -7,10 +7,10 @@
     url('http://at.alicdn.com/t/font_1002004_eixz5mi24k.ttf') format('truetype'),
     url('http://at.alicdn.com/t/font_1002004_eixz5mi24k.svg#iconfont') format('svg');
   }
-//   @font-face{
-//       font-family: 'Regular';
-//       src: url('../font/.font-spider/庞门正道标题体.ttf') format('truetype');
-//   }
+  @font-face{
+      font-family: 'Regular';
+      src: url('../font/.font-spider/庞门正道标题体.ttf') format('truetype');
+  }
   .regular-font {
       font-family: 'Regular';
   }
@@ -345,6 +345,7 @@ img{
         .navbar-wrap{
             .logo{
                 float: left;
+                position: relative;
                 font-size: 0;
                 padding: .26rem 0 .2rem; 
                 margin-left: .28rem;
@@ -355,6 +356,7 @@ img{
                 }
             }
             .icon{
+                position: relative;
                 z-index: 999;
                 float: right;
                 font-size: 0;

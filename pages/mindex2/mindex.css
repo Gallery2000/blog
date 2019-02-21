@@ -1,0 +1,508 @@
+@charset "UTF-8";
+ul.islider-outer > li .next-page {
+  position: absolute;
+  width: .8rem;
+  height: .8rem;
+  color: #0252d9;
+  bottom: .4rem;
+  left: 50%;
+  margin-left: -.4rem; }
+  ul.islider-outer > li .next-page .iconfont {
+    font-size: .8rem; }
+
+#iSlider-wrapper .section {
+  width: 100%;
+  height: 100%; }
+  #iSlider-wrapper .section .container {
+    overflow: hidden;
+    height: 100%;
+    padding-top: .96rem; }
+  #iSlider-wrapper .section .next-page {
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    color: #0252d9;
+    bottom: .4rem;
+    left: 50%;
+    margin-left: -.4rem; }
+    #iSlider-wrapper .section .next-page .iconfont {
+      font-size: .8rem; }
+  #iSlider-wrapper .section .text-wrap {
+    text-align: center;
+    margin-top: .52rem;
+    overflow: hidden; }
+    #iSlider-wrapper .section .text-wrap .title {
+      font-size: .44rem;
+      color: #0252d9;
+      margin-bottom: .3rem;
+      font-family: 'Regular'; }
+    #iSlider-wrapper .section .text-wrap .desc {
+      color: #000;
+      font-size: 0.28rem; }
+  #iSlider-wrapper .section .custom-pagination {
+    text-align: center; }
+    #iSlider-wrapper .section .custom-pagination .swiper-pagination-bullet {
+      margin: 0 .08rem; }
+  #iSlider-wrapper .section .footer-text {
+    font-size: .36rem;
+    text-align: center; }
+    #iSlider-wrapper .section .footer-text a {
+      color: #0252d9; }
+
+#iSlider-wrapper .phone-screen-1 {
+  background-color: #0252d9; }
+  #iSlider-wrapper .phone-screen-1 .container {
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 4.66rem;
+    margin-top: 0;
+    height: 100%; }
+    #iSlider-wrapper .phone-screen-1 .container .title {
+      overflow: hidden;
+      font-size: 1rem; }
+    #iSlider-wrapper .phone-screen-1 .container .desc {
+      font-size: .5rem;
+      margin-top: .4rem; }
+  #iSlider-wrapper .phone-screen-1 .next-page {
+    color: #fff; }
+
+#iSlider-wrapper .phone-screen-2 .container .headlines {
+  padding: .48rem 0;
+  text-align: center;
+  box-shadow: 0 0 0.08rem #eee;
+  margin: .56rem .28rem .86rem; }
+  #iSlider-wrapper .phone-screen-2 .container .headlines .title {
+    font-size: .44rem;
+    color: #0252d9;
+    line-height: .44rem;
+    margin-bottom: .74rem; }
+  #iSlider-wrapper .phone-screen-2 .container .headlines .desc {
+    color: #000;
+    font-size: .26rem;
+    line-height: .36rem; }
+#iSlider-wrapper .phone-screen-2 .container .slider-headlines {
+  margin: 0 auto;
+  width: 6.4rem; }
+  #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide {
+    position: relative;
+    height: 4.28rem; }
+    #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide img {
+      width: 100%;
+      height: 100%; }
+    #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap {
+      position: absolute;
+      top: .92rem;
+      left: .96rem;
+      color: #fff; }
+      #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .big-title {
+        font-weight: 400;
+        font-size: .7rem;
+        margin-bottom: .26rem; }
+      #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .desc {
+        font-size: .36rem;
+        font-weight: 100;
+        color: #fff; }
+#iSlider-wrapper .phone-screen-2 .custom-pagination {
+  margin-top: .2rem; }
+
+#iSlider-wrapper .phone-screen-3 .container .phone-slider {
+  width: 4.6rem; }
+  #iSlider-wrapper .phone-screen-3 .container .phone-slider .swiper-slide .img-wrap {
+    font-size: 0; }
+    #iSlider-wrapper .phone-screen-3 .container .phone-slider .swiper-slide .img-wrap img {
+      vertical-align: middle;
+      width: 100%; }
+#iSlider-wrapper .phone-screen-3 .container .custom-pagination.swiper-pagination-bullets {
+  margin-top: -0.2rem;
+  margin-bottom: .2rem; }
+
+#iSlider-wrapper .phone-screen-4 .container .slider-detail {
+  margin: .52rem auto 0;
+  width: 6.92rem; }
+  #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide {
+    text-align: center;
+    font-size: .36rem;
+    color: #000;
+    padding: .2rem; }
+    #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap {
+      width: 6.52rem;
+      border-radius: .08rem;
+      overflow: hidden;
+      box-shadow: 0 0 .1rem #979797; }
+      #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .title {
+        margin: .52rem 0; }
+      #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .desc {
+        margin-top: .96rem;
+        margin-bottom: .94rem;
+        padding: 0 .36rem; }
+      #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .img-wrap img {
+        width: 6rem;
+        height: 4rem;
+        box-shadow: 0 .04rem .08rem #000; }
+#iSlider-wrapper .phone-screen-4 .container .custom-pagination {
+  margin-bottom: .4rem; }
+
+#iSlider-wrapper .phone-screen-5 .container .text-wrap {
+  margin-bottom: .4rem;
+  font-size: 0; }
+  #iSlider-wrapper .phone-screen-5 .container .text-wrap .title {
+    margin-bottom: 0; }
+#iSlider-wrapper .phone-screen-5 .container .cooperation ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  #iSlider-wrapper .phone-screen-5 .container .cooperation ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 50%;
+    height: 3rem; }
+    #iSlider-wrapper .phone-screen-5 .container .cooperation ul li img {
+      width: 80%; }
+
+#iSlider-wrapper .phone-screen-6 .container .text-wrap .title {
+  margin-bottom: 0; }
+#iSlider-wrapper .phone-screen-6 .container .contact dl {
+  padding: 0 .8rem;
+  margin-top: .7rem; }
+  #iSlider-wrapper .phone-screen-6 .container .contact dl dd {
+    padding: .08rem 0;
+    display: flex;
+    align-items: center; }
+    #iSlider-wrapper .phone-screen-6 .container .contact dl dd .iconfont {
+      width: .8rem;
+      font-size: .5rem;
+      flex: 1; }
+    #iSlider-wrapper .phone-screen-6 .container .contact dl dd .text {
+      flex: 6;
+      font-size: .26rem;
+      line-height: .4rem;
+      display: inline-block; }
+#iSlider-wrapper .phone-screen-6 .call-map {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 8rem; }
+
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* 兼容iphone5 */
+  #iSlider-wrapper .section .text-wrap {
+    text-align: center;
+    margin-top: 0.364rem;
+    overflow: hidden; }
+    #iSlider-wrapper .section .text-wrap .title {
+      font-size: 0.396rem;
+      color: #0252d9;
+      margin-bottom: 0.21rem;
+      font-family: "Regular"; }
+    #iSlider-wrapper .section .text-wrap .desc {
+      color: #000;
+      font-size: 0.252rem; }
+
+  #iSlider-wrapper .phone-screen-2 {
+    margin-top: 0.14rem; }
+    #iSlider-wrapper .phone-screen-2 .container .headlines {
+      padding: 0.336rem 0;
+      margin: 0.392rem 0.28rem 0.602rem; }
+      #iSlider-wrapper .phone-screen-2 .container .headlines .title {
+        font-size: 0.396rem;
+        line-height: 0.396rem;
+        margin-bottom: 0.518rem; }
+      #iSlider-wrapper .phone-screen-2 .container .headlines .desc {
+        font-size: 0.234rem;
+        line-height: 0.324rem; }
+    #iSlider-wrapper .phone-screen-2 .container .slider-headlines {
+      width: 5.376rem; }
+      #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide {
+        position: relative;
+        height: 3.5952rem; }
+        #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap {
+          position: absolute;
+          top: 0.7728rem;
+          left: 0.8064rem;
+          color: #fff; }
+          #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .big-title {
+            font-weight: 400;
+            font-size: 0.588rem;
+            margin-bottom: 0.2184rem; }
+          #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .desc {
+            font-size: 0.3024rem;
+            font-weight: 100; }
+
+  #iSlider-wrapper .phone-screen-3 .container .phone-slider {
+    width: 3.312rem; }
+    #iSlider-wrapper .phone-screen-3 .container .phone-slider .swiper-slide .img-wrap {
+      font-size: 0; }
+      #iSlider-wrapper .phone-screen-3 .container .phone-slider .swiper-slide .img-wrap img {
+        vertical-align: middle;
+        width: 100%; }
+  #iSlider-wrapper .phone-screen-3 .container .custom-pagination.swiper-pagination-bullets {
+    margin-top: -0.12rem;
+    margin-bottom: 0.12rem; }
+
+  #iSlider-wrapper .phone-screen-4 .container .slider-detail {
+    margin: 0.2288rem auto 0;
+    width: 4.844rem; }
+    #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide {
+      text-align: center;
+      font-size: 0.288rem;
+      color: #000;
+      padding: 0.14rem; }
+      #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap {
+        width: 4.564rem;
+        overflow: hidden; }
+        #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .title {
+          margin: 0.2288rem 0; }
+        #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .desc {
+          margin-top: 0.4224rem;
+          margin-bottom: 0.4136rem;
+          padding: 0 0.252rem; }
+        #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .img-wrap img {
+          width: 4.2rem;
+          height: 2.8rem; }
+  #iSlider-wrapper .phone-screen-4 .container .custom-pagination {
+    margin-bottom: 0.12rem; }
+
+  #iSlider-wrapper .phone-screen-5 .container .text-wrap {
+    margin-bottom: 0.28rem; }
+  #iSlider-wrapper .phone-screen-5 .container .cooperation ul li {
+    height: 2.5rem; }
+
+  #iSlider-wrapper .phone-screen-6 .container .contact dl {
+    padding: 0 0.608rem;
+    margin-top: 0.35rem; }
+    #iSlider-wrapper .phone-screen-6 .container .contact dl dd {
+      padding: 0.056rem 0;
+      display: flex;
+      align-items: center; }
+      #iSlider-wrapper .phone-screen-6 .container .contact dl dd .iconfont {
+        font-size: 0.38rem;
+        flex: 1; }
+      #iSlider-wrapper .phone-screen-6 .container .contact dl dd .text {
+        flex: 7;
+        font-size: 0.1976rem;
+        line-height: 0.304rem;
+        display: inline-block; }
+  #iSlider-wrapper .phone-screen-6 .call-map {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 4.48rem; } }
+@media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  #iSlider-wrapper .section .text-wrap {
+    text-align: center;
+    margin-top: 0.416rem;
+    overflow: hidden; }
+    #iSlider-wrapper .section .text-wrap .title {
+      font-size: 0.396rem;
+      color: #0252d9;
+      margin-bottom: 0.24rem;
+      font-family: "Regular"; }
+    #iSlider-wrapper .section .text-wrap .desc {
+      color: #000;
+      font-size: 0.252rem; }
+
+  #iSlider-wrapper .phone-screen-2 .container .headlines {
+    padding: 0.3552rem 0;
+    margin: 0.4368rem 0.28rem 0.6708rem; }
+    #iSlider-wrapper .phone-screen-2 .container .headlines .title {
+      font-size: 0.396rem;
+      line-height: 0.396rem;
+      margin-bottom: 0.5476rem; }
+    #iSlider-wrapper .phone-screen-2 .container .headlines .desc {
+      font-size: 0.234rem;
+      line-height: 0.324rem; }
+  #iSlider-wrapper .phone-screen-2 .container .slider-headlines {
+    width: 5.76rem; }
+    #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide {
+      position: relative;
+      height: 3.852rem; }
+      #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap {
+        position: absolute;
+        top: 0.828rem;
+        left: 0.864rem;
+        color: #fff; }
+        #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .big-title {
+          font-weight: 400;
+          font-size: 0.63rem;
+          margin-bottom: 0.234rem; }
+        #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .desc {
+          font-size: 0.324rem;
+          font-weight: 100; }
+  #iSlider-wrapper .phone-screen-2 .custom-pagination {
+    margin-top: 0.156rem; }
+
+  #iSlider-wrapper .phone-screen-3 .container .phone-slider {
+    width: 3.772rem; }
+    #iSlider-wrapper .phone-screen-3 .container .phone-slider .swiper-slide .img-wrap {
+      font-size: 0; }
+      #iSlider-wrapper .phone-screen-3 .container .phone-slider .swiper-slide .img-wrap img {
+        vertical-align: middle;
+        width: 100%; }
+  #iSlider-wrapper .phone-screen-3 .container .custom-pagination.swiper-pagination-bullets {
+    margin-top: -0.16rem;
+    margin-bottom: 0.16rem; }
+
+  #iSlider-wrapper .phone-screen-4 .container .slider-detail {
+    margin: 0.3016rem auto 0;
+    width: 5.3976rem; }
+    #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide {
+      text-align: center;
+      font-size: 0.3024rem;
+      color: #000;
+      padding: 0.14rem; }
+      #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap {
+        width: 5.0856rem;
+        overflow: hidden; }
+        #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .title {
+          margin: 0.3016rem 0; }
+        #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .desc {
+          margin-top: 0.5568rem;
+          margin-bottom: 0.5452rem;
+          padding: 0 0.252rem; }
+        #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .img-wrap img {
+          width: 4.68rem;
+          height: 3.12rem; }
+  #iSlider-wrapper .phone-screen-4 .container .custom-pagination {
+    margin-bottom: 0.12rem; }
+
+  #iSlider-wrapper .phone-screen-5 .container .text-wrap {
+    margin-bottom: 0.32rem; }
+  #iSlider-wrapper .phone-screen-5 .container .cooperation ul li {
+    height: 2.8rem; }
+
+  #iSlider-wrapper .phone-screen-6 .container .contact dl {
+    padding: 0 0.608rem;
+    margin-top: 0.35rem; }
+    #iSlider-wrapper .phone-screen-6 .container .contact dl dd {
+      padding: 0.056rem 0;
+      display: flex;
+      align-items: center; }
+      #iSlider-wrapper .phone-screen-6 .container .contact dl dd .iconfont {
+        font-size: 0.38rem;
+        flex: 1; }
+      #iSlider-wrapper .phone-screen-6 .container .contact dl dd .text {
+        flex: 7;
+        font-size: 0.1976rem;
+        line-height: 0.304rem;
+        display: inline-block; }
+  #iSlider-wrapper .phone-screen-6 .call-map {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 4.48rem; } }
+@media (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  /*iphone6plus*/
+  #iSlider-wrapper .section .text-wrap {
+    text-align: center;
+    margin-top: 0.416rem;
+    overflow: hidden; }
+    #iSlider-wrapper .section .text-wrap .title {
+      font-size: 0.396rem;
+      color: #0252d9;
+      margin-bottom: 0.24rem;
+      font-family: "Regular"; }
+    #iSlider-wrapper .section .text-wrap .desc {
+      color: #000;
+      font-size: 0.252rem; }
+
+  #iSlider-wrapper .phone-screen-2 .container .headlines {
+    padding: 0.4032rem 0;
+    margin: 0.4368rem 0.28rem 0.6708rem; }
+    #iSlider-wrapper .phone-screen-2 .container .headlines .title {
+      font-size: 0.396rem;
+      line-height: 0.396rem;
+      margin-bottom: 0.6216rem; }
+    #iSlider-wrapper .phone-screen-2 .container .headlines .desc {
+      font-size: 0.234rem;
+      line-height: 0.324rem; }
+  #iSlider-wrapper .phone-screen-2 .container .slider-headlines {
+    width: 5.76rem; }
+    #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide {
+      position: relative;
+      height: 3.852rem; }
+      #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap {
+        position: absolute;
+        top: 0.828rem;
+        left: 0.864rem;
+        color: #fff; }
+        #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .big-title {
+          font-weight: 400;
+          font-size: 0.63rem;
+          margin-bottom: 0.234rem; }
+        #iSlider-wrapper .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .desc {
+          font-size: 0.324rem;
+          font-weight: 100; }
+
+  #iSlider-wrapper .phone-screen-3 .container .phone-slider {
+    width: 3.68rem; }
+    #iSlider-wrapper .phone-screen-3 .container .phone-slider .swiper-slide .img-wrap {
+      font-size: 0; }
+      #iSlider-wrapper .phone-screen-3 .container .phone-slider .swiper-slide .img-wrap img {
+        vertical-align: middle;
+        width: 100%; }
+  #iSlider-wrapper .phone-screen-3 .container .custom-pagination.swiper-pagination-bullets {
+    margin-top: -0.14rem;
+    margin-bottom: 0.14rem; }
+
+  #iSlider-wrapper .phone-screen-4 .container .slider-detail {
+    margin: 0.2704rem auto 0;
+    width: 5.3976rem; }
+    #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide {
+      text-align: center;
+      font-size: 0.3024rem;
+      color: #000;
+      padding: 0.14rem; }
+      #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap {
+        width: 5.0856rem;
+        overflow: hidden; }
+        #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .title {
+          margin: 0.2704rem 0; }
+        #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .desc {
+          margin-top: 0.4992rem;
+          margin-bottom: 0.4888rem;
+          padding: 0 0.252rem; }
+        #iSlider-wrapper .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .img-wrap img {
+          width: 4.68rem;
+          height: 3.12rem; }
+  #iSlider-wrapper .phone-screen-4 .container .custom-pagination {
+    margin-bottom: 0.12rem; }
+
+  #iSlider-wrapper .phone-screen-5 .container .text-wrap {
+    margin-bottom: 0.32rem; }
+  #iSlider-wrapper .phone-screen-5 .container .cooperation ul li {
+    height: 2.8rem; }
+
+  #iSlider-wrapper .phone-screen-6 .container .contact dl {
+    padding: 0 0.608rem;
+    margin-top: 0.35rem; }
+    #iSlider-wrapper .phone-screen-6 .container .contact dl dd {
+      padding: 0.056rem 0;
+      display: flex;
+      align-items: center; }
+      #iSlider-wrapper .phone-screen-6 .container .contact dl dd .iconfont {
+        font-size: 0.38rem;
+        flex: 1; }
+      #iSlider-wrapper .phone-screen-6 .container .contact dl dd .text {
+        flex: 7;
+        font-size: 0.1976rem;
+        line-height: 0.304rem;
+        display: inline-block; }
+  #iSlider-wrapper .phone-screen-6 .call-map {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 4.48rem; } }
+
+/*# sourceMappingURL=mindex.css.map */

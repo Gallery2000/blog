@@ -1,47 +1,7 @@
 @charset "UTF-8";
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden; }
-
-/*上滑提示*/
-@-webkit-keyframes swipeMoveTop {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 10px, 0); }
-  70% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0); }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -10px, 0); } }
-/*左滑提示*/
-@-webkit-keyframes swipeMoveLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(10px, 0, 0); }
-  70% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0); }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate3d(-10px, 0, 0); } }
-@-webkit-keyframes slideToTop {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100px, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0); } }
-#fullpage {
-  width: 100%;
-  height: 100%; }
-
 #fullpage .section {
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   position: relative; }
   #fullpage .section .container {
     overflow: hidden;
@@ -105,12 +65,12 @@ html, body {
   #fullpage .phone-screen-2 .container .headlines .title {
     font-size: .44rem;
     color: #0252d9;
-    line-height: .48rem;
+    line-height: .44rem;
     margin-bottom: .74rem; }
   #fullpage .phone-screen-2 .container .headlines .desc {
     color: #000;
     font-size: .26rem;
-    line-height: .38rem; }
+    line-height: .36rem; }
 #fullpage .phone-screen-2 .container .slider-headlines {
   margin: 0 auto;
   width: 6.4rem; }
@@ -120,16 +80,16 @@ html, body {
     #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide img {
       width: 100%;
       height: 100%; }
-    #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg {
+    #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap {
       position: absolute;
       top: .92rem;
       left: .96rem;
       color: #fff; }
-      #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg .big-title {
+      #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .big-title {
         font-weight: 400;
         font-size: .7rem;
         margin-bottom: .26rem; }
-      #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg .desc {
+      #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .desc {
         font-size: .36rem;
         font-weight: 100;
         color: #fff; }
@@ -237,35 +197,35 @@ html, body {
       color: #000;
       font-size: 0.252rem; }
 
-  #fullpage .phone-screen-2 .container .headlines {
-    padding: 0.24rem 0;
-    margin: 0.28rem 0.28rem 0.43rem; }
-    #fullpage .phone-screen-2 .container .headlines .title {
-      font-size: 0.396rem;
-      line-height: .48rem;
-      margin-bottom: 0.37rem; }
-    #fullpage .phone-screen-2 .container .headlines .desc {
-      font-size: 0.234rem;
-      line-height: .38rem; }
-  #fullpage .phone-screen-2 .container .slider-headlines {
-    width: 5.376rem; }
-    #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide {
-      position: relative;
-      height: 3.5952rem; }
-      #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg {
-        position: absolute;
-        top: 0.7728rem;
-        left: 0.8064rem;
-        color: #fff; }
-        #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg .big-title {
-          font-weight: 400;
-          font-size: 0.588rem;
-          margin-bottom: 0.2184rem; }
-        #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg .desc {
-          font-size: 0.3024rem;
-          font-weight: 100; }
-  #fullpage .phone-screen-2 .custom-pagination {
-    margin-top: 0.08rem; }
+  #fullpage .phone-screen-2 {
+    margin-top: 0.14rem; }
+    #fullpage .phone-screen-2 .container .headlines {
+      padding: 0.336rem 0;
+      margin: 0.392rem 0.28rem 0.602rem; }
+      #fullpage .phone-screen-2 .container .headlines .title {
+        font-size: 0.396rem;
+        line-height: 0.396rem;
+        margin-bottom: 0.518rem; }
+      #fullpage .phone-screen-2 .container .headlines .desc {
+        font-size: 0.234rem;
+        line-height: 0.324rem; }
+    #fullpage .phone-screen-2 .container .slider-headlines {
+      width: 5.376rem; }
+      #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide {
+        position: relative;
+        height: 3.5952rem; }
+        #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap {
+          position: absolute;
+          top: 0.7728rem;
+          left: 0.8064rem;
+          color: #fff; }
+          #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .big-title {
+            font-weight: 400;
+            font-size: 0.588rem;
+            margin-bottom: 0.2184rem; }
+          #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .desc {
+            font-size: 0.3024rem;
+            font-weight: 100; }
 
   #fullpage .phone-screen-3 .container .phone-slider {
     width: 3.312rem; }
@@ -299,7 +259,7 @@ html, body {
           width: 4.2rem;
           height: 2.8rem; }
   #fullpage .phone-screen-4 .container .custom-pagination {
-    margin-bottom: 0.04rem; }
+    margin-bottom: 0.12rem; }
 
   #fullpage .phone-screen-5 .container .text-wrap {
     margin-bottom: 0.28rem; }
@@ -342,37 +302,37 @@ html, body {
       font-size: 0.252rem; }
 
   #fullpage .phone-screen-2 .container .headlines {
-    padding: 0.288rem 0;
-    margin: 0.336rem 0.28rem 0.516rem; }
+    padding: 0.3552rem 0;
+    margin: 0.4368rem 0.28rem 0.6708rem; }
     #fullpage .phone-screen-2 .container .headlines .title {
       font-size: 0.396rem;
-      line-height: .48rem;
-      margin-bottom: 0.444rem; }
+      line-height: 0.396rem;
+      margin-bottom: 0.5476rem; }
     #fullpage .phone-screen-2 .container .headlines .desc {
       font-size: 0.234rem;
-      line-height: .38rem; }
+      line-height: 0.324rem; }
   #fullpage .phone-screen-2 .container .slider-headlines {
-    width: 5.504rem; }
+    width: 5.76rem; }
     #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide {
       position: relative;
-      height: 3.6808rem; }
-      #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg {
+      height: 3.852rem; }
+      #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap {
         position: absolute;
-        top: 0.644rem;
-        left: 0.672rem;
+        top: 0.828rem;
+        left: 0.864rem;
         color: #fff; }
-        #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg .big-title {
+        #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .big-title {
           font-weight: 400;
-          font-size: 0.602rem;
-          margin-bottom: 0.2236rem; }
-        #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg .desc {
-          font-size: 0.3096rem;
+          font-size: 0.63rem;
+          margin-bottom: 0.234rem; }
+        #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .desc {
+          font-size: 0.324rem;
           font-weight: 100; }
   #fullpage .phone-screen-2 .custom-pagination {
     margin-top: 0.156rem; }
 
   #fullpage .phone-screen-3 .container .phone-slider {
-    width: 3.588rem; }
+    width: 3.772rem; }
     #fullpage .phone-screen-3 .container .phone-slider .swiper-slide .img-wrap {
       font-size: 0; }
       #fullpage .phone-screen-3 .container .phone-slider .swiper-slide .img-wrap img {
@@ -380,10 +340,10 @@ html, body {
         width: 100%; }
   #fullpage .phone-screen-3 .container .custom-pagination.swiper-pagination-bullets {
     margin-top: -0.16rem;
-    margin-bottom: 0.08rem; }
+    margin-bottom: 0.16rem; }
 
   #fullpage .phone-screen-4 .container .slider-detail {
-    margin: 0.2288rem auto 0;
+    margin: 0.3016rem auto 0;
     width: 5.3976rem; }
     #fullpage .phone-screen-4 .container .slider-detail .swiper-slide {
       text-align: center;
@@ -394,10 +354,10 @@ html, body {
         width: 5.0856rem;
         overflow: hidden; }
         #fullpage .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .title {
-          margin: 0.2288rem 0; }
+          margin: 0.3016rem 0; }
         #fullpage .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .desc {
-          margin-top: 0.4224rem;
-          margin-bottom: 0.4136rem;
+          margin-top: 0.5568rem;
+          margin-bottom: 0.5452rem;
           padding: 0 0.252rem; }
         #fullpage .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap .img-wrap img {
           width: 4.68rem;
@@ -406,9 +366,9 @@ html, body {
     margin-bottom: 0.12rem; }
 
   #fullpage .phone-screen-5 .container .text-wrap {
-    margin-bottom: 0.16rem; }
+    margin-bottom: 0.32rem; }
   #fullpage .phone-screen-5 .container .cooperation ul li {
-    height: 2.7rem; }
+    height: 2.8rem; }
 
   #fullpage .phone-screen-6 .container .contact dl {
     padding: 0 0.608rem;
@@ -447,30 +407,30 @@ html, body {
       font-size: 0.252rem; }
 
   #fullpage .phone-screen-2 .container .headlines {
-    padding: 0.336rem 0;
-    margin: 0.336rem 0.28rem 0.516rem; }
+    padding: 0.4032rem 0;
+    margin: 0.4368rem 0.28rem 0.6708rem; }
     #fullpage .phone-screen-2 .container .headlines .title {
       font-size: 0.396rem;
-      line-height: .48rem;
-      margin-bottom: 0.518rem; }
+      line-height: 0.396rem;
+      margin-bottom: 0.6216rem; }
     #fullpage .phone-screen-2 .container .headlines .desc {
       font-size: 0.234rem;
-      line-height: .38rem; }
+      line-height: 0.324rem; }
   #fullpage .phone-screen-2 .container .slider-headlines {
     width: 5.76rem; }
     #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide {
       position: relative;
       height: 3.852rem; }
-      #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg {
+      #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap {
         position: absolute;
-        top: 0.736rem;
-        left: 0.768rem;
+        top: 0.828rem;
+        left: 0.864rem;
         color: #fff; }
-        #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg .big-title {
+        #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .big-title {
           font-weight: 400;
           font-size: 0.63rem;
           margin-bottom: 0.234rem; }
-        #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg .desc {
+        #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-wrap .desc {
           font-size: 0.324rem;
           font-weight: 100; }
 

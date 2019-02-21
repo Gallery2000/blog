@@ -3,13 +3,12 @@ $gray:#fafafa;
 .recruit-body {
     width: 100%;
     padding: 20px 0;
-    height: 100vh;
     // background-position: center center;
     // background-repeat: no-repeat;
     background-color: $blue; // margin-top: 50px;
     text-align: center;
     img {
-        width: 774px;
+        height: 100%;
     }
 }
 .fade {
@@ -242,11 +241,14 @@ $gray:#fafafa;
 @media (max-width: 768px) {
     body {
         padding-top: .96rem;
-        padding-bottom: 1rem;
+    }
+    .recruit-detail .main .recruit-position ul li.active.item .item .title{
+        font-size: .3rem;
     }
     .phone-screen-5 {
-        margin: .64rem 0;
+        margin: .52rem 0 .44rem;
         &.active {
+            display: none !important;
             .text-wrap {
                 display: none;
             }
@@ -277,11 +279,11 @@ $gray:#fafafa;
             }
         }
         .category {
-            // transition: all 1s;
-            margin: .92rem .4rem 0;
+            margin: .52rem auto 0;
+            width: 6.68rem;
             ul {
+                text-align: center;
                 li {
-                    // transition: all .5s;
                     height: 2rem;
                     line-height: 2rem;
                     font-size: .36rem;
@@ -299,6 +301,9 @@ $gray:#fafafa;
         }
     }
     .recruit-detail {
+        margin: 2.96rem auto 0;
+        width: 6.68rem;
+        display: none;
         .main {
             padding: 0;
             .category {
@@ -313,11 +318,11 @@ $gray:#fafafa;
                 }
             }
             .recruit-position {
-                display: none;
-                margin: 0 .4rem;
-                width: auto;
                 box-shadow: 0 0 .08rem #4c4c4c;
                 border-radius: .1rem;
+                &.active{
+                    // margin: 2.96rem auto;
+                }
                 ul {
                     li {
                         &.active {}
@@ -326,10 +331,12 @@ $gray:#fafafa;
                             &.item-#{$i} .after {
                                 content: "";
                                 after: "";
+                                width: 6.5rem;
                                 position: absolute;
-                                right: 2rem;
+                                right: 0;
                                 left: 0;
                                 bottom: 0;
+                                margin: 0 auto;
                                 border-bottom: 1px solid #d7d7d7;
                             }
                         }
@@ -354,4 +361,19 @@ $gray:#fafafa;
             }
         }
     }
+}
+.animation-box{
+    height: 2rem;
+    width: 6.68rem;
+    line-height: 2rem;
+    font-size: .36rem;
+    color: $blue;
+    border-radius: 0.08rem;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 .08rem #979797;
+    position: fixed;
+    z-index: 11;
+    font-family: 'Regular';
+    background-color: #fff;
 }

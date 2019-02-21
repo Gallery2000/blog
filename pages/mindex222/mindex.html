@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../common/style/main.css">
     <link rel="stylesheet" href="./mindex.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <link rel="stylesheet" href="../../common/style/jquery.fullPage.css">
     <script src="../../common/js/rem.js"></script>
     <title></title>
 </head>
@@ -16,9 +17,7 @@
     <div class="phone-navbar visible-xs">
         <div class="navbar-wrap clear">
             <div class="logo">
-                <a href="../mindex/mindex.html">
                 <img src="../../images/logit-title.png" alt="">
-            </a>
             </div>
             <div class="icon">
                 <i class="iconfont">&#xe655;</i>
@@ -26,10 +25,10 @@
         </div>
         <div class="full-screen">
             <ul>
-                <li><a data-index="1">发展历程</a></li>
-                <li><a data-index="2">产品中心</a></li>
-                <li><a data-index="3">招贤纳士</a></li>
-                <li><a data-index="5">联系我们</a></li>
+                <li><a data-name="develop">发展历程</a></li>
+                <li><a data-name="product">产品中心</a></li>
+                <li><a data-name="recruit">招贤纳士</a></li>
+                <li><a data-name="contact">联系我们</a></li>
             </ul>
         </div>
     </div>
@@ -60,25 +59,25 @@
                         </dl>
                     </div>
                 </div>
-                <div class="swiper-container slider-headlines" data-lock-next="true" data-lock-prev="true">
+                <div class="swiper-container slider-headlines">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="../../images/index/新科技.png" alt="">
-                            <div class="text-msg">
+                            <div class="text-wrap">
                                 <p class="big-title regular-font">新科技</p>
                                 <p class="desc">构筑智慧未来</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <img src="../../images/index/新文化.png" alt="">
-                            <div class="text-msg">
+                            <div class="text-wrap">
                                 <p class="big-title regular-font">新文化</p>
                                 <p class="desc">丰富精神生活</p>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <img src="../../images/index/社会责任.png" alt="">
-                            <div class="text-msg">
+                            <div class="text-wrap">
                                 <p class="big-title regular-font">社会责任</p>
                                 <p class="desc">履行使命担当</p>
                             </div>
@@ -99,7 +98,7 @@
                     </h1>
                     <p class="desc">全面布局打造高端产品</p>
                 </div>
-                <div class="swiper-container phone-slider" data-lock-next="true" data-lock-prev="true">
+                <div class="swiper-container phone-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="img-wrap">
@@ -138,7 +137,7 @@
                     </h1>
                     <p class="desc">全面布局打造高端产品</p>
                 </div>
-                <div class="swiper-container slider-detail" data-lock-next="true" data-lock-prev="true">
+                <div class="swiper-container slider-detail">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="slider-wrap">
@@ -267,45 +266,22 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
-    <script src="../../common/js/zepto.min.js"></script>
-    <script src="../../common/js/PageSlider.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../../common/js/jquery.easing.min.js"></script>
+    <script src="../../common/js/jquery.slimscroll.min.js"></script>
+    <script src="../../common/js/jquery.fullPage.min.js"></script>
     <script src="./mindex.js"></script>
     <script src="http://api.map.baidu.com/api?v=2.0&ak=5tXIMPokB8DvjlXvbeTBQmYFsgMGmls9"></script>
     <script>
         $(function () {
-           var oPageSlider =  new PageSlider({
-                pages: $('#fullpage .section'),
-                direction: 'vertical',          //可选，vertical 或 v 为上下滑动，horizontal 或 h 为左右滑动，默认为 vertical
-                currentClass: 'current',        //可选, 当前屏的class (方便实现内容的进场动画)，默认值为 'current'
-                gestureFollowing: 'false',      //可选，如果为 true，则开启手势跟随模式
-                hasDot: 'false',                //可选，生成标识点结构，样式自己控制
-                preventDefault: true,           //可选，是否阻止默认行为
-                rememberLastVisited: true,      //可选，记住上一次访问结束后的索引值，可用于实现页面返回后是否回到上次访问的页面
-                animationPlayOnce: false,       //可选，切换页面时，动画只执行一次
-                dev: false,                     //可选，开发模式，传入具体页面索引值
-                oninit: function () {},         //可选，初始化完成时的回调
-                onbeforechange: function () {}, //可选，开始切换前的回调
-                onchange: function () {},       //可选，每一屏切换完成时的回调
-                onSwipeUp: function () {},      //可选，swipeUp 回调
-                onSwipeDown: function () {},    //可选，swipeDown 回调
-                onSwipeLeft: function () {},    //可选，swipeLeft 回调
-                onSwipeRight: function () {}    //可选，swipeRight 回调
+            $('#fullpage').fullpage({
+                scrollOverflow:true,
+                verticalCentered: false,
+                resize: true
             });
-            $('.next-page').on('click',function(){
-                oPageSlider.next()
-            })
-            $('.full-screen').find('a').on('click',function(){
-                $('.phone-navbar').removeClass('active');
-                oPageSlider.moveTo($(this).attr('data-index'), true)
-            })
-            // oPageSlider.moveTo(5);
-            $('.phone-navbar').on('click','.icon',function(){
-                if($('.phone-navbar').hasClass('active')){
-                    $('.phone-navbar').removeClass('active');
-                }else{
-                    $('.phone-navbar').addClass('active');
-
-                }
+            $.fn.fullpage.moveTo(4);
+            $('.next-page').click(function(){
+                $.fn.fullpage.moveSectionDown();
             })
             function createDot(swiper, current, total) {
                 var customPaginationHtml = "";

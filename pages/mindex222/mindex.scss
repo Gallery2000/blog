@@ -1,62 +1,6 @@
 $blue:#0252d9;
 $gray:#fafafa;
-html, body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-/*上滑提示*/
-@-webkit-keyframes swipeMoveTop {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 10px, 0);
-    }
-    70% {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-    }
-    100% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, -10px, 0);
-    }
-}
-
-/*左滑提示*/
-@-webkit-keyframes swipeMoveLeft {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(10px, 0, 0);
-    }
-    70% {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-    }
-    100% {
-        opacity: 0;
-        -webkit-transform: translate3d(-10px, 0, 0);
-    }
-}
-
-@-webkit-keyframes slideToTop {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100px, 0);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-    }
-}
-#fullpage{
-    width: 100%;
-    height: 100%;
-}
 #fullpage .section {
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    position: relative;
     .container {
         overflow: hidden;
         height: 100%;
@@ -137,13 +81,13 @@ html, body {
             .title {
                 font-size: .44rem;
                 color: $blue;
-                line-height: .48rem;
+                line-height: .44rem;
                 margin-bottom: .74rem;
             }
             .desc {
                 color: #000;
                 font-size: .26rem;
-                line-height: .38rem;
+                line-height: .36rem;
             }
         }
         .slider-headlines {
@@ -156,7 +100,7 @@ html, body {
                     width: 100%;
                     height: 100%;
                 }
-                .text-msg {
+                .text-wrap {
                     position: absolute;
                     top: .92rem;
                     left: .96rem;
@@ -318,6 +262,18 @@ html, body {
 @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
     /* 兼容iphone5 */
     #fullpage .section {
+        .next-page {
+            position: absolute;
+            width: .8rem;
+            height: .8rem;
+            color: $blue;
+            bottom: .4rem;
+            left: 50%;
+            margin-left: -.4rem;
+            .iconfont {
+                font-size: .8rem;
+            }
+        }
         .text-wrap {
             text-align: center;
             margin-top: .52rem*0.7;
@@ -333,21 +289,33 @@ html, body {
                 font-size: .28rem*0.9;
             }
         }
-
+        .custom-pagination {
+            text-align: center;
+            .swiper-pagination-bullet {
+                margin: 0 .08rem;
+            }
+        }
+        .footer-text {
+            font-size: .36rem;
+            text-align: center;
+            a {
+                color: $blue;
+            }
+        }
     }
     #fullpage .phone-screen-2 {
         .container {
             .headlines {
-                padding: .48rem*0.5 0;
-                margin: .56rem*0.5 .28rem .86rem*0.5;
+                padding: .48rem*0.7 0;
+                margin: .56rem*0.7 .28rem .86rem*0.7;
                 .title {
                     font-size: .44rem*0.9;
-                    line-height: .48rem;
-                    margin-bottom: .74rem*0.5;
+                    line-height: .44rem*0.9;
+                    margin-bottom: .74rem*0.7;
                 }
                 .desc {
                     font-size: .26rem*0.9;
-                    line-height: .38rem;
+                    line-height: .36rem*0.9;
                 }
             }
             .slider-headlines {
@@ -355,7 +323,7 @@ html, body {
                 .swiper-slide {
                     position: relative;
                     height: 4.28rem*0.84;
-                    .text-msg {
+                    .text-wrap {
                         position: absolute;
                         top: .92rem*0.84;
                         left: .96rem*0.84;
@@ -373,9 +341,7 @@ html, body {
                 }
             }
         }
-        .custom-pagination {
-            margin-top: 0.2rem*.4;
-        }
+        margin-top: .2rem*0.7;
     }
     #fullpage .phone-screen-3 {
         .container {
@@ -429,7 +395,7 @@ html, body {
                 }
             }
             .custom-pagination {
-                margin-bottom: .4rem*0.1;
+                margin-bottom: .4rem*0.3;
             }
         }
     }
@@ -477,6 +443,18 @@ html, body {
 
 @media(min-device-width:375px)and(max-device-width:667px)and(-webkit-min-device-pixel-ratio:2) {
     #fullpage .section {
+        .next-page {
+            position: absolute;
+            width: .8rem;
+            height: .8rem;
+            color: $blue;
+            bottom: .4rem;
+            left: 50%;
+            margin-left: -.4rem;
+            .iconfont {
+                font-size: .8rem;
+            }
+        }
         .text-wrap {
             text-align: center;
             margin-top: .52rem*0.8;
@@ -492,40 +470,52 @@ html, body {
                 font-size: .28rem*0.9;
             }
         }
-
+        .custom-pagination {
+            text-align: center;
+            .swiper-pagination-bullet {
+                margin: 0 .08rem;
+            }
+        }
+        .footer-text {
+            font-size: .36rem;
+            text-align: center;
+            a {
+                color: $blue;
+            }
+        }
     }
     #fullpage .phone-screen-2 {
         .container {
             .headlines {
-                padding: .48rem*0.6 0;
-                margin: .56rem*0.6 .28rem .86rem*0.6;
+                padding: .48rem*0.74 0;
+                margin: .56rem*0.78 .28rem .86rem*0.78;
                 .title {
                     font-size: .44rem*0.9;
-                    line-height: .48rem;
-                    margin-bottom: .74rem*0.6;
+                    line-height: .44rem*0.9;
+                    margin-bottom: .74rem*0.74;
                 }
                 .desc {
                     font-size: .26rem*0.9;
-                    line-height: .38rem;
+                    line-height: .36rem*0.9;
                 }
             }
             .slider-headlines {
-                width: 6.4rem*0.86;
+                width: 6.4rem*0.9;
                 .swiper-slide {
                     position: relative;
-                    height: 4.28rem*0.86;
-                    .text-msg {
+                    height: 4.28rem*0.9;
+                    .text-wrap {
                         position: absolute;
-                        top: .92rem*0.7;
-                        left: .96rem*0.7;
+                        top: .92rem*0.9;
+                        left: .96rem*0.9;
                         color: #fff;
                         .big-title {
                             font-weight: 400;
-                            font-size: .7rem*0.86;
-                            margin-bottom: .26rem*0.86;
+                            font-size: .7rem*0.9;
+                            margin-bottom: .26rem*0.9;
                         }
                         .desc {
-                            font-size: .36rem*0.86;
+                            font-size: .36rem*0.9;
                             font-weight: 100;
                         }
                     }
@@ -539,7 +529,7 @@ html, body {
     #fullpage .phone-screen-3 {
         .container {
             .phone-slider {
-                width: 4.6rem*0.78;
+                width: 4.6rem*0.82;
                 .swiper-slide {
                     .img-wrap {
                         font-size: 0;
@@ -552,7 +542,7 @@ html, body {
             }
             .custom-pagination.swiper-pagination-bullets {
                 margin-top: -0.2rem*0.8;
-                margin-bottom: .2rem*0.4;
+                margin-bottom: .2rem*0.8;
             }
         }
     }
@@ -560,7 +550,7 @@ html, body {
     #fullpage .phone-screen-4 {
         .container {
             .slider-detail {
-                margin: .52rem*0.44 auto 0;
+                margin: .52rem*0.58 auto 0;
                 width: 6.92rem*0.78 ;
                 .swiper-slide {
                     text-align: center;
@@ -571,11 +561,11 @@ html, body {
                         width: 6.52rem*0.78;
                         overflow: hidden;
                         .title {
-                            margin: .52rem*0.44 0;
+                            margin: .52rem*0.58 0;
                         }
                         .desc {
-                            margin-top: .96rem*0.44;
-                            margin-bottom: .94rem*0.44;
+                            margin-top: .96rem*0.58;
+                            margin-bottom: .94rem*0.58;
                             padding: 0 .36rem*0.7;
                         }
                         .img-wrap {
@@ -594,10 +584,10 @@ html, body {
     }
     #fullpage .phone-screen-5 .container {
         .text-wrap{
-            margin-bottom:.4rem*0.4;
+            margin-bottom:.4rem*0.8;
         }
         .cooperation ul li{
-            height: 2.7rem;
+            height: 2.8rem;
         }
     }
     #fullpage .phone-screen-6 {
@@ -637,6 +627,18 @@ html, body {
 @media(min-device-width:414px)and(max-device-width:736px)and(-webkit-min-device-pixel-ratio:3) {
     /*iphone6plus*/
     #fullpage .section {
+        .next-page {
+            position: absolute;
+            width: .8rem;
+            height: .8rem;
+            color: $blue;
+            bottom: .4rem;
+            left: 50%;
+            margin-left: -.4rem;
+            .iconfont {
+                font-size: .8rem;
+            }
+        }
         .text-wrap {
             text-align: center;
             margin-top: .52rem*0.8;
@@ -652,21 +654,33 @@ html, body {
                 font-size: .28rem*0.9;
             }
         }
-
+        .custom-pagination {
+            text-align: center;
+            .swiper-pagination-bullet {
+                margin: 0 .08rem;
+            }
+        }
+        .footer-text {
+            font-size: .36rem;
+            text-align: center;
+            a {
+                color: $blue;
+            }
+        }
     }
     #fullpage .phone-screen-2 {
         .container {
             .headlines {
-                padding: .48rem*0.7 0;
-                margin: .56rem*0.6 .28rem .86rem*0.6;
+                padding: .48rem*0.84 0;
+                margin: .56rem*0.78 .28rem .86rem*0.78;
                 .title {
                     font-size: .44rem*0.9;
-                    line-height: .48rem;
-                    margin-bottom: .74rem*0.7;
+                    line-height: .44rem*0.9;
+                    margin-bottom: .74rem*0.84;
                 }
                 .desc {
                     font-size: .26rem*0.9;
-                    line-height: .38rem;
+                    line-height: .36rem*0.9;
                 }
             }
             .slider-headlines {
@@ -674,10 +688,10 @@ html, body {
                 .swiper-slide {
                     position: relative;
                     height: 4.28rem*0.9;
-                    .text-msg {
+                    .text-wrap {
                         position: absolute;
-                        top: .92rem*0.8;
-                        left: .96rem*0.8;
+                        top: .92rem*0.9;
+                        left: .96rem*0.9;
                         color: #fff;
                         .big-title {
                             font-weight: 400;
