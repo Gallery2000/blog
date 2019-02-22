@@ -48,12 +48,12 @@ body {
     position: absolute;
     width: .8rem;
     height: .8rem;
-    color: #0252d9;
     bottom: .4rem;
     left: 50%;
     margin-left: -.4rem; }
     #fullpage .slide-page .next-page .iconfont {
-      font-size: .8rem; }
+      font-size: .8rem;
+      color: #0252d9; }
   #fullpage .slide-page .text-wrap {
     margin-top: 3.7%;
     text-align: center;
@@ -92,7 +92,7 @@ body {
     #fullpage .phone-screen-1 .container .desc {
       font-size: .5rem;
       margin-top: .4rem; }
-  #fullpage .phone-screen-1 .next-page {
+  #fullpage .phone-screen-1 .next-page a .iconfont {
     color: #fff; }
 
 #fullpage .phone-screen-2 .container .headlines {
@@ -164,7 +164,7 @@ body {
       margin: 0 auto;
       border-radius: .08rem;
       overflow: hidden;
-      box-shadow: 0 0 .1rem #979797;
+      box-shadow: 0 0 .1rem #D1D1D1;
       display: -webkit-box;
       display: -webkit-flex;
       -webkit-display: flex;
@@ -246,7 +246,7 @@ body {
       font-size: .26rem;
       line-height: .4rem;
       display: inline-block; }
-#fullpage .phone-screen-6 .call-map {
+#fullpage .phone-screen-6 .container .call-map {
   position: absolute;
   bottom: 0;
   right: 0;

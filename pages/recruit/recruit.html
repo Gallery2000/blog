@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>招贤纳士</title>
 
@@ -41,25 +42,25 @@
         </div>
     </div>
     <div class="phone-navbar visible-xs">
-        <div class="navbar-wrap clear">
-            <div class="logo">
-                <a href="../mindex/mindex.html">
+            <div class="navbar-wrap clear">
+                <div class="logo">
+                    <a href="../mindex/mindex.html">
                     <img src="../../images/logit-title.png" alt="">
                 </a>
+                </div>
+                <div class="icon">
+                    <i class="iconfont">&#xe655;</i>
+                </div>
             </div>
-            <div class="icon">
-                <i class="iconfont">&#xe655;</i>
+            <div class="full-screen">
+                <ul>
+                    <li><a data-index="1" data-name="develop">发展历程</a></li>
+                    <li><a data-index="2" data-name="product">产品中心</a></li>
+                    <li><a data-index="3" data-name="recruit">招贤纳士</a></li>
+                    <li><a data-index="5" data-name="contact">联系我们</a></li>
+                </ul>
             </div>
         </div>
-        <div class="full-screen">
-            <ul>
-                <li><a data-name="develop">发展历程</a></li>
-                <li><a data-name="product">产品中心</a></li>
-                <li><a data-name="recruit">招贤纳士</a></li>
-                <li><a data-name="contact">联系我们</a></li>
-            </ul>
-        </div>
-    </div>
     <div class="phone-screen phone-screen-5 visible-xs">
         <div class="text-wrap">
             <h1 class="title">
@@ -90,16 +91,16 @@
                         <div class="text-wrap">职能类</div>
                     </div>
                     <div class="box col-lg-2 box col-md-2 box col-xs-2">
-                        <div class="text-wrap">职能类</div>
+                        <div class="text-wrap">技术类</div>
                     </div>
                     <div class="box col-lg-2 box col-md-2 box col-xs-2">
-                        <div class="text-wrap">职能类</div>
+                        <div class="text-wrap">产品类</div>
                     </div>
                     <div class="box col-lg-2 box col-md-2 box col-xs-2">
-                        <div class="text-wrap">职能类</div>
+                        <div class="text-wrap">运营类</div>
                     </div>
                     <div class="box col-lg-2 box col-md-2 box col-xs-2">
-                        <div class="text-wrap">职能类</div>
+                        <div class="text-wrap">营销类</div>
                     </div>
                 </div>
             </div>
@@ -558,7 +559,8 @@
                         'left': '50%',
                         'margin-left': '-1rem',
                         'top': '1.48rem'
-                    }, 200, function () {
+                    }, 200+index*50, function () {
+                        // $('.recruit-detail').append(box);
                         $(this).unbind('click').on('click', function () {
                             $('.phone-screen-5').show();
                             $('.recruit-detail').hide();

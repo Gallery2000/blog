@@ -68,12 +68,13 @@ body {
         position: absolute;
         width: .8rem;
         height: .8rem;
-        color: $blue;
+        
         bottom: .4rem;
         left: 50%;
         margin-left: -.4rem;
         .iconfont {
             font-size: .8rem;
+            color: $blue;
         }
     }
     .text-wrap {
@@ -126,7 +127,11 @@ body {
         }
     }
     .next-page {
-        color: #fff;
+        a{
+            .iconfont{
+                color: #fff;
+            }
+        }
     }
 }
 
@@ -224,7 +229,7 @@ body {
                     margin: 0 auto;
                     border-radius: .08rem;
                     overflow: hidden;
-                    box-shadow: 0 0 .1rem #979797;
+                    box-shadow: 0 0 .1rem #D1D1D1;
                     display: -webkit-box;
                     display: -webkit-flex;
                     -webkit-display: flex;
@@ -340,13 +345,13 @@ body {
                 }
             }
         }
-    }
-    .call-map {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        height: 40%;
+        .call-map {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 40%;
+        }
     }
 }
 

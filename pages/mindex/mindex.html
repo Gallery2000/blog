@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../common/style/main.css">
     <link rel="stylesheet" href="./mindex.css">
@@ -41,7 +42,9 @@
                 <p class="desc">专注互联网技术研发流量推广</p>
             </div>
             <div class="next-page" data-index="1">
-                <i class="iconfont">&#xe628;</i>
+                <a href="#develop">
+                        <i class="iconfont">&#xe628;</i>
+                </a>
             </div>
         </div>
         <div class="slide-page phone-screen-2">
@@ -60,7 +63,6 @@
                                         <dd>研发成果广泛应用于生产，工作的科技研发型企业。</dd>
                                     </dl>
                                 </div>
-                    
                 </div>
                 <div class="swiper-container slider-headlines" data-lock-next="true" data-lock-prev="true">
                     <div class="swiper-wrapper">
@@ -90,7 +92,10 @@
                 <div class="custom-pagination" id="eadlines-pagination"></div>
             </div>
             <div class="next-page" data-index="2">
-                <i class="iconfont">&#xe628;</i>
+                <a href="#product">
+                        <i class="iconfont">&#xe628;</i>
+                </a>
+                
             </div>
         </div>
         <div class="slide-page phone-screen-3">
@@ -133,16 +138,19 @@
                 </div>
             </div>
             <div class="next-page" data-index="2">
-                    <i class="iconfont">&#xe628;</i>
+                    <a href="#recruit">
+                            <i class="iconfont">&#xe628;</i>
+                    </a>
+                    
                 </div>
         </div>
         <div class="slide-page phone-screen-4">
             <div class="container">
                 <div class="text-wrap">
                     <h1 class="title">
-                        在产品研发上，我们开足马力
+                            让世界看到你的影响力
                     </h1>
-                    <p class="desc">全面布局打造高端产品</p>
+                    <p class="desc">我们渴望优秀的你加入进来，一起共创未来</p>
                 </div>
                 <div class="swiper-container slider-detail" data-lock-next="true" data-lock-prev="true">
                     <div class="swiper-wrapper">
@@ -193,7 +201,9 @@
                 </div>
             </div>
             <div class="next-page" data-index="2">
+                    <a href="#cooperation">
                     <i class="iconfont">&#xe628;</i>
+                    </a>
                 </div>
         </div>
         <div class="slide-page phone-screen-5">
@@ -233,7 +243,9 @@
                 </div>
             </div>
             <div class="next-page" data-index="2">
+                <a href="#contact">
                 <i class="iconfont">&#xe628;</i>
+            </a>
             </div>
         </div>
         <div class="slide-page phone-screen-6">
@@ -273,8 +285,9 @@
                         </dd>
                     </dl>
                 </div>
+                <div class="call-map" id="container-map"></div>
             </div>
-            <div class="call-map" id="container-map"></div>
+            
         </div>
     </div>
     <script src="../../common/js/jquery-1.9.1.min.js"></script>
@@ -318,8 +331,14 @@
                     case 'recruit':
                     slidepage.slideTo(4);
                     break;
+                    case 'cooperation':
+                    slidepage.slideTo(5);
+                    break;
                     case 'contact':
                     slidepage.slideTo(6);
+                    break;
+                    default:
+                    slidepage.slideTo(1);
                     break;
                 }
             }
@@ -349,6 +368,7 @@
 
             }
             new Swiper('.slider-headlines', {
+                speed:700,
                 paginationType: 'custom',
                 pagination: {
                     el: '#eadlines-pagination',
@@ -363,6 +383,8 @@
             })
             var myPhoneSlider =  new Swiper('.phone-slider', {
                 paginationType: 'custom',
+                // direction:1000,
+                speed:700,
                 loop:true,
                 autoplay:{
                     delay:3000,
@@ -376,6 +398,7 @@
             })
             myPhoneSlider.autoplay.stop();
             new Swiper('.slider-detail', {
+                speed:700,
                 paginationType: 'custom',
                 pagination: {
                     el: '#detail-pagination',
