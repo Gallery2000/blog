@@ -46,20 +46,19 @@
         <div class="section phone-screen-2">
             <div class="container">
                 <div class="headlines">
-                            <div class="title regular-font">
-                                    以互联网为基础的<br>
-                                    科技和文化公司
-                                </div>
-                                <div class="desc">
-                                    <dl>
-                                        <dd>广东畅游网络科技有限公司成立于2015年8月</dd>
-                                        <dd>位于珠口东岸，广东历史文化名城“东莞”</dd>
-                                        <dd>坐落在美丽的东莞松山湖高新技术开发区</dd>
-                                        <dd>是一家国内为数不多的，具备系统研发，定制实力，并将</dd>
-                                        <dd>研发成果广泛应用于生产，工作的科技研发型企业。</dd>
-                                    </dl>
-                                </div>
-                    
+                    <div class="title regular-font">
+                        以互联网为基础的<br>
+                        科技和文化公司
+                    </div>
+                    <div class="desc">
+                        <dl>
+                            <dd>广东畅游网络科技有限公司成立于2015年8月</dd>
+                            <dd>位于珠口东岸，广东历史文化名城“东莞”</dd>
+                            <dd>坐落在美丽的东莞松山湖高新技术开发区</dd>
+                            <dd>是一家国内为数不多的，具备系统研发，定制实力，并将</dd>
+                            <dd>研发成果广泛应用于生产，工作的科技研发型企业。</dd>
+                        </dl>
+                    </div>
                 </div>
                 <div class="swiper-container slider-headlines" data-lock-next="true" data-lock-prev="true">
                     <div class="swiper-wrapper">
@@ -103,16 +102,19 @@
                 <div class="swiper-container phone-slider" data-lock-next="true" data-lock-prev="true">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            
+                            <div class="img-wrap">
                                 <img src="../../images/产品介绍/一键刷机.png" alt="">
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            
+                            <div class="img-wrap">
                                 <img src="../../images/产品介绍/一键刷机.png" alt="">
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            
+                            <div class="img-wrap">
                                 <img src="../../images/产品介绍/一键刷机.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <!-- 如果需要分页器 -->
@@ -143,8 +145,9 @@
                                 <div class="title">
                                     办公环境
                                 </div>
-                                
+                                <div class="img-wrap">
                                     <img src="../../images/index/五险一金.png" alt="">
+                                </div>
                                 <div class="desc">
                                     公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
                                 </div>
@@ -155,8 +158,9 @@
                                 <div class="title">
                                     办公环境
                                 </div>
-                                
+                                <div class="img-wrap">
                                     <img src="../../images/index/五险一金.png" alt="">
+                                </div>
                                 <div class="desc">
                                     公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
                                 </div>
@@ -167,8 +171,9 @@
                                 <div class="title">
                                     办公环境
                                 </div>
-                                
+                                <div class="img-wrap">
                                     <img src="../../images/index/五险一金.png" alt="">
+                                </div>
                                 <div class="desc">
                                     公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
                                 </div>
@@ -265,7 +270,7 @@
     <script src="../../common/js/zepto.min.js"></script>
     <script src="../../common/js/PageSlider.js"></script>
     <script src="./mindex.js"></script>
-    <script src="http://api.map.baidu.com/api?v=2.0&ak=5tXIMPokB8DvjlXvbeTBQmYFsgMGmls9"></script>
+    <!-- <script src="http://api.map.baidu.com/api?v=2.0&ak=5tXIMPokB8DvjlXvbeTBQmYFsgMGmls9"></script> -->
     <script>
         $(function () {
            var oPageSlider =  new PageSlider({
@@ -293,7 +298,7 @@
                 $('.phone-navbar').removeClass('active');
                 oPageSlider.moveTo($(this).attr('data-index'), true)
             })
-            oPageSlider.moveTo(4);
+            // oPageSlider.moveTo(5);
             $('.phone-navbar').on('click','.icon',function(){
                 if($('.phone-navbar').hasClass('active')){
                     $('.phone-navbar').removeClass('active');
@@ -323,7 +328,6 @@
             })
             new Swiper('.phone-slider', {
                 paginationType: 'custom',
-                slidesPerView:'auto',
                 pagination: {
                     el: '#phone-pagination',
                 },
