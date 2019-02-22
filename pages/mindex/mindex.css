@@ -38,18 +38,13 @@ body {
   width: 100%;
   height: 100%; }
 
-#fullpage .section {
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  position: relative;
+#fullpage .slide-page {
   padding-top: .96rem;
   padding-bottom: 1.2rem; }
-  #fullpage .section .container {
+  #fullpage .slide-page .container {
     overflow: hidden;
     height: 100%; }
-  #fullpage .section .next-page {
+  #fullpage .slide-page .next-page {
     position: absolute;
     width: .8rem;
     height: .8rem;
@@ -57,29 +52,29 @@ body {
     bottom: .4rem;
     left: 50%;
     margin-left: -.4rem; }
-    #fullpage .section .next-page .iconfont {
+    #fullpage .slide-page .next-page .iconfont {
       font-size: .8rem; }
-  #fullpage .section .text-wrap {
+  #fullpage .slide-page .text-wrap {
     margin-top: 3.7%;
     text-align: center;
     overflow: hidden; }
-    #fullpage .section .text-wrap .title {
+    #fullpage .slide-page .text-wrap .title {
       font-size: .44rem;
       color: #0252d9;
       margin-bottom: 2.22%;
       font-family: 'Regular'; }
-    #fullpage .section .text-wrap .desc {
+    #fullpage .slide-page .text-wrap .desc {
       color: #000;
       font-size: 0.28rem; }
-  #fullpage .section .custom-pagination {
+  #fullpage .slide-page .custom-pagination {
     text-align: center;
     font-size: 0; }
-    #fullpage .section .custom-pagination .swiper-pagination-bullet {
+    #fullpage .slide-page .custom-pagination .swiper-pagination-bullet {
       margin: 0 .08rem; }
-  #fullpage .section .footer-text {
+  #fullpage .slide-page .footer-text {
     font-size: .36rem;
     text-align: center; }
-    #fullpage .section .footer-text a {
+    #fullpage .slide-page .footer-text a {
       color: #0252d9; }
 
 #fullpage .phone-screen-1 {
@@ -88,7 +83,7 @@ body {
     color: #fff;
     text-align: center;
     overflow: hidden;
-    padding-top: 3.7rem;
+    padding-top: 40%;
     margin-top: 0;
     height: 100%; }
     #fullpage .phone-screen-1 .container .title {
@@ -132,8 +127,8 @@ body {
       height: 100%; }
     #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg {
       position: absolute;
-      top: .92rem;
-      left: .96rem;
+      top: 14%;
+      left: 12%;
       color: #fff; }
       #fullpage .phone-screen-2 .container .slider-headlines .swiper-slide .text-msg .big-title {
         font-weight: 400;
@@ -147,6 +142,7 @@ body {
   margin-top: 3%; }
 
 #fullpage .phone-screen-3 .container .phone-slider {
+  margin-top: 2%;
   height: 75%; }
   #fullpage .phone-screen-3 .container .phone-slider .swiper-slide {
     text-align: center; }
@@ -158,13 +154,14 @@ body {
 
 #fullpage .phone-screen-4 .container .slider-detail {
   margin: 2% auto 0;
-  width: 76%;
   height: 72%; }
   #fullpage .phone-screen-4 .container .slider-detail .swiper-slide {
     font-size: .32rem;
     color: #000;
-    padding: .1rem; }
+    padding: .1rem 0; }
     #fullpage .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap {
+      width: 6rem;
+      margin: 0 auto;
       border-radius: .08rem;
       overflow: hidden;
       box-shadow: 0 0 .1rem #979797;
@@ -193,7 +190,8 @@ body {
         justify-content: center;
         -webkit-align-items: center;
         align-items: center;
-        padding: 0 .36rem; }
+        padding: 0 .36rem;
+        text-align: center; }
       #fullpage .phone-screen-4 .container .slider-detail .swiper-slide .slider-wrap img {
         padding: 0 .2rem;
         flex: 1;
@@ -207,7 +205,7 @@ body {
   #fullpage .phone-screen-5 .container .text-wrap .title {
     margin-bottom: 0; }
 #fullpage .phone-screen-5 .container .cooperation {
-  height: 100%; }
+  height: 90%; }
   #fullpage .phone-screen-5 .container .cooperation ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -223,8 +221,7 @@ body {
       justify-content: center;
       -webkit-align-items: center;
       align-items: center;
-      width: 50%;
-      height: 22.5%; }
+      width: 50%; }
       #fullpage .phone-screen-5 .container .cooperation ul li img {
         width: 80%; }
 
@@ -258,7 +255,11 @@ body {
 
 @media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
   #fullpage .phone-screen-3 .container .phone-slider {
-    height: 10%; }
+    margin-top: 0;
+    height: 74%; }
 
   #fullpage .phone-screen-4 .container .slider-detail {
-    height: 70%; } }
+    height: 70%; }
+
+  #fullpage .phone-screen-6 .container .contact dl dd {
+    padding: 0; } }

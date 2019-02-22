@@ -6,7 +6,11 @@
   src: url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.woff2") format("woff2"), url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.woff") format("woff"), url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.svg#iconfont") format("svg"); }
 @font-face {
   font-family: 'Regular';
-  src: url("../font/.font-spider/庞门正道标题体.ttf") format("truetype"); }
+  src: url("../font/庞门正道标题体.ttf") format("truetype"); }
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent; }
+
 .regular-font {
   font-family: 'Regular'; }
 
@@ -59,7 +63,8 @@ img {
   z-index: 999;
   transition: .1s;
   transition-timing-function: ease-out;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #000; }
   .blog-navbar:hover {
     height: 90px;
     height: 80px\0;

@@ -556,7 +556,8 @@
                         'width': '2rem',
                         'borderRadius': '1rem',
                         'left': '50%',
-                        'margin-left': '-1rem'
+                        'margin-left': '-1rem',
+                        'top': '1.48rem'
                     }, 200, function () {
                         $(this).unbind('click').on('click', function () {
                             $('.phone-screen-5').show();
@@ -572,9 +573,7 @@
                                 $(this).remove();
                             })
                         })
-                    }).animate({
-                        'top': '1.48rem'
-                    }, 400)
+                    })
                 })
             }
             // function clickHadnle(){
