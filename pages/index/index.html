@@ -41,11 +41,11 @@
             </div>
             <div class="phone-navbar visible-xs">
                     <div class="navbar-wrap clear">
-                        <div class="logo">
-                            <a href="../mindex/mindex.html">
-                            <img src="../../images/logit-title.png" alt="">
+                        <a href="../mindex/mindex.html">
+                            <div class="logo">
+                                <img src="../../images/logit-title.png" alt="">
+                            </div>
                         </a>
-                        </div>
                         <div class="icon">
                             <i class="iconfont">&#xe655;</i>
                         </div>
@@ -657,6 +657,23 @@
 
                         }
                     })
+                    var map = new BMap.Map("container-map");
+                    var point = new BMap.Point(113.893854, 22.933373);
+                    map.centerAndZoom(point, 18);
+                    var marker = new BMap.Marker(point); // 创建标注
+
+                    var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(46, 29), {
+                        anchor: new BMap.Size(15, 54),
+                        imageOffset: new BMap.Size(22, 0 - 12 * 25) // 设置图片偏移    
+                    });
+                    var marker = new BMap.Marker(point, {
+                        icon: myIcon
+                    });
+
+
+                    map.addOverlay(marker)
+
+                    map.enableScrollWheelZoom(true);
                 }
             }
             var time = new Date().getTime();
@@ -672,25 +689,6 @@
                 }
             }
         })
-    </script>
-    <script>
-        var map = new BMap.Map("container-map");
-        var point = new BMap.Point(113.893854, 22.933373);
-        map.centerAndZoom(point, 18);
-        var marker = new BMap.Marker(point); // 创建标注
-
-        var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(46, 29), {
-            anchor: new BMap.Size(15, 54),
-            imageOffset: new BMap.Size(22, 0 - 12 * 25) // 设置图片偏移    
-        });
-        var marker = new BMap.Marker(point, {
-            icon: myIcon
-        });
-
-
-        map.addOverlay(marker)
-
-        map.enableScrollWheelZoom(true);
     </script>
 </body>
 

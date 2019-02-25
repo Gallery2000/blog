@@ -40,11 +40,11 @@
             </div>
             <div class="phone-navbar visible-xs">
                     <div class="navbar-wrap clear">
-                        <div class="logo">
-                            <a href="../mindex/mindex.html">
-                            <img src="../../images/logit-title.png" alt="">
+                        <a href="../mindex/mindex.html">
+                            <div class="logo">
+                                <img src="../../images/logit-title.png" alt="">
+                            </div>
                         </a>
-                        </div>
                         <div class="icon">
                             <i class="iconfont">&#xe655;</i>
                         </div>
@@ -64,7 +64,7 @@
                 畅游浏览器应用软件
             </div>
             <div class="phone-wrap">
-              <img src="../../images/产品介绍/WIFI热点大师.png" alt="">
+              <img src="" alt="">
             </div>
             <div class="text-wrap">
                 <div class="release-time">发布时间：2018-09-18 16:50 </div>
@@ -116,6 +116,82 @@
         </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="../../common/js/globalPageHadnle.js"></script>
+    <script>
+        $(document).ready(function(){
+            var dataArr = ['WIFI热点大师','一键刷机','多开分身大师','手机优化','极速清理大师','游戏加速器','畅游云','畅游浏览器','看图大师','驱动大师','畅游影视大全','畅游头条']; 
+            var dataArr  = [
+                {
+                    title:'WIFI热点大师',
+                    desc:'一款免费共享无线WiFi热点的软件,能利用笔记本或者台式机的无线网卡共享出免费的无线热点,供智能手机等移动便携设备上网冲浪。',
+                    img:'WIFI热点大师'
+                },
+                {
+                    title:'一键刷机',
+                    desc:'安卓一键刷机工具，兼容超2000款机型，支持固件升级，ROOT权限一键获取',
+                    img:'一键刷机'
+                },
+                {
+                    title:'多开分身大师',
+                    desc:'一部手机登录两个微信，工作号生活号同时在线。轻松实现社交聊天APP、游戏等几乎所有应用的多账户同时在线，生活/工作互不干扰，娱乐/游戏双倍惊喜，让你的手机充满无限可能。',
+                    img:'多开分身大师'
+                },
+                {
+                    title:'手机优化',
+                    desc:'一款完全免费的手机优化工具，集合系统优化、网络优化、进程优化、电池优化…众多功能，运行更流畅、更省电',
+                    img:'手机优化'
+                },
+                {
+                    title:'极速清理大师',
+                    desc:'一款支持手机深度清理优化工具,可以智能分析和清理手机的存储空间和内存空间,从而让您的手机系统运行更加流畅',
+                    img:'极速清理大师'
+                },
+                {
+                    title:'游戏加速器',
+                    desc:'一款专业手游网络优化加速产品，一键解决手游因网络问题造成的游戏卡顿、延迟、掉线、加载缓慢等一系列问题，提高手游网络的稳定性，彻底告别卡顿等问题。',
+                    img:'游戏加速器'
+                },
+                {
+                    title:'畅游云',
+                    desc:'专业提供的云服务器、云数据库、云存储、CDN、大数据等服务，帮助企业畅游上云',
+                    img:'畅游云'
+                },
+                {
+                    title:'畅游浏览器',
+                    desc:'畅游浏览器,依托畅游人工智能、大数据处理等核心技术，提供丰富的内容资源和强大搜索能力，带给您全新的上网搜索体验。全新内核升级，让您的手机上网“飞”起来',
+                    img:'畅游浏览器'
+                },
+                {
+                    title:'看图大师',
+                    desc:'清新唯美风格的智能照片美化处理软件！ 各种方形模糊效果，还有Square唯美式视频制作！',
+                    img:'看图大师'
+                },
+                {
+                    title:'驱动大师',
+                    desc:'驱动大师是一款集驱动管理和硬件检测于一体的、专业级驱动管理和维护工具的万能驱动。驱动精灵为用户提供驱动备份、恢复、安装、删除、在线更新等实用功能。',
+                    img:'驱动大师'
+                },
+                {
+                    title:'畅游影视大全',
+                    desc:'影视资源很多的畅游影视，视频播放清晰流畅，操作界面简单美观，畅游影视不要会员，想看就看，海量高清视频360度满足你的需求 畅游影视功能齐全，快速下载，不花流量，下载到本地免费看',
+                    img:'畅游影视大全'
+                },
+                {
+                    title:'畅游头条',
+                    desc:'畅游头条，做您关注的今日头条，提供每日的热点新闻资讯，及时获取国内、国际头条新闻。从突发新闻到时事热点、社会趣闻、直播视频、精彩图集，随时随地看，一网打尽您的资讯需求！',
+                    img:'畅游头条'
+                }
+            ]
+            var dataId = QueryString('id');
+            var dataIndex = parseInt(dataId)-1;
+            $('.detail-body .title').text(dataArr[dataIndex].title);
+            $('.phone-wrap img').attr('src','../../images/产品介绍/'+dataArr[dataIndex].title+'.png')
+            $('.text-wrap .release-desc').text(dataArr[dataIndex].desc)
+             function QueryString(item){
+                var svalue = location.search.match(new RegExp("[\?\&]" + item + "=([^\&]*)(\&?)","i"));
+                return svalue ? svalue[1] : svalue;
+            }
+        })
+    </script>
 </body>
 
 </html>

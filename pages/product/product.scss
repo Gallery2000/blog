@@ -154,6 +154,10 @@ $gray:#fafafa;
     }
 }
 @media (max-width: 768px) {
+    .product-main .main .container-fluid .row .col-md-3 .img-wrap a img:hover{
+        transition: none;
+        transform: none;
+    }
     .product-main{
         padding-top: .96rem;
         overflow: hidden;
