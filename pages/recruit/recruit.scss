@@ -79,22 +79,30 @@ $gray:#fafafa;
             text-align: center;
         }
         .recruit-type {
+            height: 130px;
             .row {
                 .box {
+                    text-align: center;
                     .text-wrap {
                         width: 130px;
                         height: 130px;
+                        display: inline-block;
                         cursor: pointer;
                         text-align: center;
                         color: $blue;
                         font-family: 'Regular';
-                        border-radius: 50%;
                         background-color: #fafafa;
                         font-size: 26px;
                         line-height: 130px;
+                        behavior: url(ie-css3.htc);
+                        border-radius: 65px;
                         &:hover {
                             background-color: $blue;
                             color: #fff;
+                            color: #0252d9\0; 
+                            color: #0252d9\9\0;
+                            *color: #0252d9\0;
+                            _color: #0252d9\0;
                         }
                     }
                 }

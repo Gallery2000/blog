@@ -57,20 +57,30 @@
       font-size: 36px;
       font-weight: 200;
       text-align: center; }
-    .recruit-detail .main .recruit-type .row .box .text-wrap {
-      width: 130px;
-      height: 130px;
-      cursor: pointer;
-      text-align: center;
-      color: #0252d9;
-      font-family: 'Regular';
-      border-radius: 50%;
-      background-color: #fafafa;
-      font-size: 26px;
-      line-height: 130px; }
-      .recruit-detail .main .recruit-type .row .box .text-wrap:hover {
-        background-color: #0252d9;
-        color: #fff; }
+    .recruit-detail .main .recruit-type {
+      height: 130px; }
+      .recruit-detail .main .recruit-type .row .box {
+        text-align: center; }
+        .recruit-detail .main .recruit-type .row .box .text-wrap {
+          width: 130px;
+          height: 130px;
+          display: inline-block;
+          cursor: pointer;
+          text-align: center;
+          color: #0252d9;
+          font-family: 'Regular';
+          background-color: #fafafa;
+          font-size: 26px;
+          line-height: 130px;
+          behavior: url(ie-css3.htc);
+          border-radius: 65px; }
+          .recruit-detail .main .recruit-type .row .box .text-wrap:hover {
+            background-color: #0252d9;
+            color: #fff;
+            color: #0252d9 \0;
+            color: #0252d9 \9\0;
+            *color: #0252d9 \0;
+            _color: #0252d9 \0; }
     .recruit-detail .main .recruit-position {
       width: 1156px;
       margin: 24px auto 50px;

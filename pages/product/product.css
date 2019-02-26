@@ -44,7 +44,15 @@
         font-size: 0; }
         .product-main .main .container-fluid .row .col-md-3 {
           vertical-align: top;
-          height: 244px; }
+          height: 244px;
+          height: 300px\0;
+          height: 300px\9\0;
+          *height: 300px\0;
+          _height: 300px\0;
+          width: 25% \0;
+          width: 25% \9\0;
+          *width: 25% \0;
+          _width: 25% \0; }
           .product-main .main .container-fluid .row .col-md-3 .img-wrap {
             text-align: center; }
             .product-main .main .container-fluid .row .col-md-3 .img-wrap a {

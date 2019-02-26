@@ -41,7 +41,10 @@ $gray:#fafafa;
         *box-shadow: 0px 0px 6px #fff\0; 
         _box-shadow: 0px 0px 6px #fff\0; 
         behavior: url(ie-css3.htc); 
-        
+        width: 1045px\0; 
+        width: 1045px\9\0;
+        *width: 1045px\0;
+        _width: 1045px\0;
         .desc {
             font-size: 14px;
         }
@@ -55,7 +58,7 @@ $gray:#fafafa;
             width: 143px;
             height: 46px;
             box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-            border-radius: 4px;
+            
             line-height: 46px;
             font-size: 16px;
             text-align: center;
@@ -63,6 +66,7 @@ $gray:#fafafa;
             font-weight: 650;
             position: relative;
             z-index: 9;
+            border-radius: 4px;
             box-shadow: 0px 0px 6px #fff\0; 
             box-shadow: 0px 0px 6px #fff\9\0; 
             *box-shadow: 0px 0px 6px #fff\0; 
@@ -82,10 +86,13 @@ $gray:#fafafa;
                 top: 0;
                 behavior: url(ie-css3.htc);
                 z-index: 9;
+                // border-radius: 4px;
                 box-shadow: 0px 0px 6px #fff\0; 
                 box-shadow: 0px 0px 6px #fff\9\0; 
                 *box-shadow: 0px 0px 6px #fff\0; 
                 _box-shadow: 0px 0px 6px #fff\0; 
+                behavior: url(ie-css3.htc); 
+                background-color: #fff;
                 .text {
                     text-align: center;
                     font-size: 13px;

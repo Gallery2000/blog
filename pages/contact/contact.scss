@@ -56,14 +56,19 @@ $gray:#fafafa;
 
     .main {
         margin: 0 auto;
+        width: 1366px;
         .row{
             .map{
-                padding-right: 6%;
+                width: 50%;
+                float: left;
                 #container-map{
                     height: 458px;
                 }
             }
             .msg{
+                padding-left: 50px;
+                width: 50%;
+                float: right;
                 .header{
                     overflow: hidden;
                     margin-top: 32px;

@@ -102,6 +102,10 @@ $gray:#fafafa;
     .brief-introduction {
         margin: 0 auto;
         overflow: hidden;
+        width: 1200px\0; 
+        width: 1200px\9\0;
+        *width: 1200px\0;
+        _width: 1200px\0;
         .text-develop {
             font-size: 20px;
             font-weight: 400;
@@ -353,8 +357,8 @@ $gray:#fafafa;
             }
             .desc-avatar {
                 overflow: hidden;
-                margin: 42px auto 0;
-                .container {
+                margin: 42px 190px 0;
+                .container-fluid {
                     .row {
                         .detail {
                             padding: 10px 16px;
@@ -527,8 +531,16 @@ $gray:#fafafa;
             margin-top: 45px;
             overflow: hidden;
             padding-bottom: 50px;
+            width: 1366px\0; 
+            width: 1366px\9\0;
+            *width: 1366px\0;
+            _width: 1366px\0;
             .row {
                 .col-lg-3 {
+                    width: 25%\0; 
+                    width: 25%\9\0;
+                    *width: 25%\0;
+                    _width: 25%\0;
                     padding: 5px;
                     .img-wrap {
                         border: 1px solid #FFF;
