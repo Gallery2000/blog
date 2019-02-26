@@ -180,6 +180,8 @@ img{
                         color: #fff;
                         font-size: 18px;
                         position: relative;
+                        display: -webkit-box;
+                        display: -webkit-flex;
                         display: flex;
                         align-items: center;
                         justify-content: center;

@@ -17,10 +17,11 @@ $gray:#fafafa;
             margin-bottom: 20px;
             font-size: 28px;
             color: $blue;
+            font-weight: 400;
         }
 
         .phone-wrap {
-            height: 62vh;
+            height: 500px;
             // background-image: url(../../images/产品介绍/WIFI热点大师.png);
             // background-repeat: no-repeat;
             // background-position: center center;
@@ -30,6 +31,7 @@ $gray:#fafafa;
             transition: .5s;
             
             &:hover {
+                -webkit-transform: translate3d(0, -10px, 0);
                 transform: translate3d(0, -10px, 0);
             }
             img{
@@ -58,12 +60,12 @@ $gray:#fafafa;
         padding-top: .96rem;
     }
     .detail-body .main .title{
-        margin-bottom: 0;
+        margin-bottom: .2rem;
         margin-top: .52rem;
         font-size: .44rem;
     }
     .detail-body .main .phone-wrap{
-        width: 4rem;
+        height: 60vh;
     }
     .detail-body .main .text-wrap{
         margin-top: -.4rem;

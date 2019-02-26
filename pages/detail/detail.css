@@ -9,12 +9,14 @@
       margin-top: 52px;
       margin-bottom: 20px;
       font-size: 28px;
-      color: #0252d9; }
+      color: #0252d9;
+      font-weight: 400; }
     .detail-body .main .phone-wrap {
-      height: 62vh;
+      height: 500px;
       margin: 0 auto;
       transition: .5s; }
       .detail-body .main .phone-wrap:hover {
+        -webkit-transform: translate3d(0, -10px, 0);
         transform: translate3d(0, -10px, 0); }
       .detail-body .main .phone-wrap img {
         height: 100%; }
@@ -35,12 +37,12 @@
     padding-top: .96rem; }
 
   .detail-body .main .title {
-    margin-bottom: 0;
+    margin-bottom: .2rem;
     margin-top: .52rem;
     font-size: .44rem; }
 
   .detail-body .main .phone-wrap {
-    width: 4rem; }
+    height: 60vh; }
 
   .detail-body .main .text-wrap {
     margin-top: -.4rem; }

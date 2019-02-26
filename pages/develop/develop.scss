@@ -195,6 +195,7 @@ $gray:#fafafa;
                     width: 40%;
                     height: auto;
                     top: 50%;
+                    -webkit-transform: translate3d(0,-50%,0);
                     transform: translate3d(0,-50%,0);
                     padding:0 10px ;
                     .text{
@@ -247,6 +248,7 @@ $gray:#fafafa;
                 width: 360px;
                 height: auto;
                 top: 50%;
+                -webkit-transform: translate3d(0,-50%,0);
                 transform: translate3d(0,-50%,0);
                 padding:0 10px ;
             }
@@ -264,6 +266,7 @@ $gray:#fafafa;
                 width: 404px;
                 height: auto;
                 top: 50%;
+                -webkit-transform: translate3d(0,-50%,0);
                 transform: translate3d(0,-50%,0);
                 padding:0 10px ;
             }

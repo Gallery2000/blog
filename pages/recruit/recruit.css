@@ -60,6 +60,7 @@
     .recruit-detail .main .recruit-type .row .box .text-wrap {
       width: 130px;
       height: 130px;
+      cursor: pointer;
       text-align: center;
       color: #0252d9;
       font-family: 'Regular';

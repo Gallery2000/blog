@@ -70,6 +70,8 @@ $gray:#fafafa;
                                 height: 122px;
                                 transition: .4s;
                                 &:hover {
+                                    
+                                    -webkit-transform: scale(1.1);
                                     transform: scale(1.1);
                                 }
                             }
@@ -87,7 +89,7 @@ $gray:#fafafa;
                     .desc {
                         font-size: 12px;
                         text-align: left;
-                        width: 245px;
+                        max-width: 245px;
                         margin: 0 auto;
                         line-height: 18px;
                     }
