@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,WAAW;EACP,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EACX,gBAAgB,EALd,OAAO",
-"sources": ["brief.scss"],
-"names": [],
-"file": "brief.css"
-}

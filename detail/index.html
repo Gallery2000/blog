@@ -7,42 +7,40 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>产品介绍</title>
-    <link rel="stylesheet" href="../../common/style/main.css">
-    <link rel="stylesheet" href="./detail.css">
-    <link rel="stylesheet" href="../../common/style/bootstrap.css">
-    <script src="../../common/js/rem.js"></script>
+    <link rel="stylesheet" href="../common/style/main.css">
+    <link rel="stylesheet" href="../assets/css/detail.css">
+    <link rel="stylesheet" href="../common/style/bootstrap.css">
+    <script src="../common/js/rem.js"></script>
 </head>
 
 <body>
-        <div class="blog-navbar hidden-xs">
-                <div class="nav-main container clear">
-                    <a href="../index/index.html">
-                        <div class="logo-wrap">
-                                
-                            <img class="logo" src="../../images/logo.png" alt="">
-                        
-                        </div>
-                        <div class="logo-wrap">
-                            <img class="title" src="../../images/logit-title.png" alt="">
-                        </div>
-                    </a>
-                    <div class="list-wrap">
-                        <ul class="clear">
-                            <!-- <li class="item-1"><a href="../index/index.html">首页</a></li> -->
-                            <li class="item-2"><a href="../develop/develop.html">发展历程</a></li>
-                            <!-- <li class="item-3"><a href="javascript:;">公司动态</a></li> -->
-                            <li class="item-4"><a href="../product/product.html">产品中心</a></li>
-                            <li class="item-5"><a href="../recruit/recruit.html">招贤纳士</a></li>
-                            <li class="item-6"><a href="../contact/contact.html">联系我们</a></li>
-                        </ul>
-                    </div>
+    <div class="blog-navbar hidden-xs">
+        <div class="nav-main container clear">
+            <a href="/">
+                <div class="logo-wrap">
+                    <img class="logo" src="./images/logo.png" alt="">
                 </div>
+                <div class="logo-wrap">
+                    <img class="title" src="./images/logit-title.png" alt="">
+                </div>
+            </a>
+            <div class="list-wrap">
+                <ul class="clear">
+                    
+                    <li class="item-2"><a href="/develop/">发展历程</a></li>
+                    
+                    <li class="item-4"><a href="/product/">产品中心</a></li>
+                    <li class="item-5"><a href="/recruit/">招贤纳士</a></li>
+                    <li class="item-6"><a href="/contact/">联系我们</a></li>
+                </ul>
             </div>
+        </div>
+    </div>
             <div class="phone-navbar visible-xs">
                     <div class="navbar-wrap clear">
-                        <a href="../mindex/mindex.html">
+                        <a href="/mindex/">
                             <div class="logo">
-                                <img src="../../images/logit-title.png" alt="">
+                                <img src="../images/logit-title.png" alt="">
                             </div>
                         </a>
                         <div class="icon">
@@ -99,7 +97,7 @@
             </div>
 
             <div class="logo-title">
-                <img data-src="../../images/logit-title.png" alt="">
+                <img data-src="../images/logit-title.png" alt="">
             </div>
         </div>
     </div> -->
@@ -114,8 +112,8 @@
                 </p>
             </div>
         </div>
-    <script src="../../common/js/jquery-1.9.1.min.js"></script>
-    <script src="../../common/js/globalPageHadnle.js"></script>
+    <script src="../common/js/jquery-1.9.1.min.js"></script>
+    <script src="../common/js/globalPageHadnle.js"></script>
     <script>
         $(document).ready(function(){
             var dataArr = ['WIFI热点大师','一键刷机','多开分身大师','手机优化','极速清理大师','游戏加速器','畅游云','畅游浏览器','看图大师','驱动大师','畅游影视大全','畅游头条']; 
@@ -184,7 +182,7 @@
             var dataId = QueryString('id');
             var dataIndex = parseInt(dataId)-1;
             $('.detail-body .title').text(dataArr[dataIndex].title);
-            $('.phone-wrap img').attr('src','../../images/产品介绍/'+dataArr[dataIndex].title+'.png')
+            $('.phone-wrap img').attr('src','../images/产品介绍/'+dataArr[dataIndex].title+'.png')
             $('.text-wrap .release-desc').text(dataArr[dataIndex].desc)
              function QueryString(item){
                 var svalue = location.search.match(new RegExp("[\?\&]" + item + "=([^\&]*)(\&?)","i"));

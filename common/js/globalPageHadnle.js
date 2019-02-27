@@ -39,6 +39,6 @@ $(document).ready(function () {
     $('.full-screen').find('a').on('click',function(){
         $('.phone-navbar').removeClass('active');
         // slidepage.slideTo(parseInt($(this).attr('data-index'))+1);
-        location.href = '../mindex/mindex.html#'+$(this).attr('data-name');
+        location.href = '/mindex/#'+$(this).attr('data-name');
     })
 })
