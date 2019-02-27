@@ -526,23 +526,27 @@
     <script>
         $(document).ready(function () {
             if (document.documentElement.clientWidth > 750) {
-                $('.recruit-body').height(window.innerHeight - 120);
-                $('.recruit-body img').addClass('bounceIn');
-                setTimeout(function(){
-                    var recruitBodyHeight = $('.recruit-body').get(0).offsetHeight;
-                    $('body,html').animate({
-                        scrollTop: recruitBodyHeight
-                    },
-                        {
-                            step: function () {
-                                var htmlHeight = document.documentElement.offsetHeight;
-                                if (htmlHeight < window.innerHeight) {
-                                    var oldBottom = parseInt($('.recruit-position').css('margin-bottom'));
-                                    $('.recruit-position').css('margin-bottom', window.innerHeight - htmlHeight + oldBottom)
+                var img = new Image();
+                img.src = '../../images/recruit/recruit.png';
+                img.onload = function(){
+                    $('.recruit-body').height(window.innerHeight - 120);
+                    $('.recruit-body img').addClass('bounceIn');
+                    setTimeout(function(){
+                        var recruitBodyHeight = $('.recruit-body').get(0).offsetHeight;
+                        $('body,html').animate({
+                            scrollTop: recruitBodyHeight
+                        },
+                            {
+                                step: function () {
+                                    var htmlHeight = document.documentElement.offsetHeight;
+                                    if (htmlHeight < window.innerHeight) {
+                                        var oldBottom = parseInt($('.recruit-position').css('margin-bottom'));
+                                        $('.recruit-position').css('margin-bottom', window.innerHeight - htmlHeight + oldBottom)
+                                    }
                                 }
-                            }
-                        })
-                }, 1000);
+                            })
+                    }, 1000);
+                }
             } else {
                 $('.category').on('click', 'li', function () {
                     var top = $(this).offset().top;

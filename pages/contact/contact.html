@@ -136,23 +136,25 @@
     <script src="../../common/js/globalPageHadnle.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5tXIMPokB8DvjlXvbeTBQmYFsgMGmls9"></script>
     <script>
-        var map = new BMap.Map("container-map");
-        var point = new BMap.Point(113.893854, 22.933373);
-        map.centerAndZoom(point, 18);
-        var marker = new BMap.Marker(point); // 创建标注
+        $(document).ready(function(){
+            var map = new BMap.Map("container-map");
+            var point = new BMap.Point(113.893854, 22.933373);
+            map.centerAndZoom(point, 18);
+            var marker = new BMap.Marker(point); // 创建标注
 
-        var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(46, 29), {
-            anchor: new BMap.Size(15, 54),
-            imageOffset: new BMap.Size(22, 0 - 12 * 25) // 设置图片偏移    
-        });
-        var marker = new BMap.Marker(point, {
-            icon: myIcon
-        });
+            var myIcon = new BMap.Icon("http://api.map.baidu.com/img/markers.png", new BMap.Size(46, 29), {
+                anchor: new BMap.Size(15, 54),
+                imageOffset: new BMap.Size(22, 0 - 12 * 25) // 设置图片偏移    
+            });
+            var marker = new BMap.Marker(point, {
+                icon: myIcon
+            });
 
 
-        map.addOverlay(marker)
+            map.addOverlay(marker)
 
-        map.enableScrollWheelZoom(true);
+            map.enableScrollWheelZoom(true);
+        })
     </script>
 </body>
 
