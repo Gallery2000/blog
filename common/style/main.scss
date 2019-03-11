@@ -9,7 +9,7 @@
   }
   @font-face{
       font-family: 'Regular';
-      src: url('../font/庞门正道标题体.ttf') format('truetype');
+      src: url('../font/regular.ttf') format('truetype');
   }
   *{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -107,7 +107,6 @@ img{
             }
 
             .logo {
-                width: 60px;
                 height: 60px;
                 position: absolute;
                 left: 0;

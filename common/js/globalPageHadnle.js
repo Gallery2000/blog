@@ -4,7 +4,6 @@ $(document).ready(function () {
         start()
     })
     function start() {
-        //.not('[data-isLoaded]')选中已加载的图片不需要重新加载
         $('img').not('[data-isLoaded]').each(function () {
             var $node = $(this)
             if (isShow($node)) {
@@ -38,7 +37,6 @@ $(document).ready(function () {
     })
     $('.full-screen').find('a').on('click',function(){
         $('.phone-navbar').removeClass('active');
-        // slidepage.slideTo(parseInt($(this).attr('data-index'))+1);
-        location.href = '/mindex/#'+$(this).attr('data-name');
+        location.href = '/m/#'+$(this).attr('data-name');
     })
 })

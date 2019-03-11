@@ -14,7 +14,8 @@
     .detail-body .main .phone-wrap {
       height: 500px;
       margin: 0 auto;
-      transition: .5s; }
+      transition: .5s;
+      display: inline-block; }
       .detail-body .main .phone-wrap:hover {
         -webkit-transform: translate3d(0, -10px, 0);
         transform: translate3d(0, -10px, 0); }
@@ -58,5 +59,3 @@
   .detail-body .main .phone-wrap:hover {
     transform: none;
     transition: none; } }
-
-/*# sourceMappingURL=detail.css.map */

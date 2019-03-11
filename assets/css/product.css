@@ -29,7 +29,7 @@
   width: 100%;
   overflow: hidden; }
   .product-main .main {
-    margin: 0 auto;
+    margin: 0 auto 76px;
     overflow: hidden; }
     .product-main .main .title {
       font-size: 36px;
@@ -107,5 +107,3 @@
           .product-main .main .container-fluid .row .col-md-3 {
             height: auto;
             margin-bottom: .2rem; } }
-
-/*# sourceMappingURL=product.css.map */

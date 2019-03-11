@@ -4,9 +4,17 @@
 <head>
     <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+      <link rel="shortcut icon" href="./favicon.ico">
+      
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>畅游科技</title>
+    <script>
+    (function(){
+        if(document.documentElement.clientWidth<=750){
+            location.href = '/m/';
+        }
+    })()
+    </script>
     <link rel="stylesheet" href="./common/style/main.css">
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./common/style/swiper.min.css">
@@ -27,9 +35,9 @@
                     </a>
                     <div class="list-wrap">
                         <ul class="clear">
-                            <li class="item-2"><a href="/develop/">发展历程</a></li>
+                            <li class="item-2"><a href="/news/">发展历程</a></li>
                             <li class="item-4"><a href="/product/">产品中心</a></li>
-                            <li class="item-5"><a href="/recruit/">招贤纳士</a></li>
+                            <li class="item-5"><a href="/join/">招贤纳士</a></li>
                             <li class="item-6"><a href="/contact/">联系我们</a></li>
                         </ul>
                     </div>
@@ -37,7 +45,7 @@
             </div>
             <div class="phone-navbar visible-xs">
                     <div class="navbar-wrap clear">
-                        <a href="/mindex/">
+                        <a href="/m/">
                             <div class="logo">
                                 <img src="./images/logit-title.png" alt="">
                             </div>
@@ -48,9 +56,9 @@
                     </div>
                     <div class="full-screen">
                         <ul>
-                            <li><a data-index="1" data-name="develop">发展历程</a></li>
+                            <li><a data-index="1" data-name="news">发展历程</a></li>
                             <li><a data-index="2" data-name="product">产品中心</a></li>
-                            <li><a data-index="3" data-name="recruit">招贤纳士</a></li>
+                            <li><a data-index="3" data-name="join">招贤纳士</a></li>
                             <li><a data-index="5" data-name="contact">联系我们</a></li>
                         </ul>
                     </div>
@@ -62,7 +70,7 @@
             <i class="iconfont">&#xe628;</i>
         </div>
     </div>
-    <div class="phone-screen phone-screen-2 visible-xs" id="develop">
+    <div class="phone-screen phone-screen-2 visible-xs" id="news">
         <div class="headlines">
             <div class="title regular-font">
                 以互联网为基础的<br>
@@ -81,33 +89,29 @@
         <div class="swiper-container slider-headlines">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="./images/index/新科技.png" alt="">
+                    <img src="./images/index/science.png" alt="">
                     <div class="text-wrap">
                         <p class="big-title regular-font">新科技</p>
                         <p class="desc">构筑智慧未来</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="./images/index/新文化.png" alt="">
+                    <img src="./images/index/new-culture.png" alt="">
                     <div class="text-wrap">
                         <p class="big-title regular-font">新文化</p>
                         <p class="desc">丰富精神生活</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="./images/index/社会责任.png" alt="">
+                    <img src="./images/index/social.png" alt="">
                     <div class="text-wrap">
                         <p class="big-title regular-font">社会责任</p>
                         <p class="desc">履行使命担当</p>
                     </div>
                 </div>
             </div>
-            <!-- 如果需要分页器 -->
             <div class="swiper-pagination"></div>
         </div>
-        <!-- <div class="next-page" data-index="2">
-            <i class="iconfont">&#xe628;</i>
-        </div> -->
     </div>
     <div class="phone-screen phone-screen-3 visible-xs" id="product">
         <div class="text-wrap">
@@ -120,21 +124,20 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="img-wrap">
-                        <img src="./images/产品介绍/一键刷机.png" alt="">
+                        <img src="./images/introduction/one-click-brusher.png" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="img-wrap">
-                        <img src="./images/产品介绍/一键刷机.png" alt="">
+                        <img src="./images/introduction/one-click-brusher.png" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="img-wrap">
-                        <img src="./images/产品介绍/一键刷机.png" alt="">
+                        <img src="./images/introduction/one-click-brusher.png" alt="">
                     </div>
                 </div>
             </div>
-            <!-- 如果需要分页器 -->
             <div class="swiper-pagination"></div>
         </div>
         <div class="footer-text regular-font">
@@ -142,11 +145,8 @@
                 查看更多
             </a>
         </div>
-        <!-- <div class="next-page" data-index="3">
-            <i class="iconfont">&#xe628;</i>
-        </div> -->
     </div>
-    <div class="phone-screen phone-screen-4 visible-xs" id="recruit">
+    <div class="phone-screen phone-screen-4 visible-xs" id="join">
         <div class="text-wrap">
             <h1 class="title">
                 在产品研发上，我们开足马力
@@ -161,7 +161,7 @@
                             办公环境
                         </div>
                         <div class="img-wrap">
-                            <img src="./images/index/五险一金.png" alt="">
+                            <img src="./images/index/guarantee.png" alt="">
                         </div>
                         <div class="desc">
                             公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
@@ -174,7 +174,7 @@
                             办公环境
                         </div>
                         <div class="img-wrap">
-                            <img src="./images/index/五险一金.png" alt="">
+                            <img src="./images/index/guarantee.png" alt="">
                         </div>
                         <div class="desc">
                             公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
@@ -187,7 +187,7 @@
                             办公环境
                         </div>
                         <div class="img-wrap">
-                            <img src="./images/index/五险一金.png" alt="">
+                            <img src="./images/index/guarantee.png" alt="">
                         </div>
                         <div class="desc">
                             公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
@@ -199,33 +199,30 @@
         </div>
         <div class="swiper-pagination custom-pagination"></div>
         <div class="footer-text regular-font">
-            <a href="/recruit/">
+            <a href="/join/">
                 加入我们
             </a>
         </div>
-        <!-- <div class="next-page" data-index="4">
-            <i class="iconfont">&#xe628;</i>
-        </div> -->
     </div>
     <div class="index-body hidden-xs">
         <div class="main container clear">
             <div class="text-wrap">
                 <div class="sm-title">
-                    <img src="./images/index/导语.png" alt="">
+                    <img src="./images/index/Introduction.png" alt="">
                 </div>
                 <div class="big-title">
-                    <img src="./images/index/有态度.png" alt="">
+                    <img src="./images/index/attitude.png" alt="">
                 </div>
             </div>
             <div class="img-wrap hidden-sm hidden-md">
                 <div class="img-box-1">
-                    <img src="./images/index/1.png" alt="">
+                    <img src="./images/index/work.png" alt="">
                 </div>
                 <div class="img-box-2">
-                    <img src="./images/index/42a098ca088ddbc144b9824c6a548c2d.png" alt="">
+                    <img src="./images/index/work-cloud.png" alt="">
                 </div>
                 <div class="img-box-3">
-                    <img src="./images/index/3.png" alt="">
+                    <img src="./images/index/work2.png" alt="">
                 </div>
             </div>
         </div>
@@ -241,21 +238,21 @@
             <div class="slider-wrap container-fluid">
                 <div class="row">
                     <div class="culture col-lg-4  col-md-4 col-xs-4">
-                        <img src="./images/index/新科技.png" alt="">
+                        <img src="./images/index/science.png" alt="">
                         <div class="text-wrap">
                             <p class="big-title regular-font">新科技</p>
                             <p class="desc">构筑智慧未来</p>
                         </div>
                     </div>
                     <div class="culture col-lg-4  col-md-4 col-xs-4">
-                        <img src="./images/index/新文化.png" alt="">
+                        <img src="./images/index/new-culture.png" alt="">
                         <div class="text-wrap">
                             <p class="big-title regular-font">新文化</p>
                             <p class="desc">丰富精神生活</p>
                         </div>
                     </div>
                     <div class="culture col-lg-4  col-md-4 col-xs-4">
-                        <img src="./images/index/社会责任.png" alt="">
+                        <img src="./images/index/social.png" alt="">
                         <div class="text-wrap">
                             <p class="big-title regular-font">社会责任</p>
                             <p class="desc">履行使命担当</p>
@@ -263,69 +260,80 @@
                     </div>
                 </div>
             </div>
-            <div class="text-develop">
-                <a href="/develop/">发展历程</a>
+            <div class="text-news">
+                <a href="/news/">发展历程</a>
             </div>
             <div class="more-wrap">
-                <div class="more-title regular-font">在产品研究上，我们开足马力</div>
+                <div class="more-title regular-font">在产品研发上，我们开足马力</div>
                 <p class="more-text">全面布局打造高端产品</p>
                 <div class="swiper-container phone-and-msg swiper-no-swiping">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
+                            <a href="/detail/?id=1">
                             <div class="img-wrap">
-                                <img data-src="./images/产品介绍/WIFI热点大师.png" alt="">
+                                <img data-src="./images/introduction/wifi-hotspot-master.png" alt="">
                                 <div class="bg-mask"></div>
                             </div>
                             <div class="text-wrap hidden-sm">
                                 <p class="title">WiFi热点大师</p>
                                 <p class="desc">一款免费共享无线WiFi热点的软件,能利用笔记本或者台式机的无线网卡共享出免费的无线热点,供智能手机等移动便携设备上网冲浪。</p>
                             </div>
+                        </a>
                         </div>
                         <div class="swiper-slide">
+                                <a href="/detail/?id=2">
                             <div class="img-wrap">
-                                <img data-src="./images/产品介绍/一键刷机.png" alt="">
+                                <img data-src="./images/introduction/one-click-brusher.png" alt="">
                                 <div class="bg-mask"></div>
                             </div>
                             <div class="text-wrap hidden-sm">
                                 <p class="title">一键刷机</p>
-                                <p class="desc">安卓一键刷机工具，兼容超2000款机型，支持固件升级，ROOT权限一键获取</p>
+                                <p class="desc">安卓一键刷机工具，兼容超2000款机型，支持固件升级，ROOT权限一键获取。</p>
                             </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
+                                <a href="/detail/?id=3">
                             <div class="img-wrap">
-                                <img data-src="./images/产品介绍/多开分身大师.png" alt="">
+                                <img data-src="./images/introduction/master-of-multiple-roles.png" alt="">
                                 <div class="bg-mask"></div>
                             </div>
                             <div class="text-wrap hidden-sm">
                                 <p class="title">多开分身大师</p>
                                 <p class="desc">
-                                    一部手机登录两个微信，工作号生活号同时在线。轻松实现社交聊天APP、游戏等几乎所有应用的多账户同时在线，生活/工作互不干扰，娱乐/游戏双倍惊喜，让你的手机充满无限可能。
+                                    一部手机登录两个账号，工作号生活号同时在线。轻松实现社交聊天APP、游戏等几乎所有应用的多账户同时在线，生活/工作互不干扰，娱乐/游戏双倍惊喜，让你的手机充满无限可能。
                                 </p>
                             </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
+                                <a href="/detail/?id=4">
                             <div class="img-wrap">
-                                <img data-src="./images/产品介绍/手机优化.png" alt="">
+                                <img data-src="./images/introduction/mobile-phone-optimization.png" alt="">
                                 <div class="bg-mask"></div>
                             </div>
                             <div class="text-wrap hidden-sm">
                                 <p class="title">手机优化大师</p>
-                                <p class="desc">一款完全免费的手机优化工具，集合系统优化、网络优化、进程优化、电池优化…众多功能，运行更流畅、更省电</p>
+                                <p class="desc">一款完全免费的手机优化工具，集合系统优化、网络优化、进程优化、电池优化…众多功能，运行更流畅、更省电。</p>
                             </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
+                                <a href="/detail/?id=5">
                             <div class="img-wrap">
-                                <img data-src="./images/产品介绍/极速清理大师.png" alt="">
+                                <img data-src="./images/introduction/quick-cleaning-master.png" alt="">
                                 <div class="bg-mask"></div>
                             </div>
                             <div class="text-wrap hidden-sm">
                                 <p class="title">极速清理大师 </p>
-                                <p class="desc">一款支持手机深度清理优化工具,可以智能分析和清理手机的存储空间和内存空间,从而让您的手机系统运行更加流畅</p>
+                                <p class="desc">一款支持手机深度清理优化工具,可以智能分析和清理手机的存储空间和内存空间,从而让您的手机系统运行更加流畅。</p>
                             </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
+                                <a href="/detail/?id=6">
                             <div class="img-wrap">
-                                <img data-src="./images/产品介绍/游戏加速器.png" alt="">
+                                <img data-src="./images/introduction/game-booster.png" alt="">
                                 <div class="bg-mask"></div>
                             </div>
                             <div class="text-wrap hidden-sm">
@@ -333,41 +341,49 @@
                                 <p class="desc">一款专业手游网络优化加速产品，一键解决手游因网络问题造成的游戏卡顿、延迟、掉线、加载缓慢等一系列问题，提高手游网络的稳定性，彻底告别卡顿等问题。
                                 </p>
                             </div>
+                            </a>
                         </div>
 
                         <div class="swiper-slide">
+                                <a href="/detail/?id=7">
                             <div class="img-wrap">
-                                <img data-src="./images/产品介绍/畅游云.png" alt="">
+                                <img data-src="./images/introduction/changyou-cloud.png" alt="">
                                 <div class="bg-mask"></div>
                             </div>
                             <div class="text-wrap hidden-sm">
                                 <p class="title">畅游云</p>
-                                <p class="desc">专业提供的云服务器、云数据库、云存储、CDN、大数据等服务，帮助企业畅游上云</p>
+                                <p class="desc">专业提供的云服务器、云数据库、云存储、CDN、大数据等服务，帮助企业畅游上云。</p>
                             </div>
+                            </a>
                         </div>
                         <div class="swiper-slide clear">
+                                <a href="/detail/?id=8">
                             <div class="img-wrap">
-                                <img data-src="./images/产品介绍/畅游浏览器.png" alt="">
+                                <img data-src="./images/introduction/changyou-browser.png" alt="">
                                 <div class="bg-mask"></div>
                             </div>
                             <div class="text-wrap hidden-sm">
                                 <p class="title">畅游浏览器</p>
                                 <p class="desc">畅游浏览器,依托畅游人工智能、大数据处理等核心技术，提供丰富的内容资源和强大搜索能力，带给您全新的上网搜索体验。</p>
                             </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
+                                <a href="/detail/?id=9">
                             <div class="img-wrap">
-                                <img data-src="./images/产品介绍/看图大师.png" alt="">
+                                <img data-src="./images/introduction/master-of-pictures.png" alt="">
                                 <div class="bg-mask"></div>
                             </div>
                             <div class="text-wrap hidden-sm">
                                 <p class="title">看图大师</p>
                                 <p class="desc">清新唯美风格的智能照片美化处理软件！ 各种方形模糊效果，还有Square唯美式视频制作！</p>
                             </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
+                                <a href="/detail/?id=10">
                             <div class="img-wrap">
-                                <img data-src="./images/产品介绍/驱动大师.png" alt="">
+                                <img data-src="./images/introduction/driver-master.png" alt="">
                                 <div class="bg-mask"></div>
                             </div>
                             <div class="text-wrap hidden-sm">
@@ -375,21 +391,25 @@
                                 <p class="desc">
                                     驱动大师是一款集驱动管理和硬件检测于一体的、专业级驱动管理和维护工具的万能驱动。驱动精灵为用户提供驱动备份、恢复、安装、删除、在线更新等实用功能。</p>
                             </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
+                                <a href="/detail/?id=11">
                             <div class="img-wrap">
-                                <img data-src="./images/产品介绍/畅游影视大全.png" alt="">
+                                <img data-src="./images/introduction/changyou-movies.png" alt="">
                                 <div class="bg-mask"></div>
                             </div>
                             <div class="text-wrap hidden-sm">
                                 <p class="title">畅游影视大全</p>
                                 <p class="desc">影视资源很多的畅游影视，视频播放清晰流畅，操作界面简单美观，畅游影视不要会员，想看就看，海量高清视频360度满足你的需求
-                                    畅游影视功能齐全，快速下载，不花流量，下载到本地免费看</p>
+                                    畅游影视功能齐全，快速下载，不花流量，下载到本地免费看。</p>
                             </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
+                                <a href="/detail/?id=12">
                             <div class="img-wrap">
-                                <img data-src="./images/产品介绍/畅游头条.png" alt="">
+                                <img data-src="./images/introduction/changyou-headlines.png" alt="">
                                 <div class="bg-mask"></div>
                             </div>
                             <div class="text-wrap hidden-sm">
@@ -398,6 +418,7 @@
                                     畅游头条，做您关注的今日头条，提供每日的热点新闻资讯，及时获取国内、国际头条新闻。从突发新闻到时事热点、社会趣闻、直播视频、精彩图集，随时随地看，一网打尽您的资讯需求！
                                 </p>
                             </div>
+                            </a>
                         </div>
                     </div>
                     <div class="swiper-button-prev"><i class="iconfont">&#xe626;</i></div>
@@ -413,32 +434,38 @@
                 </div>
                 <div class="desc">我们渴望优秀的你能加入进来，一起共创未来</div>
                 <div class="desc-avatar">
-                    <div class="container-fluid">
+                    <div class="container">
                         <div class="row">
-                            <div class="detail col-lg-4 col-md-4 col-xs-4">
+                            <div class="detail col-lg-3 col-md-3 col-xs-3" style="margin-left:11.5%;">
                                 <div class="detail-wrap">
                                     <div class="action-wrap">
-                                        <img data-src="./images/index/办公环境.jpg" alt="">
+                                        <img data-src="./images/index/office.jpg" alt="">
                                         <div class="more-act">
+                                            <a href="/join/">
                                             了解更多
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="desc-wrap">
                                         <div class="text">
+                                                
                                             办公环境
                                         </div>
                                         <div class="desc-text">
+                                                
                                             公司提供丰富的水果零食，以及午餐晚餐，且办公环境舒适优雅
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="detail col-lg-4 col-md-4 col-xs-4">
+                            <div class="detail col-lg-3 col-md-3 col-xs-3">
                                 <div class="detail-wrap">
                                     <div class="action-wrap">
-                                        <img data-src="./images/index/公司团建.jpg" alt="">
+                                        <img data-src="./images/index/league-building.jpg" alt="">
                                         <div class="more-act">
+                                                <a href="/join/">
                                             了解更多
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="desc-wrap">
@@ -452,12 +479,14 @@
                                 </div>
 
                             </div>
-                            <div class="detail col-lg-4 col-md-4 col-xs-4">
+                            <div class="detail col-lg-3 col-md-3 col-xs-3">
                                 <div class="detail-wrap">
                                     <div class="action-wrap">
-                                        <img data-src="./images/index/五险一金.png" alt="">
+                                        <img data-src="./images/index/guarantee.png" alt="">
                                         <div class="more-act">
+                                                <a href="/join/">
                                             了解更多
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="desc-wrap">
@@ -474,7 +503,7 @@
                     </div>
                 </div>
             </div>
-            <a href="/recruit/" class="join-us">
+            <a href="/join/" class="join-us">
                 加入我们
             </a>
         </div>
@@ -486,53 +515,50 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 col-xs-6">
-                        <div class="img-wrap"><img data-src="./images/合作伙伴/腾讯logo_03.png" alt=""></div>
+                        <div class="img-wrap"><img data-src="./images/partner/tencent.png" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-xs-6">
-                        <div class="img-wrap"><img data-src="./images/合作伙伴/阿里巴巴.png" alt=""></div>
+                        <div class="img-wrap"><img data-src="./images/partner/alibaba.png" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-xs-6">
-                        <div class="img-wrap"><img data-src="./images/合作伙伴/百度_03.png" alt=""></div>
+                        <div class="img-wrap"><img data-src="./images/partner/baidu.png" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-xs-6">
-                        <div class="img-wrap"><img data-src="./images/合作伙伴/360_03.png" alt=""></div>
+                        <div class="img-wrap"><img data-src="./images/partner/360.png" alt=""></div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-xs-6">
-                        <div class="img-wrap"><img data-src="./images/合作伙伴/2345导航logo.jpg" alt=""></div>
+                        <div class="img-wrap"><img data-src="./images/partner/2345.jpg" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-xs-6">
-                        <div class="img-wrap"><img data-src="./images/合作伙伴/d2f340b50e246cd937a4a79df04f0f81.png"
+                        <div class="img-wrap"><img data-src="./images/partner/sogo.png"
                                 alt=""></div>
                     </div>
                     <div class="col-lg-3 col-xs-6">
-                        <div class="img-wrap"><img data-src="./images/合作伙伴/d5692f7250bd3a02f53dc71224b27fdf.jpg"
+                        <div class="img-wrap"><img data-src="./images/partner/kingsoft.jpg"
                                 alt=""></div>
                     </div>
                     <div class="col-lg-3 col-xs-6">
-                        <div class="img-wrap"><img data-src="./images/合作伙伴/猎豹_03.png" alt=""></div>
+                        <div class="img-wrap"><img data-src="./images/partner/cheetah.png" alt=""></div>
                     </div>
                 </div>
                 <div class="row hidden-xs">
                     <div class="col-lg-3 col-xs-6">
-                        <div class="img-wrap"><img data-src="./images/合作伙伴/腾讯视频.jpg" alt=""></div>
+                        <div class="img-wrap"><img data-src="./images/partner/tencent-movie.jpg" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-xs-6">
-                        <div class="img-wrap"><img data-src="./images/合作伙伴/应用宝_03.png" alt=""></div>
+                        <div class="img-wrap"><img data-src="./images/partner/myapp.png" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-xs-6">
-                        <div class="img-wrap"><img data-src="./images/合作伙伴/酷狗_03.png" alt=""></div>
+                        <div class="img-wrap"><img data-src="./images/partner/cool-dog.png" alt=""></div>
                     </div>
                     <div class="col-lg-3 col-xs-6">
-                        <div class="img-wrap"><img data-src="./images/合作伙伴/酷我_03.png" alt=""></div>
+                        <div class="img-wrap"><img data-src="./images/partner/koowo.png" alt=""></div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="next-page"  data-index="5">
-            <i class="iconfont">&#xe628;</i>
-        </div> -->
     </div>
     <div class="phone-screen phone-screen-6 visible-xs" id="contact">
         <div class="contact">
@@ -559,7 +585,7 @@
                 <div class="call-me-wrap">
                     <div class="row">
                         <div class="col-xs-2 icon"><i class="iconfont">&#xe633;</div>
-                        <div class="col-xs-10 text">1002938477</div>
+                        <div class="col-xs-10 text">97642630</div>
                     </div>
                     <div class="row">
                         <div class="col-xs-2 icon"><i class="iconfont">&#xe60a;</div>
@@ -567,7 +593,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-2 icon"><i class="iconfont">&#xe634;</div>
-                        <div class="col-xs-10 text">1002938477@qq.com</div>
+                        <div class="col-xs-10 text">97642630@qq.com</div>
                     </div>
                 </div>
             </div>
@@ -577,11 +603,11 @@
     <div class="footer-banner hidden-xs phone-screen ">
         <div class="copyright-wrap container">
             <div class="copyright">
-                Copyright © 2015 - 2019 thinkabout.cn. All Rights Reserved.<br />
+                Copyright © 2015 - 2019 gdchangyou.cn All Rights Reserved.<br />
                 广东畅游网络科技有限公司
             </div>
             <p class="copyright-bottom">
-                版权所有 粤B2-20190001号站长统计|文网文许可证
+                版权所有 粤ICP备19017522号
             </p>
         </div>
     </div>
@@ -595,7 +621,7 @@
         $(document).ready(function () {
             $('.next-page').click(function () {
                 var top = (parseInt($('html').css('font-size')) * 130) / 100;
-                var oScroll = $('#develop').offset().top - top;
+                var oScroll = $('#news').offset().top - top;
                 $('html,body').animate({
                     scrollTop: oScroll
                 })
@@ -624,6 +650,9 @@
                     mySwiper2.el.onmouseleave = function () {
                         mySwiper2.autoplay.start();
                     }
+                    $('.phone-and-msg').find('.swiper-slide').on('click',function(){
+                        location.href = '/detail?id='+parseInt($(this).index()+1);
+                    })
                 } else {
                     var mySwiper1 = new Swiper('.slider-headlines', {
                         pagination: {
@@ -654,7 +683,7 @@
                         }
                     })
                     var map = new BMap.Map("container-map");
-                    var point = new BMap.Point(113.893854, 22.933373);
+                    var point = new BMap.Point(113.895388,22.958649);
                     map.centerAndZoom(point, 18);
                     var marker = new BMap.Marker(point); // 创建标注
 

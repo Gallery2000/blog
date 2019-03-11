@@ -22,13 +22,12 @@ if (document.documentElement.clientWidth <= 750) {
       doc.write(wrap.innerHTML);
       wrap = null;
     }
-    //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
     refreshRem();
 
     win.addEventListener(
       "resize",
       function() {
-        clearTimeout(tid); //防止执行两次
+        clearTimeout(tid); 
         tid = setTimeout(refreshRem, 300);
       },
       false
@@ -38,7 +37,6 @@ if (document.documentElement.clientWidth <= 750) {
       "pageshow",
       function(e) {
         if (e.persisted) {
-          // 浏览器后退的时候重新计算
           clearTimeout(tid);
           tid = setTimeout(refreshRem, 300);
         }

@@ -2,14 +2,8 @@ $blue:#0252d9;
 $gray:#fafafa;
 
 .product-body {
-    // margin-top: 80px;
     width: 100%;
     background-color: #eee;
-    // height: 500px;
-    // background-image: url(../../images/product/产品的副本.png);
-    // overflow: hidden;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/product/产品的副本.png', sizingMethod='scale');
-    // background-repeat: no-repeat;
-    // background-size: 100%;
     overflow: hidden;
     position: relative;
     img{
@@ -43,7 +37,7 @@ $gray:#fafafa;
     width: 100%;
     overflow: hidden;
     .main {
-        margin: 0 auto;
+        margin: 0 auto 76px;
         overflow: hidden;
 
         .title {
@@ -104,63 +98,6 @@ $gray:#fafafa;
                 }
             }
         }
-        // ul {
-        //     text-align: center;
-        //     font-size: 0;
-        //     -webkit-text-size-adjust: none;
-        //     overflow: hidden;
-        //     // &:last-child {
-        //     //     li {
-        //     //         height: 296px;
-        //     //     }
-        //     // }
-
-        //     li {
-        //         text-align: center;
-        //         vertical-align: top;
-        //         width: 244px;
-        //         height: 244px;
-        //         padding: 50px 46px;
-        //         // float: left;
-        //         display: inline-block;
-        //         box-sizing: content-box;
-        //         overflow: hidden;
-        //         .img-wrap {
-        //             text-align: center;
-
-        //             a {
-        //                 color: #fff;
-
-        //                 img {
-        //                     width: 122px;
-        //                     height: 122px;
-        //                     transition: .4s;
-
-        //                     &:hover {
-        //                         transform: scale(1.1);
-        //                     }
-        //                 }
-        //             }
-
-        //         }
-
-        //         .title {
-        //             margin-top: 12px;
-        //             margin-bottom: 10px;
-        //             font-size: 16px;
-        //             line-height: 28px;
-        //             height: 28px;
-        //         }
-
-        //         .desc {
-        //             font-size: 12px;
-        //             text-align: left;
-        //             width: 245px;
-        //             margin: 0 auto;
-        //             line-height: 18px;
-        //         }
-        //     }
-        // }
     }
 }
 @media (max-width: 768px) {
