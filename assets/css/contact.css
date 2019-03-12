@@ -36,8 +36,7 @@
   margin-bottom: 42px;
   overflow: hidden; }
   .location .main {
-    margin: 0 auto;
-    width: 1366px; }
+    margin: 0 auto; }
     .location .main .row .map {
       width: 50%;
       float: left; }
