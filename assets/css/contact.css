@@ -38,13 +38,11 @@
   .location .main {
     margin: 0 auto; }
     .location .main .row .map {
-      width: 50%;
       float: left; }
       .location .main .row .map #container-map {
         height: 458px; }
     .location .main .row .msg {
-      padding-left: 50px;
-      width: 50%;
+      padding-left: 5%;
       float: right; }
       .location .main .row .msg .header {
         overflow: hidden;
