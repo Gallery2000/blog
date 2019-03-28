@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'iconfont';
   /* project id 1002004 */
-  src: url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.eot");
-  src: url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.woff2") format("woff2"), url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.woff") format("woff"), url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1002004_eixz5mi24k.svg#iconfont") format("svg"); }
+  src: url("//at.alicdn.com/t/font_1002004_eixz5mi24k.eot");
+  src: url("//at.alicdn.com/t/font_1002004_eixz5mi24k.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_1002004_eixz5mi24k.woff2") format("woff2"), url("//at.alicdn.com/t/font_1002004_eixz5mi24k.woff") format("woff"), url("//at.alicdn.com/t/font_1002004_eixz5mi24k.ttf") format("truetype"), url("//at.alicdn.com/t/font_1002004_eixz5mi24k.svg#iconfont") format("svg"); }
 @font-face {
   font-family: 'Regular';
   src: url("../font/regular.ttf") format("truetype"); }
@@ -326,5 +326,3 @@ img {
         font-size: .8rem;
         padding: .08rem 0;
         color: #fff; } }
-
-/*# sourceMappingURL=main.css.map */
